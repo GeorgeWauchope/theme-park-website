@@ -16,50 +16,55 @@
         <h1 class="index"><a href="places-to-stay.html"><em>Places to stay</em></a></h1>
         <h1 class="index"><a href="rides-and-experiences.html">Rides & Experiences</a></h1>
         <h1 class="index">1-1800-666-6999</h1>
-        <button id="bookNowButton" type ="button">BOOK NOW</button>
+        <button id="headerBookNowButton" type ="button">BOOK NOW</button>
     </header>
 
     <!-- Searchbar for housing -->
-    <div #housingSearchBar>
+    <div id = "housingSearchBar">
         <!-- Data input -->
-        <p>from: </p> 
-        <input type = "date">
-        <p>to: </p> 
-        <input type="date">
+        <p>from: <input type = "date"></p> 
+        
+        <p>to: <input type="date"></p> 
+        
 
         <!-- number of participats input -->
-        <p>number of adults: </p> 
-        <input type = "number">
-        <p>number of children: </p> 
-        <input type="number">
+        <p>number of adults: <input type = "number"> </p>
+        <p>number of children: <input type="number"> </p>
 
         <!-- slogan -->
         <p>Number one rated<br>theme park in the<br>world!</p> 
 
-        <button id="searchButton" type="button">SEARCH</button>
+        <button id="housingSearchButton" type="button">SEARCH</button>
     </div>
 
     <!-- Preview Shown when there is no active search -->
     <div id="housingPreview">
-            <img src/localImage.jpg>
+            <img src = "/localImage.jpg" >
             <div id = "previewText">All accomodations<br>includes the stay<br>in the park</div>
     </div>
     
     <!-- Listings. When searhcing you get listings -->
-    <div class = "listing">
-        <img src/localImage.jpg>
-        <h2>Name of listing</h2>
-        <p>Double beds: <span id="singleBedListing1"></span></p>
-        <p>Single beds: <span id="doubleBedListing1"></span></p>
-        <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+    <div id = housingListings>
+    
+    
+        <div class = "listing">
+            <img src= "/localImage.jpg">
+            <h2>Name of listing</h2>
+            <p>Double beds: <span id="singleBedListing1"></span></p>
+            <p>Single beds: <span id="doubleBedListing1"></span></p>
+            <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-        <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-        <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+            <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+            <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-        <p>All accomodations includes the stay in the park</p>
-        <button id="orderNowButton" type="button">ORDER NOW</button>
+            <p>All accomodations includes the stay in the park</p>
+            <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
+
+
+
+
     </div>
-
     <!-- Information for special bookings -->
     <p>Do you have special requirements?</p>
     <p>Would you like to book for a group?</p>
@@ -69,9 +74,11 @@
     <h1>Contact us</h1>
 
     <p>Are you ready to come and have fun?</p>
-    <button id="bookNowButton" type ="button">BOOK NOW</button>
+    <button id="housingBookNowButton" type ="button">BOOK NOW</button>
+    
     <footer>
 
     </footer>
+
 </body>
 </html>
