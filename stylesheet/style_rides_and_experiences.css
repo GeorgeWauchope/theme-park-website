@@ -1,0 +1,250 @@
+
+
+/* Below is CSS for top navbar created by Geoge Wauchope */
+
+#phone-and-button-top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #e9fa00;
+    height: 50px;
+    width: 100%;
+  }
+  
+  #phone-and-button-top-nav > button {
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #b81106;
+    color: white;
+    font-size: 16px;
+  }
+  
+  #phone-and-button-top-nav > p {
+    margin-right: 30px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b81106;
+    color: #fff;
+  }
+  
+  .brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .brandLink {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .navbar-links li:hover {
+    background-color: #e9fa00;
+  }
+  
+  .navbar-links li a:hover {
+    color: black;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  /*Below is CSS coded by Martha Fortrie*/ 
+  nav {
+      font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+      font-size: 1em;
+      color: black;
+  }
+  
+  body {
+      background-color:#9FC5A2; /* light green color */
+  }
+  
+  .RandEContainer {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    font-size: 18px;
+  }
+  .RandEContainer > h3, h2 {
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .ridesContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    font-size: 1em;
+    color: #b81106; /* Red color */
+  }
+  
+  .TyrannoCont {
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+ 
+  .VelocirCont {
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+  .SpinosaurusCont {
+    padding: 30px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+  
+  .ShowsAndEventsContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    font-size: 1em;
+    color: #b81106; /* Red color */ 
+  }
+  
+  .JurassicCont{
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+
+  .DinoDanceCont{
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+
+  .LiveMusicContainer {
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+
+  .RestaurantsContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    font-size: 1em;
+    color: #b81106; /* Red color */
+  }
+  
+  .JungleCont {
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+  
+  .T_rexCont {
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+  
+  .McdonaldsCont{
+    padding: 20px;
+    text-align: center; 
+    justify-content: space-between; 
+  }
+  
+  .MapCont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+    font-size: 1em; 
+    align-items: center;
+  }
+table {
+    color:#000000;
+    align-items: left;
+}
+
+address {
+    color:#000000;
+    text-align: left;
+}
+
+  @media screen and (max-width: 768px){
+    .RandEContainer{
+        flex-direction: row;
+    }
+}
+  
+/* Footer coded by George Wauchope */
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #b81106;
+    display: flex;
+    align-items: center;
+}
+  
+.footer > h2 > a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+  
+.contact-us {
+    margin-bottom: 50px;
+}
+

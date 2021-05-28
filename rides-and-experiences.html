@@ -3,26 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=stylesheet type="text/css" href="stylesheet/style_rides_and_experiences.css">
     <title>DinoLand - Rides And Experiences webpage</title>
   </head>
   <body>
      <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
-     <nav class="nav">
-      <h1 class="index"><a href="index.html">DinoLand</a></h1>
-      <h1 class="index">
-        <a href="places-to-stay.html">Places to stay</a>
-      </h1>
-      <h1 class="index">
-        <a href="rides-and-experiences.html"><em>Rides & Experiences</em></a>
-      </h1>
-      <h1 class="index">1-1800-666-6999</h1>
-      <button id="headerBookNowButton" type="button">BOOK NOW</button>
+     <nav id="phone-and-button-top-nav">
+      <p>1-800-374-4654</p>
+      <button>BOOK NOW</button>
+    </nav>
+
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="index.html" class="brandLink">DinoLand</a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="places-to-stay.html">Places to stay</a>
+          </li>
+          <li>
+            <a href="rides-and-experiences.html" target="_blank"
+              >Rides & experiences</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main>
 
       <!-- Intro section for Rides and experiences below coded by Martha Fortrie-->
-      <div class="Rides and Experiences">
+      <div class="RandEContainer">
         <h3>Rides and Experiences</h3>
         <p>
           DinoLand is a fun place for everyone! Spend the day riding our dinosaur
@@ -31,181 +48,193 @@
         </p>
         <p>Available for adults and children. Book your experience now!</p>
       </div>
-      <hr />
+      
 
       <!-- Section for our featured rides below coded by Martha Fortrie-->
-      <div class="Our featured rides">
+      <div class="ridesContainer">
         <h2>Our Featured Rides</h2>
         <!-- description and image of the Tyranno ride coded by Martha Fortrie-->
-        <h3>The Tyranno</h3>
-        <img
-          src="img/img_ride_1.jpg"
-          alt="Image of Tyranno Ride"
-          style="width: 350px; height: auto"
-        />
-        <p>
-          Dinoland's oldest and most iconic roller coaster ride. Offers a two
-          minute ride reaching speeds of 40 m.p.h.<br />
-          This ride is not recommended for those who fear heights and fast
-          speeds.<br />Remain seated at all times and enjoy the view.
-        </p>
-        <p>
-          <i><b>Height Requirment:</b> 50" minimum</i>
-        </p>
-        <p>
-          <i><b>Age Requirment:</b> 10 years or older</i>
-        </p>
+        <div class="TyrannoCont">
+          <h3>The Tyranno</h3>
+          <img
+            src="img/img_ride_1.jpg"
+            alt="Image of Tyranno Ride"
+            style="width: 500px; height: auto"
+          />
+          <p>
+            Dinoland's oldest and most iconic roller coaster ride. Offers a two
+            minute ride reaching speeds of 40 m.p.h.<br />
+            This ride is not recommended for those who fear heights and fast
+            speeds.<br />Remain seated at all times and enjoy the view.
+          </p>
+          <p>
+            <i><b>Height Requirment:</b> 50" minimum</i>
+          </p>
+          <p>
+            <i><b>Age Requirment:</b> 10 years or older</i>
+          </p>
+        </div>
 
         <!--description and image of the Velocir ride  coded by Martha Fortrie-->
-        <h3>The Velocir</h3>
-        <img
-          src="img/img_ride_3.jpg"
-          alt="Image of the Velocir ride"
-          style="width: 300px; height: auto"
-        />
-        <p>
-          Enjoy this swinging ride. Go round and round. The faster the Velocir
-          goes, the more ride tilts<br />offering you a soaring experience.
-        </p>
-        <p>
-          <i
-            ><b>Height Requirment:</b> 40" minimum OR be accompanied by an
-            adult.</i
-          >
-        </p>
-        <p>
-          <i
-            ><b>Age Requirment:</b> 10 years or older. Infants are not
-            permitted.</i
-          >
-        </p>
-
+        <div class="VelocirCont">
+          <h3>The Velocir</h3>
+          <img
+            src="img/img_ride_3.jpg"
+            alt="Image of the Velocir ride"
+            style="width: 500px; height: auto"
+          />
+          <p>
+            Enjoy this swinging ride. Go round and round. The faster the Velocir
+            goes, the more ride tilts<br />offering you a soaring experience.
+          </p>
+          <p>
+            <i
+              ><b>Height Requirment:</b> 40" minimum OR be accompanied by an
+              adult.</i
+            >
+          </p>
+          <p>
+            <i
+              ><b>Age Requirment:</b> 10 years or older. Infants are not
+              permitted.</i
+            >
+          </p>
+        </div>
+        <div class="SpinosaurusCont">
         <!-- description and image of the spinosaurus ride coded by Martha Fortrie-->
-        <h3>Spinosaurus Speed</h3>
-        <img
-          src="img/img_ride_2.jpg"
-          alt="Image of the Spinosaurus Speed ride"
-          style="width: 300px; height: auto"
-        />
-        <p>
-          Strap-in and brace yourself for this ride. This ride has no mercy for
-          those who fear.<br />The Spinosaurus Speed is our fastest ride reaching
-          speeds of 60 m.p.h. Loop after loop inside and out.
-        </p>
-        <p>
-          <i><b>Height Requirment:</b> 40" minimum</i>
-        </p>
-        <p>
-          <i><b>Age Requirment:</b> 10 years or older</i>
-        </p>
-        <br />
-
-        <!--link for page with more rides below coded by Martha Fortrie-->
-        <a href="#">More Rides</a>
+          <h3>Spinosaurus Speed</h3>
+          <img
+            src="img/img_ride_2.jpg"
+            alt="Image of the Spinosaurus Speed ride"
+            style="width: 500px; height: auto"
+          />
+          <p>
+            Strap-in and brace yourself for this ride. This ride has no mercy for
+            those who fear.<br />The Spinosaurus Speed is our fastest ride reaching
+            speeds of 60 m.p.h. Loop after loop inside and out.
+          </p>
+          <p>
+            <i><b>Height Requirment:</b> 40" minimum</i>
+          </p>
+          <p>
+            <i><b>Age Requirment:</b> 10 years or older</i>
+          </p>
+          <br />
+          <!--link for page with more rides below coded by Martha Fortrie-->
+          <a href="#">More Rides</a>
+        </div>
+        
+        
       </div>
-      <hr />
+  
       <!-- Section for our shows and events coded by Martha Fortrie-->
-      <div class="Shows and Events">
+      <div class="ShowsAndEventsContainer">
         <h2>Shows and Events</h2>
         <!-- Image and description of the Jurassic Quest show coded by Martha Fortrie-->
-        <h3>Jurassic Quest</h3>
-        <img
-          src="img/img_show_2.jpg"
-          alt="Image of the Jurassic Quest Show"
-          style="width: 300px; height: 200px"
-        />
-        <p>
-          The Jurassic Quest, is a show for all ages. A 45-minute animated show
-          based on the movie Jurassic Park.
-        </p>
-        <p>Show exhibits every Monday, Thursday and Sunday at 7PM.</p>
-        <p>
-          <i><b>Age Requirment:</b> All ages welome!</i>
-        </p>
-
+        <div class="JurassicCont">
+          <h3>Jurassic Quest</h3>
+          <img
+            src="img/img_show_2.jpg"
+            alt="Image of the Jurassic Quest Show"
+            style="width: 500px; height: 200px"
+          />
+          <p>
+            The Jurassic Quest, is a show for all ages. A 45-minute animated show
+            based on the movie Jurassic Park.
+          </p>
+          <p>Show exhibits every Monday, Thursday and Sunday at 7PM.</p>
+          <p>
+            <i><b>Age Requirment:</b> All ages welome!</i>
+          </p>
+        </div>
         <!-- Image and description of the Dino Dance Show coded by Martha Fortrie-->
-        <h3>Dino Dance Show</h3>
-        <img
-          src="img/img_show_3.jpg"
-          alt="Image of the Dino Dance Show"
-          style="width: 350px; height: 200px"
-        />
-        <p>
-          The Dino Dance show is for the younger crowds. Bring your kids and have
-          some fun featuring all of the latests dino dances.
-        </p>
-        <p>
-          The Dino Dance show can be enjoyed every Tuesday, Wednesday and Saturday
-          starting at 4PM
-        </p>
-        <p>
-          <i><b>Age Requirment:</b> All ages welcome!</i>
-        </p>
-
+        <div class="DinoDanceCont">
+          <h3>Dino Dance Show</h3>
+          <img
+            src="img/img_show_3.jpg"
+            alt="Image of the Dino Dance Show"
+            style="width: 500px; height: 200px"
+          />
+          <p>
+            The Dino Dance show is for the younger crowds. Bring your kids and have
+            some fun featuring all of the latests dino dances.
+          </p>
+          <p>
+            The Dino Dance show can be enjoyed every Tuesday, Wednesday and Saturday
+            starting at 4PM
+          </p>
+          <p>
+            <i><b>Age Requirment:</b> All ages welcome!</i>
+          </p>
+        </div>
         <!-- Image and description of our live music event coded by Martha Fortrie-->
-        <h3>Live Music</h3>
-        <img
-          src="img/img_show_1.jpg"
-          alt="Image of Live Music Event"
-          style="width: 300px; height: 200px"
-        />
-        <p>
-          Put the kids to bed and come join us every friday night for live music
-          featuring our local latest talet.
-        </p>
-        <p>Shows begin at 9PM</p>
-        <p>
-          <i><b>Age Requirment:</b> All ages welcome!</i>
-        </p>
-        <hr />
+        <div class="LiveMusicContainer">
+          <h3>Live Music</h3>
+          <img
+            src="img/img_show_1.jpg"
+            alt="Image of Live Music Event"
+            style="width: 500px; height: 200px"
+          />
+          <p>
+            Put the kids to bed and come join us every friday night for live music
+            featuring our local latest talet.
+          </p>
+          <p>Shows begin at 9PM</p>
+          <p>
+            <i><b>Age Requirment:</b> All ages welcome!</i>
+          </p>
+        </div>
       </div>
       <!-- Section for our Restaurant and Dining options coded by Martha Fortrie-->
-      <div class="Restaurants and Dining">
+      <div class="RestaurantsContainer">
         <h2>Restaurants and Dining</h2>
         <!-- Image and description of the Jungle Cafe coded by Martha Fortrie-->
-        <h3>Jungle Cafe</h3>
-        <img
-          src="img/img_food_2.jpg"
-          alt="Image of the Jungle Cafe"
-          style="width: 350px; height: auto"
-        />
-        <p>
-          Enjoy our Jungle Cafe. This jungle themed cafe serves food of all types
-          for all appetites.
-        </p>
-        <p>Open every day from 8:00AM to 10:00PM.</p>
-
+        <div class="JungleCont">
+          <h3>Jungle Cafe</h3>
+          <img
+            src="img/img_food_2.jpg"
+            alt="Image of the Jungle Cafe"
+            style="width: 500px; height: auto"
+          />
+          <p>
+            Enjoy our Jungle Cafe. This jungle themed cafe serves food of all types
+            for all appetites.
+          </p>
+          <p>Open every day from 8:00AM to 10:00PM.</p>
+        </div>
         <!-- Image and description of our T-Rex BBQ Pit coded by Martha Fortrie -->
-        <h3>T-Rex BBQ Pit</h3>
-        <img
-          src="img/img_food_1.jpg"
-          alt="Image of the T-Rex BBQ Pit"
-          style="width: 300px; height: auto"
-        />
-        <p>
-          The T-Rex BBQ Pit, offers mouth watering smoked brisket, the finest
-          rotisserie chicken and pork platters as well as your most desired
-          comfort foods.
-        </p>
-        <p>Open every day from 8:00AM to 10:00PM.</p>
-
+        <div class="T_rexCont">
+          <h3>T-Rex BBQ Pit</h3>
+          <img
+            src="img/img_food_1.jpg"
+            alt="Image of the T-Rex BBQ Pit"
+            style="width: 500px; height: auto"
+          />
+          <p>
+            The T-Rex BBQ Pit, offers mouth watering smoked brisket, the finest
+            rotisserie chicken and pork platters as well as your most desired
+            comfort foods.
+          </p>
+          <p>Open every day from 8:00AM to 10:00PM.</p>
+        </div>
         <!-- Image and description of our Mcdonalds dining option coded by Martha Fortrie-->
-        <h3>McDondalds</h3>
-        <img
-          src="img/img_food_3.jpg"
-          alt="Image of McDonalds"
-          style="width: 300px; height: auto"
-        />
-        <p>
-          Burgers, fries and more. Enjoy some food in between rides for a quick
-          grab and go or sit in our cafe while you rest from the thrills of the
-          park.
-        </p>
-        <p>Open everyday from 7:00AM to midnight.</p>
-        <hr />
+        <div class="McdonaldsCont">
+          <h3>McDondalds</h3>
+          <img
+            src="img/img_food_3.jpg"
+            alt="Image of McDonalds"
+            style="width: 300px; height: auto"
+          />
+          <p>
+            Burgers, fries and more. Enjoy some food in between rides for a quick
+            grab and go or sit in our cafe while you rest from the thrills of the
+            park.
+          </p>
+          <p>Open everyday from 7:00AM to midnight.</p>
+        </div>
       </div>
       <!-- Section for our park map coded by Martha Fortrie-->
-      <div class="Park Map">
+      <div class="MapCont">
         <!-- Image of our park map and additional park details coded by Martha Fortrie-->
         <h2>Park Map</h2>
         <img
@@ -253,7 +282,7 @@
 
      <!-- Footer Code Below (George Wauchope's code)-->
     <footer>
-      <div>
+      <div class="footer">
         <h2><a href="/index.html">DinoLand</a></h2>
       </div>
     </footer>
