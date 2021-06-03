@@ -31,7 +31,7 @@ nav { grid-area: nav;}
 /* for mobile*/
 @media only screen and (max-width: 570px){
     nav{
-        background:#3FB453;
+        background:#b31010;
         border-radius: 10px;
         border: 1px solid white;
         text-align:center;
@@ -164,7 +164,7 @@ nav { grid-area: nav;}
 /* for desktop*/
 @media only screen and (min-width: 1011px){
     nav{
-        background: #3FB453;
+        background: #971414;
         border-radius: 15px;
         border: 3px solid black;
         text-align:center;
@@ -197,7 +197,7 @@ nav { grid-area: nav;}
         font-variant: normal;
         font-weight: normal;
         font-size: 5em;
-        color: #743A8F;
+        color: #d9e626;
        
         padding:1px;
         border: 1px;
