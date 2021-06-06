@@ -105,6 +105,14 @@
   body {
       background-color:#9FC5A2; /* light green color */
   }
+
+  @keyframes change-color {
+      0% {color: black; left: 0px;}
+      25% {color:red; left: 100px;}
+      50% {color:yellow;}
+      75% {color:green; left: 300px;}
+      100% {color: black; }
+  }
   
   .RandEContainer {
     width: 100%;
@@ -115,10 +123,19 @@
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 18px;
   }
+
   .RandEContainer > h3, h2 {
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     text-align: center;
     font-size: 22px;
+  }
+
+  .RandEContainer > h3 {
+    font-size: 50px;
+    position: relative;
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
   }
   
   .ridesContainer {
