@@ -20,7 +20,6 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
 
 * {
     box-sizing: border-box;
-    text-align: center;
 }
 
 
