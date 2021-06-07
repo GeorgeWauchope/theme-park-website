@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>DinoLand - Places To Stay</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="DinoLand - Places to stay webpage"
-    />
-    <meta 
-      name="keywords" 
-      content="DinoLand booking bookings housing 'place to stay'"
-    />
-    <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
 
-    <!-- Code made with the help of https://realfavicongenerator.net/  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/scripts/">
-    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="msapplication-config" content="/scripts/browserconfig.xml">
-    <meta name="theme-color" content="#e8f852">
-    
+<head>
+  <title>DinoLand - Places To Stay</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="DinoLand - Places to stay webpage" />
+  <meta name="keywords" content="DinoLand booking bookings housing 'place to stay'" />
+  <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
 
-  </head>
+  <!-- Code made with the help of https://realfavicongenerator.net/  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/scripts/">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-config" content="/scripts/browserconfig.xml">
+  <meta name="theme-color" content="#e8f852">
 
-  <body>
-    <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
-    <nav class="nav">
-      
-      
 
-      <h1 id = "logo"><a href="index.html"><img
-        src="/img/DinoLandWideLogo.png"
-        alt="DinoLand wide logo" width=400 height="90%" /></a></h1>
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id= "toggle"/>
-      <h1 id = "Places">
-        <a href="places-to-stay.html"><em #marked>Places to stay</em></a>
-      </h1>
-      <h1 id = "rides">
-        <a href="rides-and-experiences.html">Rides & Experiences</a>
-      </h1>
-      <h1 id = "phoneNr">1-1800-666-6999
-      <button id="headerBookNowButton" type="button">BOOK NOW</button>
-    </h1>
+</head>
+
+<body>
+  <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
+
+  <div id="nav">
+    <nav id="phone-and-button-top-nav">
+      <p>1-800-374-4654</p>
+      <button>BOOK NOW</button>
     </nav>
 
-    <main>
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="index.html" class="brandLink">DinoLand</a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="places-to-stay.html">Places to stay</a>
+          </li>
+          <li>
+            <a href="rides-and-experiences.html" target="_blank">Rides & experiences</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="grid-container-PtS">
+      
       <!-- Searchbar for housing, coded by Sveinbjoern -->
       <div id="housingSearchBar">
+        <h2>SEARCH</h2>
         <!-- Data input -->
         <p>from: <input type="date" /></p>
 
-        <p>to: <input type="date" /></p>
+        <p>to:   <input type="date" /></p>
 
         <!-- number of participats input -->
         <p>number of adults: <input type="number" /></p>
@@ -69,29 +74,23 @@
         <button id="housingSearchButton" type="button">SEARCH</button>
       </div>
 
+
+
+
       <!-- Preview Shown when there is no active search, coded by Sveinbjoern-->
-      <div id="housingPreview">
-        <img
-          src="/img/preview.jpg"
-          alt="picture preview of housing"
-          width="600"
-          height="400"
-        />
-        <div id="previewText">
+      <div id="housingPreview" title="Sample pictures of housing">
+        <img src="/img/preview.jpg" alt="picture preview of housing" />
+        <p>
           All accomodations<br />includes the stay<br />in the park
-        </div>
+        </p>
       </div>
 
       <!-- Listings. When you search you get listings, coded by Sveinbjoern-->
       <div id="housingListings">
+
         <div class="listing">
           <h2>Name of listing</h2>
-          <img
-            src="/img/listing.jpg"
-            alt="picture of an available house"
-            width="200"
-            height="200"
-          />
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
           <p>Double beds: <span id="singleBedListing1"></span></p>
           <p>Single beds: <span id="doubleBedListing1"></span></p>
@@ -106,6 +105,7 @@
       </div>
 
       <!-- Information for special bookings, coded by Sveinbjoern-->
+    <div class="contact-us">
       <p>Do you have special requirements?</p>
       <p>Would you like to book for a group?</p>
       <p>Do you need space for conferences or parties?</p>
@@ -114,34 +114,39 @@
         If you have any questions then<br />
         please contact us:
       </p>
+
       <!-- Contact Form Code Below (George Wauchope's code)-->
 
-      <div class="contact-us">
-        <h2>Contact us</h2>
-        <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" /><br />
-          <label for="message">Message:</label><br />
-          <input type="text" id="message" name="message" /><br />
-          <input type="submit" value="Submit" /><br />
-        </form>
-      </div>
-  
+
+      
+      <h2>Contact us</h2>
+      <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="message">Message:</label><br />
+        <input type="text" id="message" name="message" /><br />
+        <input type="submit" value="Submit" /><br />
+      </form>
+    </div>
+
+    </div>
+
+
+    <div class="callToAction">
       <p>Are you ready to come and have fun?</p>
       <button id="housingBookNowButton" type="button">BOOK NOW</button>
-    </main>
-     <!-- Footer Code Below (George Wauchope's code)-->
+    </div>
+    <!-- Footer Code Below (George Wauchope's code)-->
     <footer>
-      <div>
-        <h2><a href="/index.html"> <img
-          src="/img/DinoLandWideLogo.png"
-          alt="DinoLand wide logo"  width=200 height="50%"/>  </a></h2>
+      <div class="footer">
+        <h2><a href="/index.html">DinoLand</a></h2>
       </div>
     </footer>
-    
-  </body>
+
+</body>
+
 </html>

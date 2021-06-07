@@ -20,1235 +20,394 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
+body {
+    background-color: #6b8e2380;
+  }
+  
+  /* Below is CSS for top navbar made by George Wauchope  */
+  
+  #phone-and-button-top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #e9fa00;
+    height: 50px;
+    width: 100%;
+  }
+  
+  #phone-and-button-top-nav > button {
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #b81106;
+    color: white;
+    font-size: 16px;
+  }
+  
+  #phone-and-button-top-nav > p {
+    margin-right: 30px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b81106;
+    color: #fff;
+  }
+  
+  .brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .brandLink {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .navbar-links li:hover {
+    background-color: #e9fa00;
+  }
+  
+  .navbar-links li a:hover {
+    color: black;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+  
+  /* Above is CSS for top navbar */
+  
+  
+  .above-fold {
+    position: relative;
+  }
+  
+  .text-above-fold {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .text-above-fold > h2 {
+    font-family: "Pattaya", sans-serif;
+  }
+  
+  .text-above-fold > button {
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #b81106;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .flex-container-for-rides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .footer {
+    width: 100%;
+    height: 80px;
+    background-color: #b81106;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer > h2 > a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contact-us {
+    margin-bottom: 50px;
+  }
+  
+  /* Media Queries Below: */
+  
+  /* Below media quiery keeps ride images on homepage mobile responsive on larger devices greater than 623 pixels wide */
+  
+    @media (min-width: 623px) {
+      .text-above-fold {
+        position: absolute;
+        top: 20vh;
+        left: 10vw;
+        color: black;
+        background-color: #f8f8f8;
+        font-size: 25px;
+  
+      }
+    }
+  
 
 
-/*The nav element*/
+/* places-to-stay.html main area*/
 
-nav { grid-area: nav;}
-/* for mobile*/
-@media only screen and (max-width: 570px){
-    nav{
-        background:#b31010;
-        border-radius: 10px;
-        border: 1px solid white;
-        text-align:center;
-        width:100%;
-       
-        
-        
-        
-    }
-    
-    label{
-        display: block;
-        cursor: pointer;
-        font-size:28px;
-        color: white;
-        float:right;
-        margin-right: 20px;
-        position: relative;
-    }
-    
-    #toggle{
-     display: none;
-    }
-
-    nav #menu{
-        display: none;
-        border-radius: 20px;
-        width:100%;
-        clear: right;
-    }
-    
-    nav ol{
-        border:1px solid white;
-        border-width:1px 0;
-        list-style:none;
-        margin:0;
-        padding:0;
-        text-align:center;
-        
-        
-    }
-    
-    nav li{
-        display:block;
-        border: 1px solid white;
-        border-radius: 5px;;
-        padding:5px;
-        
-        
-        
-    }
-    
-    nav li a {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        text-decoration: none;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 1em;
-        color:hsl(0,0%,255%);
-        display:inline-block;
-        padding:10px;
-    
-        
-        
-    }
-
-    #toggle:checked + #menu{
-        display: block;
-    }
-}
-/* for tablet*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
-    nav{
-        background: #3FB453;
-        border-radius: 10px;
-        border: 1px solid white;
-        text-align:center;
-        width:100%;
-        
-        
-        
-    }
-    
-    label{
-        margin: 0 40px 0 0;
-        font-size: 26px;   
-        text-align: center;
-        display: none;
-    }
-    
-    #toggle{
-     display: none;
-    }
-    
-    nav ol{
-        border:1px solid white;
-        border-width:1px 0;
-        list-style:none;
-        margin:0;
-        padding:0;
-        text-align:center;
-        
-    }
-    
-    nav li{
-        display:inline;
-        border: 1px solid white;
-        border-radius: 5px;;
-        padding:5px;
-        
-        
-    }
-    
-    nav li a {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: normal;
-        text-decoration: none;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 1em;
-        color:hsl(0,0%,255%);
-        display:inline-block;
-        padding:10px;
-    
-        
-        
-    }
-}
-/* for desktop*/
-@media only screen and (min-width: 1011px){
-    nav{
-        background: #971414;
-        border-radius: 15px;
-        border: 3px solid black;
-        text-align:center;
-        width:100%;
-        display:inline-flex;
-        line-height: 0.8;
-        text-indent: 25px;
-        
-        
-        
-    }
-    
-    
-    label{
-        margin: 0 40px 0 0;
-        font-size: 26px;   
-        text-align: center;
-        display: none;
-    }
-    
-    #toggle{
-     display: none;
-    }
-    
-    
-    nav a {
-        font-family: Jurassic, Helvetica, sans-serif;
-        font-style: normal;
-        text-decoration: none;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 5em;
-        color: #d9e626;
-       
-        padding:1px;
-        border: 1px;
-    
-    }
-
-    nav em {
-       
-        font-variant: cursive;
-        
-    
-    }
-
-    em.marked {border-style: solid;}
-
-}
-
-
-
-
-/* places-to-stay.html */
-
-#orReadingIntro { grid-area: intro; }
-aside { grid-area: aside; }
-#orReadingBooks { grid-area: main; }
+#housingSearchBar { grid-area: searchBar; }
+#housingPreview { grid-area: housingPreview; }
+#housingListings { grid-area: housingListings; }
+.contact-us { grid-area: contact-us;}
 
 /*Mobile*/
-@media only screen and (max-width: 570px){
-    .grid-container-onlineRead {
+@media only screen and (max-width: 640px){
+    #grid-container-PtS { 
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto;
+        width: 100%;
+        object-fit: cover;
+        
         grid-template-areas:
-          'nav nav nav nav nav nav'
-          'intro intro intro intro intro intro'
-          'aside aside aside aside aside aside'
-          'main main main main main main'
-          'footer footer footer footer footer footer';
-        background-color: white;
+          ' searchBar '
+          ' housingPreview  '
+          ' housingListings '
+          ' contact-us '
+                            
       }
       
-      #orReadingIntro{
-        background: rgb(212, 212, 134);
-        padding: 20px;
-        text-align: center;
-      }
-      
-      #orReadingIntro p{
-        font-size: 15px;
-      }
-      
-      aside{
-          background: white;
-          padding:20px;
-          height: 100%;
-          border:1px solid grey;
-          border-bottom: none;
-      }
-      
-      aside #orProtocol{
-      background: rgb(243, 243, 226);
-      height: 100%;
-      border:1px solid lightgray;
-      
-      }
-      
-      aside #orProtocolOverview{
-        padding:20px;
-      }
-      
-      aside #orProtocolOverview p{
-        font-weight: bold;
-      } 
-      
-      aside #orProtocolList{
-         
-      } 
-      
-      aside #orProtocolList li{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 0.8em;
-          color: black; 
-          margin-bottom: 80px;
-          margin-right: 20px;
-      } 
-      
-      #orReadingBooks{
-          border: 1px solid grey;
-          padding:20px;
-         
-      }
-      
-      #orReadingBooks p:first-child{
-           font-weight: bold;
-           font-size: 19px;
-      }
-      
-      #orReadingBooks .orBook{
-          background: rgb(243, 243, 226);
-          padding:20px;
-          border: 1px solid black;
-          margin-bottom: 10px;
-          border-style: dashed;
-      
-      }
-      
-      #orReadingBooks .orBook h2{
-       font-size: 15px;
-      }
-      
-      #orReadingBooks .orBook h2 a{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color: blue;
-      }
-      
-      #orReadingBooks .orBook img{
+    #housingSearchBar{
+       text-align: center;
+        margin: 11px;
+        position: relative;
+        border: 3px  #e9fa00;
+        border-style: solid;
+        border-radius: 16px;
+        /* box-sizing: content-box; */
+        
        
       }
       
-      #orReadingBooks .orBook p{
+      #housingPreview{
+    
        
+          position: relative;
+          object-fit: cover;
+        width: 100%
+
+        
+      }
+      
+      #housingPreview  p {
+        font-size: 25px;
+        z-index: 1;
+        /* display: inline; */
+        position: absolute;
+       bottom: 10%; 
+       margin: 16px;
+       
+      
+      background-color: #f6fa003c;
+      border-radius: 10px;
+        
+
+      }
+
+      #housingPreview  img {
+        
+        border: 16px solid rgb(115, 150, 65);
+        border-radius: 16px;
+        margin-top: 15px;
+        object-fit: fill;
+        width: 100%;
+       
+
+        
+        position: relative;
+      }
+      
+      .contact-us{
+          margin: 10px;
       }
 }
 /*Tablet-------------------------------------*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
-    .grid-container-onlineRead {
+@media only screen and (min-width: 641px) and (max-width: 1010px){
+    #grid-container-PtS {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 220px auto;
+        width: 100%;
+        object-fit: cover;
+        
         grid-template-areas:
-          'header header header header header header'
-          'nav nav nav nav nav nav'
-          'intro intro intro intro intro intro'
-          'aside aside aside aside aside aside'
-          'main main main main main main'
-          'footer footer footer footer footer footer';
-        background-color: white;
+          'searchBar housingPreview  '
+          'searchBar housingListings '
+          'searchBar contact-us '
+                            
       }
       
-      #orReadingIntro{
-        background: rgb(212, 212, 134);
-        padding: 20px;
-      }
-      
-      #orReadingIntro p{
-        font-size: 15px;
-      }
-      
-      aside{
-          background: white;
-          padding:20px;
-          height: 100%;
-          border:1px solid grey;
-          border-bottom: none;
-      }
-      
-      aside #orProtocol{
-      background: rgb(243, 243, 226);
-      height: 100%;
-      border:1px solid lightgray;
-      }
-      
-      aside #orProtocolOverview{
-        padding:20px;
-      }
-      
-      aside #orProtocolOverview p{
-        font-weight: bold;
-        font-size: 15px;
-      } 
-      
-      aside #orProtocolList{
-         
-      } 
-      
-      aside #orProtocolList li{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 0.9em;
-          color: black; 
-          margin-bottom: 80px;
-      } 
-      
-      #orReadingBooks{
-          border: 1px solid grey;
-          padding:20px;
-         
-      }
-      
-      #orReadingBooks p:first-child{
-           font-weight: bold;
-           font-size: 18px;
-      }
-      
-      #orReadingBooks .orBook{
-          background: rgb(243, 243, 226);
-          padding:20px;
-          border: 1px solid black;
-          margin-bottom: 10px;
-          border-style: dashed;
-      
-      }
-      
-      #orReadingBooks .orBook h2{
-          font-size:17px;
+    #housingSearchBar{
+       
+        margin: 11px;
+        position: relative;
+        border: 3px  #e9fa00;
+        border-style: solid;
+        border-radius: 16px;
+        /* box-sizing: content-box; */
+        align-self: flex-start;
        
       }
       
-      #orReadingBooks .orBook h2 a{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color: blue;
+      #housingPreview{
+    
+       
+          position: relative;
+          object-fit: cover;
+        width: 100%
+
+        
       }
       
-      #orReadingBooks .orBook img{
+      #housingPreview  p {
+        font-size: 25px;
+        z-index: 1;
+        /* display: inline; */
+        position: absolute;
+       bottom: 10%; 
+       margin: 16px;
        
+      
+      background-color: #f6fa003c;
+      border-radius: 10px;
+        
+
+      }
+
+      #housingPreview  img {
+        
+        border: 16px solid rgb(115, 150, 65);
+        border-radius: 16px;
+        margin-top: 15px;
+        object-fit: fill;
+        width: 100%;
+       
+
+        
+        position: relative;
       }
       
-      #orReadingBooks .orBook p{
-       
+      .contact-us{
+          margin: 10px;
       }
+      
 }
 /*Desktop-------------------------------------*/
 @media only screen and (min-width: 1011px){
-    .grid-container-onlineRead {
+    #grid-container-PtS {
         display: grid;
-        grid-template-columns: auto auto auto auto auto 300px;
-        grid-template-areas:
-          'nav nav nav nav nav nav'
-          'intro intro intro intro intro aside'
-          'main main main main main aside'
-          'footer footer footer footer footer footer';
-        background-color: white;
-      }
-      
-      #orReadingIntro{
-        background: rgb(212, 212, 134);
-        padding: 20px;
-      }
-      
-      #orReadingIntro p{
-        font-size: 20px;
-      }
-      
-      aside{
-          background: white;
-          padding:20px;
-          height: 100%;
-          border:1px solid grey;
-      }
-      
-      aside #orProtocol{
-      background: rgb(243, 243, 226);
-      height: 100%;
-      border:1px solid lightgray;
-      width:100%;
-      }
-      
-      aside #orProtocolOverview{
-        padding:20px;
-      }
-      
-      aside #orProtocolOverview p{
-        font-weight: bold;
-      } 
-      
-      aside #orProtocolList{
-         
-      } 
-      
-      aside #orProtocolList li{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 0.9em;
-          color: black; 
-          margin-bottom: 80px;
-          padding:15px;
-      } 
-      
-      #orReadingBooks{
-          border: 1px solid grey;
-          border-right: none;
-          padding:20px;
-         
-      }
-      
-      #orReadingBooks p:first-child{
-           font-weight: bold;
-           font-size: 25px;
-      }
-      
-      #orReadingBooks .orBook{
-          background: rgb(243, 243, 226);
-          padding:20px;
-          border: 1px solid black;
-          margin-bottom: 10px;
-          border-style: dashed;
-      
-      }
-      
-      #orReadingBooks .orBook h2{
-       
-      }
-      
-      #orReadingBooks .orBook h2 a{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color: blue;
-      }
-      
-      #orReadingBooks .orBook img{
-       
-      }
-      
-      #orReadingBooks .orBook p{
-       
-      }
-
-}
-
-
-
-
-
-
-
-/* listings*/
-
-#orBookTitle { grid-area: title; }
-#fplinkArea { grid-area: main; }
-#orBookdCurrent { grid-area: currentBook; }
-#orBookDiscussions { grid-area: pastDiscussion; }
-#orBookVideo { grid-area: bookVideo; }
-
-/**/
-@media only screen and (max-width: 570px){
-
-    .grid-container-book {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-template-areas:
-          'header header header header header header'
-          'nav nav nav nav nav nav'
-          'title title title title title title'
-          'currentBook currentBook currentBook currentBook currentBook currentBook'
-          'pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion'
-          'bookVideo bookVideo bookVideo bookVideo bookVideo bookVideo'
-          'footer footer footer footer footer footer';
-        background-color: white;
-      }
-      
-      #orBookTitle{
-          text-align: center;
-          background: rgb(212, 212, 134);
-          padding:10px;
-      
-      }
-      
-      #orBookTitle h2{
-        font-size: 19px;
+        grid-template-columns: 220px auto 200px;
+        width: 100%;
+        object-fit: cover;
         
+        grid-template-areas:
+          'searchBar housingPreview  contact-us'
+          'searchBar housingListings contact-us'
+           
       }
       
-      #orBookTitle p{
-       padding: 10px;
-       text-align: center;
-      }
-      
-      #orBookdCurrent
-      {
-        padding:20px;
-        border: 1px solid grey;
-        border-bottom:none;
-        background: rgb(243, 243, 226);
-      }
-      
-      #orBookdCurrent #orBookDcTitle{
-          
-      }
-      
-      #orBookdCurrent #orBookDcTitle h3
-      {
-         font-size:16px;
-      }
-      
-      #orBookdCurrent #orBookDcSeal{
-      
-      }
-      
-      #orBookdCurrent #orBookDcSeal p
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:rgb(0, 0, 0);
-      }
-      
-      #orBookdCurrent .orBookDcComment 
-      {
-          border: 1px solid grey;
-          margin-bottom: 10px;
-          padding: 10px;
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic{
-        
-      } 
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic img{
-         
-      } 
-      
-      
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName{
-          
-      }
-      
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color:rgb(0, 0, 0);
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcText{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcText q{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate{
-      
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate time
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: italic;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:black;
-      }
-      
-      #orBookDiscussions{
-          padding: 10px;
-          border: 1px solid grey;
-          background: rgb(229, 231, 245);
-          border-bottom:none;
-      
-      }
-      
-      #orBookDiscussions p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: bold;
-          font-size: 20px;;
-          color:black;
-      }
-      
-      #orBookDiscussions .orBookDiscussion{
-      
-      }
-      
-      #orBookDiscussions .orBookDiscussion h3{
-          font-weight: normal;
-      }
-      
-      #orBookVideo{
-          border: 1px solid grey;
-          border-bottom:none;
-          text-align: center;
-          padding:0;
-          margin:0;
-          background: rgb(229, 231, 245);
+    #housingSearchBar{
+       
+        margin: 11px;
+        position: relative;
+        border: 3px  #e9fa00;
+        border-style: solid;
+        border-radius: 16px;
+        /* box-sizing: content-box; */
+        align-self: flex-start;
        
       }
       
-      #orBookVideo video{
+      #housingPreview{
+    
+       
           position: relative;
-          bottom:5px;
-      }
+          object-fit: cover;
+        width: 100%
 
-}
-/*Tablet*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
-
-    .grid-container-book {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-areas:
-        'header header header header header header'
-        'nav nav nav nav nav nav'
-        'title title title title title title'
-        'currentBook currentBook currentBook currentBook currentBook currentBook'
-        'pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion'
-        'bookVideo bookVideo bookVideo bookVideo bookVideo bookVideo'
-        'footer footer footer footer footer footer';
-        background-color: white;
-      }
-      
-      #orBookTitle{
-          text-align: center;
-          background: rgb(212, 212, 134);
-          padding:10px;
-      
-      }
-      
-      #orBookTitle h2{
-        font-size: 22px;
         
       }
       
-      #orBookTitle p{
-        padding: 10px;
-        text-align: center;
-      }
-      
-      #orBookdCurrent
-      {
-        padding:20px;
-        border: 1px solid grey;
-        background: rgb(243, 243, 226);
-      }
-      
-      #orBookdCurrent #orBookDcTitle{
-          
-      }
-      
-      #orBookdCurrent #orBookDcTitle h3
-      {
-         
-      }
-      
-      #orBookdCurrent #orBookDcSeal{
-      
-      }
-      
-      #orBookdCurrent #orBookDcSeal p
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:rgb(0, 0, 0);
-      }
-      
-      #orBookdCurrent .orBookDcComment 
-      {
-          border: 1px solid grey;
-          margin-bottom: 10px;
-          padding: 10px;
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic{
-        
-      } 
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic img{
-         
-      } 
-      
-      
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName{
-          
-      }
-      
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color:rgb(0, 0, 0);
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcText{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcText q{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate{
-      
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate time
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: italic;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:black;
-      }
-      
-      #orBookDiscussions{
-          padding: 10px;
-          border: 1px solid grey;
-          background: rgb(229, 231, 245);
-          border-top:none;
-      
-      }
-      
-      #orBookDiscussions p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: bold;
-          font-size: 20px;;
-          color:black;
-      }
-      
-      #orBookDiscussions .orBookDiscussion{
-      
-      }
-      
-      #orBookDiscussions .orBookDiscussion h3{
-          font-weight: normal;
-      }
-      
-      #orBookVideo{
-          border: 1px solid grey;
-          border-top: none;
-          border-bottom: none;
-          text-align: center;
-          padding:0;
-          margin:0;
-          background: rgb(229, 231, 245);
+      #housingPreview  p {
+        font-size: 25px;
+        z-index: 1;
+        /* display: inline; */
+        position: absolute;
+       bottom: 10%; 
+       margin: 16px;
        
-      }
       
-      #orBookVideo video{
-          position: relative;
-          bottom:5px;
-      }
-}
-/*Desktop*/
-@media only screen and (min-width: 1011px){
-
-    .grid-container-book {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-areas:
-        'header header header header header header'
-        'nav nav nav nav nav nav'
-        'title title title title title title'
-        'currentBook currentBook currentBook currentBook pastDiscussion pastDiscussion'
-        'currentBook currentBook currentBook currentBook bookVideo bookVideo'
-        'footer footer footer footer footer footer';
-        background-color: white;
-      }
-      
-      #orBookTitle{
-          text-align: center;
-          background: rgb(212, 212, 134);
-      
-      }
-      
-      #orBookTitle h2{
-        font-size: 22px;
+      background-color: #f6fa003c;
+      border-radius: 10px;
         
+
       }
-      
-      #orBookTitle p{
+
+      #housingPreview  img {
+        
+        border: 16px solid rgb(115, 150, 65);
+        border-radius: 16px;
+        margin-top: 15px;
+        object-fit: fill;
+        width: 100%;
        
-      }
-      
-      #orBookdCurrent
-      {
-        padding:20px;
-        border: 1px solid grey;
-        border-right: none;
-        background: rgb(243, 243, 226);
-      }
-      
-      #orBookdCurrent #orBookDcTitle{
-          
-      }
-      
-      #orBookdCurrent #orBookDcTitle h3
-      {
-         
-      }
-      
-      #orBookdCurrent #orBookDcSeal{
-      
-      }
-      
-      #orBookdCurrent #orBookDcSeal p
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:rgb(0, 0, 0);
-      }
-      
-      #orBookdCurrent .orBookDcComment 
-      {
-          border: 1px solid grey;
-          margin-bottom: 10px;
-          padding: 10px;
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic{
+
         
-      } 
-      
-      #orBookdCurrent .orBookDcComment .orBookDcContent .ContPic img{
-         
-      } 
-      
-      
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName{
-          
+        position: relative;
       }
       
-      #orBookdCurrent .orBookDcComment  .orBookDcContent .ContName p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 18px;;
-          color:rgb(0, 0, 0);
+      .contact-us{
+          margin: 10px;
       }
       
-      #orBookdCurrent .orBookDcComment .orBookDcText{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .orBookDcText q{
-         
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate{
-      
-      }
-      
-      #orBookdCurrent .orBookDcComment .ContDate time
-      {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: italic;
-          font-variant: normal;
-          font-weight: normal;
-          font-size: 15px;;
-          color:black;
-      }
-      
-      #orBookDiscussions{
-          padding: 10px;
-          border: 1px solid grey;
-          background: rgb(229, 231, 245);
-      
-      }
-      
-      #orBookDiscussions p{
-          font-family: 'Times New Roman', Times, serif;
-          font-style: normal;
-          font-variant: normal;
-          font-weight: bold;
-          font-size: 20px;;
-          color:black;
-      }
-      
-      #orBookDiscussions .orBookDiscussion{
-      
-      }
-      
-      #orBookDiscussions .orBookDiscussion h3{
-          font-weight: normal;
-      }
-      
-      #orBookVideo{
-          border: 1px solid grey;
-          border-top: none;
-          text-align: center;
-          padding:0;
-          margin:0;
-          background: rgb(229, 231, 245);
-       
-      }
-      
-      #orBookVideo video{
-          position: relative;
-          top:45px;
-      }
+     
+
 }
-
-
-
-
-/*Footer CSS-------------------------------------------*/
-
-footer { grid-area: footer; }
-/*Mobile-------------------------------------*/
-@media only screen and (max-width: 570px){
-    footer
-{
-    background: #3FB453;;
-    text-align: center;
-    width:100%;
-    padding: 10px;
-}
-
-footer #fpcontactInformation
-{
-    background: rgb(243, 243, 226);
-    text-align: center;
-    margin: auto;
-    width:99%;
-    padding:10px;
-    
-}
-
-
-
-
-footer #fpcontactInformation #contact
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 20px;;
-    color: red;
-}
-
-footer #fpcontactInformation #name
-{
-  
-}
-
-footer #fpcontactInformation #email
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: blue;
-}
-
-footer #fpcontactInformation #charity
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: black;
-}
-
-
-
-footer #fpcontactInformation ul li a
-{
-    
-}
-}
-/*Tablet-------------------------------------*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
-    footer
-    {
-        background: #3FB453;
-        text-align: center;
-        width:100%;
-        padding: 10px;
-    }
-    
-    footer #fpcontactInformation
-    {
-        background: rgb(243, 243, 226);
-        text-align: center;
-        margin: auto;
-        width:99%;
-        padding:10px;
-        
-    }
-    
-    footer #fpcontactInformation ul
-    {
-        list-style:none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
-    
-    footer #fpcontactInformation ul li
-    {
-        padding: 8px; 
-    }
-    
-    
-    footer #fpcontactInformation #contact
-    {
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: bold;
-        font-size: 20px;;
-        color: red;
-    }
-    
-    footer #fpcontactInformation #name
-    {
-      
-    }
-    
-    footer #fpcontactInformation #email
-    {
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 15px;;
-        color: blue;
-    }
-    
-    footer #fpcontactInformation #charity
-    {
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        font-size: 15px;;
-        color: black;
-    }
-    
-    
-    
-    footer #fpcontactInformation ul li a
-    {
-        
-    }
-}
-@media only screen and (min-width: 1011px){
-    footer
-{
-    background: #3FB453;
-    text-align: center;
-    width:100%;
-    padding: 10px;
-}
-
-footer #fpcontactInformation
-{
-    background: rgb(243, 243, 226);
-    text-align: center;
-    margin: auto;
-    width:99%;
-    padding:10px;
-    
-}
-
-footer #fpcontactInformation ul
-{
-    list-style:none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-footer #fpcontactInformation ul li
-{
-    display: inline-block;
-    margin:20px;
-    height: 5px;
-    position: relative;
-    padding-bottom: 10px;
-    
-}
-
-
-footer #fpcontactInformation #contact
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size: 20px;;
-    color: red;
-}
-
-footer #fpcontactInformation #name
-{
-  
-}
-
-footer #fpcontactInformation #email
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: blue;
-}
-
-footer #fpcontactInformation #charity
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 15px;;
-    color: black;
-}
-
-
-
-footer #fpcontactInformation ul li a
-{
-    
-}
-}
-
