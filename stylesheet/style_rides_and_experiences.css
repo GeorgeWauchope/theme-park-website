@@ -103,7 +103,8 @@
   }
   
   body {
-      background-color:#9FC5A2; /* light green color */
+      background-color:#6b8e2380;
+      margin: 0;
   }
 
   @keyframes change-color {
@@ -127,7 +128,7 @@
   .RandEContainer > h3, h2 {
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .RandEContainer > h3 {
