@@ -108,17 +108,15 @@
       margin: 0;
   }
 
-  @keyframes change-color {
+  /* @keyframes change-color {
       0% {color: black; left: 0px;}
       25% {color:red; left: 100px;}
       50% {color:yellow;}
       75% {color:green; left: 300px;}
       100% {color: black; }
-  }
+  } */
   
-
   .RandEContainer {
-
     width: 100%;
     display: flex;
     box-sizing: border-box;
@@ -126,8 +124,6 @@
     text-align: center;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 18px;
-
-
   }
 
   .RandEContainer > h3, h2 {
@@ -144,7 +140,6 @@
     animation-iteration-count: 3;
   }
 
-  
   .ridesContainer {
     display: flex;
     width: 100%;
@@ -154,13 +149,18 @@
     font-size: 1em;
     color: #b81106; /* Red color */
   }
+  .ridesContainer:hover > h2 {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateX(360deg);
+  }
   
   .TyrannoCont {
     padding: 20px;
     text-align: center; 
     justify-content: space-between; 
   }
- 
+
   .VelocirCont {
     padding: 20px;
     text-align: center; 
@@ -180,6 +180,11 @@
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
     color: #b81106; /* Red color */ 
+  }
+  .ShowsAndEventsContainer:hover > h2 {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateX(360deg);
   }
   
   .JurassicCont{
@@ -208,6 +213,12 @@
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
     color: #b81106; /* Red color */
+  }
+
+  .RestaurantsContainer:hover > h2 {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateX(360deg);
   }
   
   .JungleCont {
