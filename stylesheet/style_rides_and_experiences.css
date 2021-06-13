@@ -108,13 +108,13 @@
       margin: 0;
   }
 
-  /* @keyframes change-color {
+  @keyframes change-color {
       0% {color: black; left: 0px;}
       25% {color:red; left: 100px;}
       50% {color:yellow;}
       75% {color:green; left: 300px;}
       100% {color: black; }
-  } */
+  }
   
   .RandEContainer {
     width: 100%;
@@ -147,7 +147,7 @@
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */
+    /* color: #b81106; Red color */
   }
   .ridesContainer:hover > h2 {
     cursor: pointer;
@@ -155,21 +155,75 @@
     transform: rotateX(360deg);
   }
   
-  .TyrannoCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
 
-  .VelocirCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+  .TyrannoCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin: 0 0 1rem 0;
   }
+  .TyrannoCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;     
+}
+
+.TyrannoCont > div {
+  padding-left: calc(100px + 1rem);
+}
+
+.TyrannoCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
+}
+
+.VelocirCont {
+  overflow:  hidden;
+  padding: 5rem;
+  max-width: 100%
+  margin: 0 0 1rem 0;
+}
+.VelocirCont > img {
+  width: 500px;  
+  float: left;
+  margin:  0 1rem 0 0;     
+}
+
+.VelocirCont > div {
+padding-left: calc(100px + 1rem);
+}
+
+.VelocirCont h3 {
+  font-weight:bold;
+  font-size: 30px;
+  color: #b81106;
+  margin: 0 0 0.5rem 0;
+}
+
+
   .SpinosaurusCont {
-    padding: 30px;
-    text-align: center; 
-    justify-content: space-between; 
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin: 0 0 1rem 0;
+  }
+  .SpinosaurusCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;     
+  }
+  
+  .SpinosaurusCont > div {
+  padding-left: calc(100px + 1rem);
+  }
+  
+  .SpinosaurusCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
   
   .ShowsAndEventsContainer {
@@ -179,30 +233,85 @@
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */ 
+    /* color: #b81106; /* Red color */  */
   }
+
+  .ShowsMain:hover > h2 {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateX(360deg);
+  }  
+
   .ShowsAndEventsContainer:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
   
-  .JurassicCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+  .JurassicCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin: 0 0 1rem 0;
   }
+  .JurassicCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;     
+}
+
+.JurassicCont > div {
+  padding-left: calc(100px + 1rem);
+}
+
+.JurassicCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
+}
 
   .DinoDanceCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin:  0 0 1rem 0;
   }
 
-  .LiveMusicContainer {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+  .DinoDanceCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;    
+}
+.DinoDanceCont > div {
+  padding-left: calc(100px + 1rem);
+}
+.DinoDanceCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
+  }
+
+.LiveMusicContainer {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin:  0 0 1rem 0;
+  }
+.LiveMusicContainer > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;    
+}
+.LiveMusicContainer > div {
+  padding-left: calc(100px + 1rem);
+}
+.LiveMusicContainer h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
 
   .RestaurantsContainer {
@@ -212,7 +321,6 @@
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */
   }
 
   .RestaurantsContainer:hover > h2 {
@@ -220,23 +328,69 @@
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
-  
-  .JungleCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+
+.JungleCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin:  0 0 1rem 0;
+}
+.JungleCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;    
+}
+.JungleCont > div {
+  padding-left: calc(100px + 1rem);
+}
+.JungleCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
   
-  .T_rexCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+.T_rexCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin:  0 0 1rem 0;
+}
+.T_rexCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;    
+}
+.T_rexCont > div {
+  padding-left: calc(100px + 1rem);
+}
+.T_rexCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
   
-  .McdonaldsCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+
+.McdonaldsCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+    margin:  0 0 1rem 0;
+  }
+.McdonaldsCont > img {
+    width: 500px;  
+    float: left;
+    margin:  0 1rem 0 0;    
+}
+.McdonaldsCont > div {
+  padding-left: calc(100px + 1rem);
+}
+.McdonaldsCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
   
   .MapCont{
@@ -258,11 +412,11 @@ address {
     text-align: left;
 }
 
-  /* @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px){
     .RandEContainer{
         flex-direction: row;
     }
-} */
+}
   
 /* Footer coded by George Wauchope */
 .footer {
