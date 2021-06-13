@@ -159,12 +159,11 @@
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin: 0 0 1rem 0;
   }
+
   .TyrannoCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;     
 }
 
 .TyrannoCont > div {
@@ -176,26 +175,22 @@
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
 }
 
 .VelocirCont {
   overflow:  hidden;
   padding: 5rem;
   max-width: 100%
-  margin: 0 0 1rem 0;
 }
 .VelocirCont > img {
   width: 500px;  
   float: left;
-  margin:  0 1rem 0 0;     
 }
 
 .VelocirCont h3 {
   font-weight:bold;
   font-size: 30px;
   color: #b81106;
-  margin: 0 0 0.5rem 0;
 }
 
 
@@ -203,12 +198,11 @@
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin: 0 0 1rem 0;
   }
+
   .SpinosaurusCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;     
   }
   
  
@@ -216,7 +210,6 @@
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
   }
   
   .ShowsAndEventsContainer {
@@ -226,7 +219,6 @@
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    /* color: #b81106; /* Red color */  */
   }
 
   .ShowsMain:hover > h2 {
@@ -245,57 +237,48 @@
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin: 0 0 1rem 0;
   }
   .JurassicCont > img {
     width: 500px;  
-    float: left;
-    margin:  0 1rem 0 0;     
+    float: left; 
 }
 .JurassicCont h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
 }
 
   .DinoDanceCont{
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin:  0 0 1rem 0;
   }
 
   .DinoDanceCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;    
 }
 
 .DinoDanceCont h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
   }
 
 .LiveMusicContainer {
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin:  0 0 1rem 0;
   }
 .LiveMusicContainer > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;    
 }
 
 .LiveMusicContainer h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
   }
 
   .RestaurantsContainer {
@@ -317,38 +300,32 @@
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin:  0 0 1rem 0;
 }
 .JungleCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;    
 }
 
 .JungleCont h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
   }
   
 .T_rexCont {
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin:  0 0 1rem 0;
 }
 .T_rexCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;    
 }
 
 .T_rexCont h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
-    margin: 0 0 0.5rem 0;
   }
   
 
@@ -356,12 +333,10 @@
     overflow:  hidden;
     padding: 5rem;
     max-width: 100%
-    margin:  0 0 1rem 0;
   }
 .McdonaldsCont > img {
     width: 500px;  
     float: left;
-    margin:  0 1rem 0 0;    
 }
 /* .McdonaldsCont > div {
   padding-left: calc(100px + 1rem);
