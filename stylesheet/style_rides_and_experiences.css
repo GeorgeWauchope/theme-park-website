@@ -99,7 +99,6 @@
   nav {
       font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
       font-size: 1em;
-      color: black;
   }
   
   body {
@@ -143,18 +142,18 @@
   .ridesContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    padding: 10px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
     /* color: #b81106; Red color */
   }
-  .ridesContainer:hover > h2 {
+
+  .ridesMain:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
-  
 
   .TyrannoCont {
     overflow:  hidden;
@@ -169,7 +168,8 @@
 }
 
 .TyrannoCont > div {
-  padding-left: calc(100px + 1rem);
+  margin: 0 1rem 0 0;
+  text-align: left;
 }
 
 .TyrannoCont h3 {
@@ -189,10 +189,6 @@
   width: 500px;  
   float: left;
   margin:  0 1rem 0 0;     
-}
-
-.VelocirCont > div {
-padding-left: calc(100px + 1rem);
 }
 
 .VelocirCont h3 {
@@ -215,10 +211,7 @@ padding-left: calc(100px + 1rem);
     margin:  0 1rem 0 0;     
   }
   
-  .SpinosaurusCont > div {
-  padding-left: calc(100px + 1rem);
-  }
-  
+ 
   .SpinosaurusCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -229,7 +222,7 @@ padding-left: calc(100px + 1rem);
   .ShowsAndEventsContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
@@ -259,11 +252,6 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;     
 }
-
-.JurassicCont > div {
-  padding-left: calc(100px + 1rem);
-}
-
 .JurassicCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -283,9 +271,7 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;    
 }
-.DinoDanceCont > div {
-  padding-left: calc(100px + 1rem);
-}
+
 .DinoDanceCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -304,9 +290,7 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;    
 }
-.LiveMusicContainer > div {
-  padding-left: calc(100px + 1rem);
-}
+
 .LiveMusicContainer h3 {
     font-weight:bold;
     font-size: 30px;
@@ -317,13 +301,13 @@ padding-left: calc(100px + 1rem);
   .RestaurantsContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
   }
 
-  .RestaurantsContainer:hover > h2 {
+  .RestMain:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
@@ -340,9 +324,7 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;    
 }
-.JungleCont > div {
-  padding-left: calc(100px + 1rem);
-}
+
 .JungleCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -361,9 +343,7 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;    
 }
-.T_rexCont > div {
-  padding-left: calc(100px + 1rem);
-}
+
 .T_rexCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -383,9 +363,10 @@ padding-left: calc(100px + 1rem);
     float: left;
     margin:  0 1rem 0 0;    
 }
-.McdonaldsCont > div {
+/* .McdonaldsCont > div {
   padding-left: calc(100px + 1rem);
-}
+} */
+
 .McdonaldsCont h3 {
     font-weight:bold;
     font-size: 30px;
@@ -411,12 +392,39 @@ address {
     color:#000000;
     text-align: left;
 }
+/* For larger devices 768px and up  */
+@media only screen and (max-width: 768px){
+  body {
+    background-color: white;
+  }
+  .ridesContainer {
+    flex-direction: column;
+  }
+  .ShowsAndEventsContainer {
+    flex-direction: column;
+  }
 
-  @media screen and (max-width: 768px){
-    .RandEContainer{
-        flex-direction: row;
-    }
-}
+  .RestaurantsContainer {
+    flex-direction: column;
+  }
+     }
+
+/* For small devices     */
+/* @media only screen and (max-width: 600px)
+{
+
+} */
+
+
+/* @media screen and(max-width:400px) {
+  .ridesContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1em;
+  }    
+} */
   
 /* Footer coded by George Wauchope */
 .footer {
