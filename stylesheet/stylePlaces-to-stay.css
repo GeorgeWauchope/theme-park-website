@@ -344,7 +344,7 @@ body {
 @media only screen and (min-width: 1011px){
     #grid-container-PtS {
         display: grid;
-        grid-template-columns: 220px auto 200px;
+        grid-template-columns: 320px auto 300px;
         width: 100%;
         object-fit: cover;
         
