@@ -99,7 +99,6 @@
   nav {
       font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
       font-size: 1em;
-      color: black;
   }
   
   body {
@@ -108,13 +107,13 @@
       margin: 0;
   }
 
-  /* @keyframes change-color {
+  @keyframes change-color {
       0% {color: black; left: 0px;}
       25% {color:red; left: 100px;}
       50% {color:yellow;}
       75% {color:green; left: 300px;}
       100% {color: black; }
-  } */
+  }
   
   .RandEContainer {
     width: 100%;
@@ -143,100 +142,209 @@
   .ridesContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    padding: 10px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */
+    /* color: #b81106; Red color */
   }
-  .ridesContainer:hover > h2 {
+
+  .ridesMain:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
-  
+
   .TyrannoCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
   }
 
-  .VelocirCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
+  .TyrannoCont > img {
+    width: 500px;  
+    float: left;
+}
+
+.TyrannoCont > div {
+  margin: 0 1rem 0 0;
+  text-align: left;
+}
+
+.TyrannoCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+}
+
+.VelocirCont {
+  overflow:  hidden;
+  padding: 5rem;
+  max-width: 100%
+}
+.VelocirCont > img {
+  width: 500px;  
+  float: left;
+}
+
+.VelocirCont h3 {
+  font-weight:bold;
+  font-size: 30px;
+  color: #b81106;
+}
+
+
   .SpinosaurusCont {
-    padding: 30px;
-    text-align: center; 
-    justify-content: space-between; 
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+  }
+
+  .SpinosaurusCont > img {
+    width: 500px;  
+    float: left;
+  }
+  
+ 
+  .SpinosaurusCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
   }
   
   .ShowsAndEventsContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */ 
   }
+
+  .ShowsMain:hover > h2 {
+    cursor: pointer;
+    transition: all 2s linear;
+    transform: rotateX(360deg);
+  }  
+
   .ShowsAndEventsContainer:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
   
-  .JurassicCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+  .JurassicCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
   }
+  .JurassicCont > img {
+    width: 500px;  
+    float: left; 
+}
+.JurassicCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+}
 
   .DinoDanceCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
   }
 
-  .LiveMusicContainer {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+  .DinoDanceCont > img {
+    width: 500px;  
+    float: left;
+}
+
+.DinoDanceCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+  }
+
+.LiveMusicContainer {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+  }
+.LiveMusicContainer > img {
+    width: 500px;  
+    float: left;
+}
+
+.LiveMusicContainer h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
   }
 
   .RestaurantsContainer {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
     font-size: 1em;
-    color: #b81106; /* Red color */
   }
 
-  .RestaurantsContainer:hover > h2 {
+  .RestMain:hover > h2 {
     cursor: pointer;
     transition: all 2s linear;
     transform: rotateX(360deg);
   }
-  
-  .JungleCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+
+.JungleCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+}
+.JungleCont > img {
+    width: 500px;  
+    float: left;
+}
+
+.JungleCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
   }
   
-  .T_rexCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+.T_rexCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+}
+.T_rexCont > img {
+    width: 500px;  
+    float: left;
+}
+
+.T_rexCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
   }
   
-  .McdonaldsCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
+
+.McdonaldsCont {
+    overflow:  hidden;
+    padding: 5rem;
+    max-width: 100%
+  }
+.McdonaldsCont > img {
+    width: 500px;  
+    float: left;
+}
+
+
+.McdonaldsCont h3 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    margin: 0 0 0.5rem 0;
   }
   
   .MapCont{
@@ -258,12 +366,28 @@ address {
     text-align: left;
 }
 
-  /* @media screen and (max-width: 768px){
-    .RandEContainer{
-        flex-direction: row;
-    }
+@media only screen and (max-width: 768px){
+  body {
+    background-color: white;
+  }
+  .ridesContainer {
+    flex-direction: column;
+  }
+  .ShowsAndEventsContainer {
+    flex-direction: column;
+  }
+
+  .RestaurantsContainer {
+    flex-direction: column;
+  }
+     }
+
+/* For small devices     */
+/* @media only screen and (max-width: 600px)
+{
+
 } */
-  
+
 /* Footer coded by George Wauchope */
 .footer {
     width: 100%;
