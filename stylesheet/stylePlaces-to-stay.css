@@ -448,7 +448,7 @@ body {
   }
 }
 
-@keyframes snap {
+@keyframes snap { 
   96% {
     scroll-snap-align: center;
   }
