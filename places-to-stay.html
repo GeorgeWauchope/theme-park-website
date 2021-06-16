@@ -69,14 +69,15 @@
         <p>number of children: <input type="number" /></p>
 
         <!-- slogan -->
-        <p>Number one rated<br />theme park in the<br />world!</p>
+        <h3>Number one rated<br />theme park in the<br />world!</h3>
 
-        <button id="housingSearchButton" type="button">SEARCH</button>
+
+        <label for="housingSearchButton"><h4>SEARCH</h4></label>
       </div>
 
 
 
-
+      <input type="checkbox" id= "housingSearchButton"/>
       <!-- Preview Shown when there is no active search, coded by Sveinbjoern-->
       <div id="housingPreview" title="Sample pictures of housing">
         <!-- <img src="/img/preview.jpg" alt="picture preview of housing" />
@@ -90,67 +91,61 @@
 
 
           <!-- adapted from https://css-tricks.com/css-only-carousel/ -->
-          <section class="carousel" aria-label="Preview images of housing">
+          <section class="carousel" >
+
+            
+            <p> All accomodations<br />includes the stay<br />in the park</p>
               <ol class="carousel__viewport">
                 <li id="carousel__slide1"
                     tabindex="0"
                     class="carousel__slide">
+                    <img src="/img/preview.jpg" alt="picture preview of housing" />
                   <div class="carousel__snapper">
                     <a href="#carousel__slide4"
                        class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2"
-                       class="carousel__next">Go to next slide</a>
-                  </div>
-                </li>
                 <li id="carousel__slide2"
                     tabindex="0"
                     class="carousel__slide">
+                    <img src="/img/alexander-kaunas-sCac3Y_cC3Y-unsplash.jpg" alt="picture preview of housing" />
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide1"
                      class="carousel__prev">Go to previous slide</a>
-                  <a href="#carousel__slide3"
-                     class="carousel__next">Go to next slide</a>
-                </li>
                 <li id="carousel__slide3"
                     tabindex="0"
                     class="carousel__slide">
+                    <img src="/img/28b142eaba35be2c2cb07f7153494506.jpg" alt="picture preview of housing" />
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide2"
                      class="carousel__prev">Go to previous slide</a>
-                  <a href="#carousel__slide4"
-                     class="carousel__next">Go to next slide</a>
-                </li>
                 <li id="carousel__slide4"
                     tabindex="0"
                     class="carousel__slide">
+                    <img src="/img/pexels-maria-orlova-4917176.jpg" alt="picture preview of housing" />
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide3"
                      class="carousel__prev">Go to previous slide</a>
-                  <a href="#carousel__slide1"
-                     class="carousel__next">Go to first slide</a>
-                </li>
-              </ol>
-              <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                  <li class="carousel__navigation-item">
-                    <a href="#carousel__slide1"
-                       class="carousel__navigation-button">Go to slide 1</a>
-                  </li>
-                  <li class="carousel__navigation-item">
-                    <a href="#carousel__slide2"
-                       class="carousel__navigation-button">Go to slide 2</a>
-                  </li>
-                  <li class="carousel__navigation-item">
-                    <a href="#carousel__slide3"
-                       class="carousel__navigation-button">Go to slide 3</a>
-                  </li>
-                  <li class="carousel__navigation-item">
-                    <a href="#carousel__slide4"
-                       class="carousel__navigation-button">Go to slide 4</a>
-                  </li>
                 </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1"
+                         class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2"
+                         class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3"
+                         class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4"
+                         class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
               </aside>
             </section>
+
       </div>
 
       <!-- Listings. When you search you get listings, coded by Sveinbjoern-->
@@ -204,10 +199,7 @@
     </div>
 
 
-    <div class="callToAction">
-      <p>Are you ready to come and have fun?</p>
-      <button id="housingBookNowButton" type="button">BOOK NOW</button>
-    </div>
+    
     <!-- Footer Code Below (George Wauchope's code)-->
     <footer>
       <div class="footer">
