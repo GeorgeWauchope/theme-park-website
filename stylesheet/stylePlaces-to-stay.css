@@ -396,9 +396,7 @@ body {
 
       #housingPreview  img {
         
-        border: 16px solid rgb(115, 150, 65);
-        border-radius: 16px;
-        margin-top: 15px;
+        max-height: 100%;
         object-fit: fill;
         width: 100%;
        
