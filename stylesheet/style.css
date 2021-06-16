@@ -6,9 +6,6 @@
 }
 
 /* Below background color uses OPACITY in hex number to make the background colour more transparent */
-body {
-  background-color: #6b8e2380;
-}
 
 /* Below is CSS for top navbar */
 
@@ -25,21 +22,39 @@ body {
   margin: 20px;
   padding: 10px;
   text-decoration: none;
-  background-color: #b81106;
-  color: white;
+  color: #fff;
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 10px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 #phone-and-button-top-nav > p {
   margin-right: 30px;
 }
 
+.item3 #phone-and-button-top-nav {
+  background-color: #fff;
+}
+.nav-wrap {
+  width: 100%;
+}
+
+.navbar .item3 {
+  margin-left: auto;
+}
+.navbar .item2 {
+  margin-left: 20px;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #b81106;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .brand-title {
@@ -59,24 +74,21 @@ body {
 
 .navbar-links li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   padding: 1rem;
   display: block;
 }
 
 .brandLink {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   padding: 1rem;
   display: block;
 }
 
-.navbar-links li:hover {
-  background-color: #e9fa00;
-}
-
 .navbar-links li a:hover {
-  color: black;
+  color: red;
+  background-color: #e9fa00;
 }
 
 .toggle-button {
@@ -105,6 +117,22 @@ body {
   display: flex;
 }
 
+.active {
+  background-color: #e9fa00;
+  color: red !important;
+}
+.mobile-button {
+  display: none;
+}
+@media (max-width: 991px) {
+  .item3 {
+    display: none;
+  }
+  .mobile-button {
+    display: flex;
+  }
+}
+
 /* Above is CSS for top navbar */
 
 .main-flex-container {
@@ -115,24 +143,54 @@ body {
   overflow: hidden;
 }
 
-#background-image {
+.text-above-fold {
   width: 100%;
-  height: 100%;
+}
+.col-overlay {
+  background: #1034a6;
+  padding: 50px 0px;
   overflow: hidden;
 }
+.text-above-fold .text {
+  color: white;
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 60px;
+}
+.text-above-fold .img {
+  width: 50%;
+  float: right;
+  display: block;
+  text-align: center;
+}
+.text-above-fold .img img {
+  width: 500px;
+  height: auto;
+}
 
-.above-fold {
+.text-above-fold .text h2 {
+  font-family: "Fjalla One", sans-serif;
   position: relative;
+  animation: mymove 3s;
+  animation-iteration-count: 3;
+  padding-bottom: 20px;
+}
+@keyframes mymove {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 50px;
+  }
 }
 
-.text-above-fold {
-  max-width: 300px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.text-above-fold > h2 {
-  font-family: "Pattaya", sans-serif;
+@media (max-width: 1275px) {
+  .text-above-fold .text {
+    margin-top: 10px;
+  }
 }
 
 .text-above-fold > button {
@@ -144,64 +202,228 @@ body {
   font-size: 16px;
 }
 
-.flex-container-for-rides {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+/* Below is CSS Grid for the rides part of homepage */
+
+.grid-for-rides {
+  margin: 5rem auto;
+
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2em;
+  padding: 0px 50px;
 }
 
-.flex-container-for-rides > img {
-  height: 50vh;
-  width: 100vh;
+.grid-for-rides > .ride {
+  text-align: center;
 }
 
-#raptor-ride {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.grid-for-rides > .ride > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
 }
 
-#terodactal-ride {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.grid-for-rides .ride-btn {
+  padding: 10px 15px;
+  background: red;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.grid-for-rides .ride-btn:hover {
+  background: #e9fa00;
+  color: #000;
 }
 
-#t-rex-ride {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.grid-for-rides > .ride > h2 {
+  margin-bottom: 15px;
 }
 
 .pricing {
-  display: flex;
-  justify-content: center;
+  width: 80%;
   margin-top: 50px;
-}
-
-#price-ranges {
-  margin-top: 15px;
+  border: 1px solid #ddd;
+  padding: 30px 0px;
   margin-bottom: 50px;
 }
+.pricing .price-header {
+  text-align: center;
+  font-size: 44px;
+}
 
-#price-ranges > li {
-  margin-bottom: 20px;
+.pricing .price-list {
+  display: flex;
+  justify-content: center;
+}
+.pricing .price-list ul {
+  margin: 30px 0px;
+}
+.pricing .price-list ul li {
+  padding: 10px 0px;
+  font-size: 22px;
+}
+
+.contact-us {
+  width: 80%;
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  padding: 30px 0px;
+  margin-bottom: 50px;
+}
+.contact-us .contact-header {
+  text-align: center;
+  font-size: 44px;
+}
+.contact-us .contact-form {
+  display: flex;
+  justify-content: center;
+}
+.contact-us .contact-form .form-group {
+  margin: 25px 0px;
+}
+.contact-us .contact-form .form-group input {
+  width: 85%;
+  padding: 8px;
+  margin-left: 12px;
+}
+.contact-us .contact-form .form-group textarea {
+  width: 85%;
+  padding: 8px;
+  margin-left: 12px;
+}
+.contact-us .contact-form .form-group label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+.contact-us .contact-form .form-group-submit {
+  text-align: right;
+}
+.contact-us .contact-form .form-group-submit .submit-button {
+  padding: 10px 20px;
+  margin-right: 35px;
+  cursor: pointer;
 }
 
 .footer {
   width: 100%;
-  height: 80px;
-  background-color: #b81106;
+  background-color: #ddd;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  padding: 30px 0px;
 }
-
-.footer > h2 > a {
-  margin-left: 50px;
+.footer .part1 .logo-img {
+  width: 100px;
+  height: auto;
+}
+.footer .part2 {
+  text-align: center;
+}
+.footer .part2 p {
+  padding: 5px 0px;
+}
+.footer-pages {
+  display: flex;
+  padding: 0;
+}
+.footer-pages ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-pages ul li {
+  float: left;
+}
+.footer-pages ul li a {
   text-decoration: none;
-  color: white;
+  padding: 0px 10px;
+  color: #000;
+}
+.footer-pages ul li a:hover {
+  color: red;
+}
+.book-btn {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.book-btn:hover {
+  background: #e9fa00;
+  color: #000;
 }
 
-.contact-us {
-  margin-bottom: 50px;
+@media (min-width: 992px) {
+  .grid-for-rides {
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .part1,
+  .part2,
+  .part3,
+  .part4 {
+    margin: 20px 0px;
+  }
+  .contact-us {
+    width: 90%;
+  }
+  .pricing {
+    width: 90%;
+  }
+  .text-above-fold .img img {
+    width: 350px;
+    margin-top: 25px;
+  }
+  .text-above-fold .text {
+    font-size: 22px;
+    padding-top: 0px;
+  }
+  .grid-for-rides .ride {
+    margin-bottom: 50px;
+  }
+  .grid-for-rides .ride:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-above-fold .text {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .text-above-fold .img {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar-links li:hover {
+    background-color: #e9fa00;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .item2 {
+    margin-left: 0px;
+  }
+  .brand-title {
+    margin: 0.5rem 0px;
+  }
 }
 
 /* Media Queries Below: */
@@ -211,29 +433,4 @@ body {
   .flex-container-for-rides {
     display: inline;
   }
-
-  @media (min-width: 623px) {
-    .text-above-fold {
-      position: absolute;
-      top: 20vh;
-      left: 10vw;
-      color: black;
-      background-color: #f8f8f8;
-      font-size: 25px;
-
-      /* max-width: 300px;
-        margin: 0 auto;
-        margin-top: 20px; */
-    }
-  }
-
-  /* .above-fold {
-      position: relative;
-    }
-  
-    .text-above-fold {
-      position: absolute;
-      top: 40vh;
-      left: 10vh;
-    } */
 }
