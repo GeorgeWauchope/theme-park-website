@@ -204,6 +204,11 @@
 
 /* Below is CSS Grid for the rides part of homepage */
 
+#rides_H1 {
+  margin-top: 60px;
+  margin-bottom: -50px;
+}
+
 .grid-for-rides {
   margin: 5rem auto;
 
@@ -264,6 +269,13 @@
 .pricing .price-list ul li {
   padding: 10px 0px;
   font-size: 22px;
+}
+
+.our_location {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .contact-us {
