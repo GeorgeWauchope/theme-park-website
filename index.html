@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DinoLand - Homepage</title>
+    <link rel="shortcut icon" href="img/dinolandLogo.png" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
+
+    <div class="mobile-button">
+      <div id="phone-and-button-top-nav">
+        <p>1-800-374-4654</p>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+
+    <nav class="nav-wrap">
+      <div class="navbar">
+        <div class="brand-title item1">
+          <a class="logo" href="index.html">
+            <img
+              class="logo-img"
+              src="img/dinolandLogo.png"
+              alt="logo"
+              width="100px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <!-- <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a> -->
+        <div class="item2">
+          <div class="navbar-links">
+            <ul>
+              <li class="active">
+                <a class="active" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="places-to-stay.html">Places to stay</a>
+              </li>
+              <li>
+                <a href="rides-and-experiences.html" target="_blank"
+                  >Rides & experiences</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item3">
+          <div id="phone-and-button-top-nav">
+            <p>1-800-374-4654</p>
+            <button>BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Above The Fold Code Below (George Wauchope's code)-->
+    <main>
+      <div class="main-flex-container">
+        <div class="text-above-fold">
+          <div class="col-overlay">
+            <div class="text">
+              <h2>“We are the best theme park in the world!”</h2>
+              <h2>“DinoLand is great for families!”</h2>
+              <a class="book-btn" href="#">BOOK NOW</a>
+            </div>
+            <div class="img">
+              <img src="img/homepage.png" alt="img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Rides Section Code Below (George Wauchope's code) - I added alt tags to each image so that people using screen readers can know what the image is about-->
+
+        <div class="grid-for-rides">
+          <div class="ride">
+            <h2 id="raptor-ride">Raptor Ride</h2>
+            <img
+              src="img/raptor_resized.jpg"
+              alt="image of our raptor ride"
+              loading="lazy"
+            />
+            <a class="ride-btn" href="./rides-and-experiences.html"
+              >Learn More</a
+            >
+          </div>
+          <div class="ride">
+            <h2 id="terodactal-ride">Terodactal Ride</h2>
+            <img
+              src="img/terodactal_resized.jpg"
+              alt="image of our terodactal ride"
+              loading="lazy"
+            />
+            <a class="ride-btn" href="./rides-and-experiences.html"
+              >Learn More</a
+            >
+          </div>
+          <div class="ride">
+            <h2 id="t-rex-ride">T-Rex Ride</h2>
+            <img
+              src="img/trex_resized.jpg"
+              alt="image of our t-rex ride"
+              loading="lazy"
+            />
+            <a class="ride-btn" href="./rides-and-experiences.html"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <!-- Pricing Section Code Below (George Wauchope's code)-->
+
+        <div class="pricing">
+          <h2 class="price-header">Pricing</h2>
+          <div class="price-list">
+            <ul>
+              <li><h3>0 to 4 years: Free</h3></li>
+              <li><h3>5 to 17 years: $20 per ticket</h3></li>
+              <li><h3>18 to 65 years: $40 per ticket</h3></li>
+              <li><h3>66+: Free</h3></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Google Map Embed Below (George Wauchope's Code) -->
+
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="600"
+              height="500"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=universal%20ornaldo%20resort&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://fmovies-online.net"></a><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 600px;
+              }</style
+            ><a href="https://www.embedgooglemap.net">map embed</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 600px;
+              }
+            </style>
+          </div>
+        </div>
+        <!-- Contact Form Code Below (George Wauchope's code)-->
+
+        <div class="contact-us">
+          <h2 class="contact-header">Contact us</h2>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <label for="fname">First name:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="First Name"
+                  required
+                /><br />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Last Name"
+                  required
+                /><br />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                /><br />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  rows="6"
+                  cols="50"
+                  name="comment"
+                  form="usrform"
+                  placeholder="Enter message here..."
+                ></textarea>
+              </div>
+              <div class="form-group-submit">
+                <button class="submit-button" type="submit" name="button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Code Below (George Wauchope's code)-->
+
+    <footer>
+      <div class="footer">
+        <div class="part1">
+          <a class="logo" href="/index.html">
+            <img class="logo-img" src="img/dinolandLogo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="part2">
+          <p>DinoLand</p>
+          <p>73, Waldrop Street, Orlando, Florida, US</p>
+          <p>(800) 374-4654</p>
+        </div>
+        <div class="part3">
+          <div class="footer-pages">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="places-to-stay.html">Places to stay</a>
+              </li>
+              <li>
+                <a href="rides-and-experiences.html" target="_blank"
+                  >Rides & experiences</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="part4">
+          <a class="book-btn" href="#">BOOK NOW</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
