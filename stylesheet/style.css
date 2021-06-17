@@ -9,7 +9,7 @@
 
 /* Below is CSS for top navbar */
 
-#phone-and-button-top-nav {
+.phone-and-button-top-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-#phone-and-button-top-nav > button {
+.phone-and-button-top-nav > button {
   margin: 20px;
   padding: 10px;
   text-decoration: none;
@@ -30,11 +30,11 @@
   cursor: pointer;
 }
 
-#phone-and-button-top-nav > p {
+.phone-and-button-top-nav > p {
   margin-right: 30px;
 }
 
-.item3 #phone-and-button-top-nav {
+.item3 .phone-and-button-top-nav {
   background-color: #fff;
 }
 .nav-wrap {
@@ -121,21 +121,21 @@
   background-color: #e9fa00;
   color: red !important;
 }
-.mobile-button {
+#mobile-button {
   display: none;
 }
 @media (max-width: 991px) {
   .item3 {
     display: none;
   }
-  .mobile-button {
+  #mobile-button {
     display: flex;
   }
 }
 
 /* Above is CSS for top navbar */
 
-.main-flex-container {
+#main-flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +204,11 @@
 
 /* Below is CSS Grid for the rides part of homepage */
 
+.rides_H1 {
+  margin-top: 60px;
+  margin-bottom: -50px;
+}
+
 .grid-for-rides {
   margin: 5rem auto;
 
@@ -264,6 +269,13 @@
 .pricing .price-list ul li {
   padding: 10px 0px;
   font-size: 22px;
+}
+
+.our_location {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .contact-us {
