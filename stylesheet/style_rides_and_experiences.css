@@ -252,6 +252,12 @@ animation-duration: 6s;
 animation-iteration-count: 3;
 }
 
+.ridesMain:hover > h2 {
+  cursor: pointer;
+  transition: all 2s linear;
+  transform: rotateX(360deg);
+  }
+
 .ridesContainer { 
 display: flex;
 width: 100%;
@@ -260,11 +266,10 @@ padding: 5px;
 font-size: 1em; 
 }
 
-.ridesMain:hover > h2 {
-cursor: pointer;
-transition: all 2s linear;
-transform: rotateX(360deg);
-}
+.ridesContainer > img {
+  width: 300px;
+  padding: 1rem; 
+  }
 
 .TyrannoCont {
 overflow: hidden;
@@ -272,21 +277,17 @@ padding: 1rem;
 max-width: 100%;
 }
 
-.TyrannoCont > img {
-width: 300px;
-padding: 1rem; 
-}
-
-.TyrannoCont > div {
+.ridesContainer > div {
 padding: 1rem;   
 margin: 0 1rem 0 0;
 text-align:left;
 }
 
-.TyrannoCont h3 {
+.ridesContainer h3 {
 font-weight:bold;
 font-size: 30px;
 color: #b81106;
+padding: 1rem;
 }
 
 .VelocirCont {
@@ -294,46 +295,11 @@ overflow: hidden;
 padding: 1rem;
 max-width: 100%;
 }
-.VelocirCont > img {
-width: 300px;
-padding: 1rem;  
-}
 
-.VelocirCont > div {
-padding: 1rem;   
-margin: 0 1rem 0 0;
-text-align: left;  
-}
-
-.VelocirCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-}
-
-
-.SpinosaurusCont {
+.RaptorRide {
 overflow: hidden;
 padding: 1rem;
 max-width: 100%;
-}
-
-.SpinosaurusCont > img {
-width: 300px;
-padding: 1rem;  
-}
-
-.SpinosaurusCont > div {
-padding: 1rem;   
-margin: 0 1rem 0 0;
-text-align: left;
-}
-
-
-.SpinosaurusCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
 }
 
 .ShowsAndEventsContainer {
@@ -356,23 +322,26 @@ transition: all 2s linear;
 transform: rotateX(360deg);
 }
 
+.ShowsAndEventsContainer h3 {
+  font-weight:bold;
+  font-size: 30px;
+  color: #b81106;
+  padding: 1rem;
+  }
+
 .JurassicCont { 
 overflow: hidden;
 padding: 1rem;
 max-width: 100%
 }
 
-.JurassicCont > img {
+.ShowsAndEventsContainer > img {
 width: 300px; 
 padding: 1rem; 
 }
 
-.JurassicCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-}
-.JurassicCont > div {
+
+.ShowsAndEventsContainer > div {
   padding: 1rem;   
   margin: 0 1rem 0 0;
   text-align: left;   
@@ -384,43 +353,10 @@ padding: 1rem;
 max-width: 100%
 }
 
-.DinoDanceCont > img {
-width: 300px;
-padding: 1rem;
-}
-
-.DinoDanceCont > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left;   
-}
-
-.DinoDanceCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-}
-
 .LiveMusicContainer {
 overflow: hidden;
 padding: 1rem;
 max-width: 100%
-}
-.LiveMusicContainer > img {
-width: 300px; 
-padding: 1rem; 
-}
-
-.LiveMusicContainer > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left;   
-}
-
-.LiveMusicContainer h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
 }
 
 .RestaurantsContainer {
@@ -437,72 +373,40 @@ transition: all 2s linear;
 transform: rotateX(360deg);
 }
 
-.JungleCont {
+.HerbivoreCont {
 overflow: hidden;
 padding: 1rem;
 max-width: 100%
 }
-.JungleCont > img {
+
+.RestaurantsContainer > img {
 width: 300px;  
 padding: 1rem;
 }
 
-.JungleCont > div {
+.RestaurantsContainer > div {
   padding: 1rem;   
   margin: 0 1rem 0 0;
   text-align: left;  
 }
 
-.JungleCont h3 {
+.RestaurantsContainer h3 {
 font-weight:bold;
 font-size: 30px;
 color: #b81106;
+padding: 1rem;
 }
 
-.T_rexCont {  
+.DinoBurgersCont {  
 overflow: hidden;
 padding: 1rem;
 max-width: 100%
 }
-.T_rexCont > img {
-width: 300px;  
-padding: 1rem;
-}
-
-.T_rexCont > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left; 
-}
-
-.T_rexCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-}
-
 
 .McdonaldsCont {   
 overflow: hidden;
 padding: 1rem;
 max-width: 100%
-}
-.McdonaldsCont > img {
-width: 300px; 
-padding: 1rem; 
-}
-
-.McdonaldsCont > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left;  
-}
-
-.McdonaldsCont h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-margin: 0 0 0.5rem 0;
 }
 
 .MapCont{
@@ -513,38 +417,29 @@ padding: 20px;
 font-size: 1em; 
 align-items: center;
 }
+
 table {
 color:#000000;
 align-items: left;
 }
 
-address {
-color:#000000;
-text-align: left;
-}
 
-@media only screen and (max-width: 991px){
-body {
-background-color: white;
-}
+/* For smaller screens enables mobile responsiveness content shown in columns */
+@media only screen and (max-width: 720px){
 .ridesContainer {
 flex-direction: column;
-margin: 5px;
 }
 .ShowsAndEventsContainer {
 flex-direction: column;
 }
-
 .RestaurantsContainer {
 flex-direction: column;
 }
- }
-
-/* For small devices     */
-/* @media only screen and (max-width: 600px)
-{
-
-} */
+/* On smaller screens moves headers to center alignment */
+.mainRidesExperiences h3 {
+  text-align: center;
+}
+}
   
 /* Footer coded by George Wauchope */
 .footer {
