@@ -1,274 +1,642 @@
 
-
+* {
+  margin: 5;
+  font-family: Arial, sans-serif;
+}
 /* Below is CSS for top navbar created by Geoge Wauchope */
 
 #phone-and-button-top-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #e9fa00;
-    height: 50px;
-    width: 100%;
-  }
-  
-  #phone-and-button-top-nav > button {
-    margin: 20px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #b81106;
-    color: white;
-    font-size: 16px;
-  }
-  
-  #phone-and-button-top-nav > p {
-    margin-right: 30px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b81106;
-    color: #fff;
-  }
-  
-  .brand-title {
-    font-size: 1.5rem;
-    margin: 0.5rem;
-  }
-  
-  .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar-links li {
-    list-style: none;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem;
-    display: block;
-  }
-  
-  .brandLink {
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem;
-    display: block;
-  }
-  
-  .navbar-links li:hover {
-    background-color: #e9fa00;
-  }
-  
-  .navbar-links li a:hover {
-    color: black;
-  }
-  
-  .toggle-button {
-    position: absolute;
-    top: 1.75rem;
-    right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e9fa00;
+  height: 50px;
+  width: 100%;
+}
+
+#phone-and-button-top-nav > button {
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#phone-and-button-top-nav > p {
+  margin-right: 30px;
+}
+
+.item3 #phone-and-button-top-nav {
+  background-color: #fff;
+}
+.nav-wrap {
+  width: 100%;
+}
+
+.navbar .item3 {
+  margin-left: auto;
+}
+.navbar .item2 {
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  display: block;
+}
+
+.brandLink {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: red;
+  background-color: #e9fa00;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.navbar-links li a {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.active {
+  background-color: #e9fa00;
+  color: red !important;
+}
+.mobile-button {
+  display: none;
+}
+@media (max-width: 991px) {
+  .item3 {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
   }
-  
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  
-  .navbar-links li a {
-    padding: 0.5rem 1rem;
-  }
-  
-  .navbar-links.active {
+  .mobile-button {
     display: flex;
   }
-  
-  /*Below is CSS coded by Martha Fortrie*/ 
-  nav {
-      font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-      font-size: 1em;
-      color: black;
-  }
-  
-  body {
-      background-color:#6b8e2380;
-      padding: 0;
-      margin: 0;
-  }
+}
+/* Above is CSS for top navbar */
 
-  @keyframes change-color {
-      0% {color: black; left: 0px;}
-      25% {color:red; left: 100px;}
-      50% {color:yellow;}
-      75% {color:green; left: 300px;}
-      100% {color: black; }
+.text-above-fold {
+  width: 100%;
+}
+.col-overlay {
+  background: #1034a6;
+  padding: 50px 0px;
+  overflow: hidden;
+}
+.text-above-fold .text {
+  color: white;
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 60px;
+}
+.text-above-fold .img {
+  width: 50%;
+  float: right;
+  display: block;
+  text-align: center;
+}
+.text-above-fold .img img {
+  width: 500px;
+  height: auto;
+}
+
+.text-above-fold .text h2 {
+  font-family: "Fjalla One", sans-serif;
+  position: relative;
+  animation: mymove 3s;
+  animation-iteration-count: 3;
+  padding-bottom: 20px;
+}
+@keyframes mymove {
+  from {
+    left: -100px;
   }
+  to {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .text-above-fold .text {
+    margin-top: 10px;
+  }
+}
+
+.text-above-fold > button {
+  margin-top: 15px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #b81106;
+  color: white;
+  font-size: 16px;
+}
+
+.book-btn {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.book-btn:hover {
+  background: #e9fa00;
+  color: #000;
+}
+
   
+ /*Below is CSS coded by Martha Fortrie*/ 
 
-  .RandEContainer {
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
 
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    text-align: center;
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 18px;
+/* @keyframes change-color {
+  0% {color: black; left: 0px;}
+  25% {color:red; left: 100px;}
+  50% {color:yellow;}
+  75% {color:green; left: 300px;}
+  100% {color: black; }
+} */
+
+.mainRidesExperiences {
+display: flex;
+justify-content: center;
+align-items: left;
+flex-direction: column;
+overflow: hidden;
+}
+
+.RandEContainer {
+width: 100%;
+display: flex;
+box-sizing: border-box;
+flex-direction: column;
+text-align: center;
+font-size: 18px;
+}
+
+.RandEContainer > h3, h2 {
+text-align: center;
+font-size: 25px;
+}
+
+/* make change to annimation +++++++++++++++++++++++++++++++++===*/
+.RandEContainer > h3 {
+font-size: 50px;
+position: relative;
+animation-name: change-color;
+animation-duration: 6s;
+animation-iteration-count: 3;
+}
+
+.ridesContainer { 
+display: flex;
+width: 100%;
+flex-direction: row; 
+padding: 5px; 
+font-size: 1em; 
+}
+
+.ridesMain:hover > h2 {
+cursor: pointer;
+transition: all 2s linear;
+transform: rotateX(360deg);
+}
+
+.TyrannoCont {
+overflow: hidden;
+padding: 1rem;
+max-width: 100%;
+}
+
+.TyrannoCont > img {
+width: 300px;
+padding: 1rem; 
+}
+
+.TyrannoCont > div {
+padding: 1rem;   
+margin: 0 1rem 0 0;
+text-align:left;
+}
+
+.TyrannoCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+
+.VelocirCont {
+overflow: hidden;
+padding: 1rem;
+max-width: 100%;
+}
+.VelocirCont > img {
+width: 300px;
+padding: 1rem;  
+}
+
+.VelocirCont > div {
+padding: 1rem;   
+margin: 0 1rem 0 0;
+text-align: left;  
+}
+
+.VelocirCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
 
 
-  }
+.SpinosaurusCont {
+overflow: hidden;
+padding: 1rem;
+max-width: 100%;
+}
 
-  .RandEContainer > h3, h2 {
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    text-align: center;
-    font-size: 25px;
-  }
+.SpinosaurusCont > img {
+width: 300px;
+padding: 1rem;  
+}
 
-  .RandEContainer > h3 {
-    font-size: 50px;
-    position: relative;
-    animation-name: change-color;
-    animation-duration: 6s;
-    animation-iteration-count: 3;
-  }
+.SpinosaurusCont > div {
+padding: 1rem;   
+margin: 0 1rem 0 0;
+text-align: left;
+}
 
-  
-  .ridesContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 1em;
-    color: #b81106; /* Red color */
-  }
-  
-  .TyrannoCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
- 
-  .VelocirCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
-  .SpinosaurusCont {
-    padding: 30px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
-  
-  .ShowsAndEventsContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 1em;
-    color: #b81106; /* Red color */ 
-  }
-  
-  .JurassicCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
 
-  .DinoDanceCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
+.SpinosaurusCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
 
-  .LiveMusicContainer {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
+.ShowsAndEventsContainer {
+display: flex;
+width: 100%;
+flex-direction: row;
+padding: 5px;
+font-size: 1em; 
+}
 
-  .RestaurantsContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 1em;
-    color: #b81106; /* Red color */
-  }
-  
-  .JungleCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
-  
-  .T_rexCont {
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
-  
-  .McdonaldsCont{
-    padding: 20px;
-    text-align: center; 
-    justify-content: space-between; 
-  }
-  
-  .MapCont{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding: 20px;
-    font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
-    font-size: 1em; 
-    align-items: center;
-  }
+.ShowsMain:hover > h2 {
+cursor: pointer;
+transition: all 2s linear;
+transform: rotateX(360deg);
+}  
+
+.ShowsAndEventsContainer:hover > h2 {
+cursor: pointer;
+transition: all 2s linear;
+transform: rotateX(360deg);
+}
+
+.JurassicCont { 
+overflow: hidden;
+padding: 1rem;
+max-width: 100%
+}
+
+.JurassicCont > img {
+width: 300px; 
+padding: 1rem; 
+}
+
+.JurassicCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+.JurassicCont > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left;   
+}
+
+.DinoDanceCont{
+overflow: hidden;
+padding: 1rem; 
+max-width: 100%
+}
+
+.DinoDanceCont > img {
+width: 300px;
+padding: 1rem;
+}
+
+.DinoDanceCont > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left;   
+}
+
+.DinoDanceCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+
+.LiveMusicContainer {
+overflow: hidden;
+padding: 1rem;
+max-width: 100%
+}
+.LiveMusicContainer > img {
+width: 300px; 
+padding: 1rem; 
+}
+
+.LiveMusicContainer > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left;   
+}
+
+.LiveMusicContainer h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+
+.RestaurantsContainer {
+display: flex;
+width: 100%;
+flex-direction: row;
+padding: 5px;
+font-size: 1em;
+}
+
+.RestMain:hover > h2 {
+cursor: pointer;
+transition: all 2s linear;
+transform: rotateX(360deg);
+}
+
+.JungleCont {
+overflow: hidden;
+padding: 1rem;
+max-width: 100%
+}
+.JungleCont > img {
+width: 300px;  
+padding: 1rem;
+}
+
+.JungleCont > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left;  
+}
+
+.JungleCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+
+.T_rexCont {  
+overflow: hidden;
+padding: 1rem;
+max-width: 100%
+}
+.T_rexCont > img {
+width: 300px;  
+padding: 1rem;
+}
+
+.T_rexCont > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left; 
+}
+
+.T_rexCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+}
+
+
+.McdonaldsCont {   
+overflow: hidden;
+padding: 1rem;
+max-width: 100%
+}
+.McdonaldsCont > img {
+width: 300px; 
+padding: 1rem; 
+}
+
+.McdonaldsCont > div {
+  padding: 1rem;   
+  margin: 0 1rem 0 0;
+  text-align: left;  
+}
+
+.McdonaldsCont h3 {
+font-weight:bold;
+font-size: 30px;
+color: #b81106;
+margin: 0 0 0.5rem 0;
+}
+
+.MapCont{
+display: flex;
+width: 100%;
+flex-direction: column;
+padding: 20px;
+font-size: 1em; 
+align-items: center;
+}
 table {
-    color:#000000;
-    align-items: left;
+color:#000000;
+align-items: left;
 }
 
 address {
-    color:#000000;
-    text-align: left;
+color:#000000;
+text-align: left;
 }
 
-  /* @media screen and (max-width: 768px){
-    .RandEContainer{
-        flex-direction: row;
-    }
+@media only screen and (max-width: 991px){
+body {
+background-color: white;
+}
+.ridesContainer {
+flex-direction: column;
+margin: 5px;
+}
+.ShowsAndEventsContainer {
+flex-direction: column;
+}
+
+.RestaurantsContainer {
+flex-direction: column;
+}
+ }
+
+/* For small devices     */
+/* @media only screen and (max-width: 600px)
+{
+
 } */
   
 /* Footer coded by George Wauchope */
 .footer {
-    width: 100%;
-    height: 80px;
-    background-color: #b81106;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0px;
 }
-  
-.footer > h2 > a {
-    margin-left: 50px;
-    text-decoration: none;
-    color: white;
+.footer .part1 .logo-img {
+  width: 100px;
+  height: auto;
 }
-  
-.contact-us {
-    margin-bottom: 50px;
+.footer .part2 {
+  text-align: center;
+}
+.footer .part2 p {
+  padding: 5px 0px;
+}
+.footer-pages {
+  display: flex;
+  padding: 0;
+}
+.footer-pages ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-pages ul li {
+  float: left;
+}
+.footer-pages ul li a {
+  text-decoration: none;
+  padding: 0px 10px;
+  color: #000;
+}
+.footer-pages ul li a:hover {
+  color: red;
 }
 
+.book-btn {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.book-btn:hover {
+  background: #e9fa00;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .part1,
+  .part2,
+  .part3,
+  .part4 {
+    margin: 20px 0px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .text-above-fold .text {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .text-above-fold .img {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar-links li:hover {
+    background-color: #e9fa00;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .item2 {
+    margin-left: 0px;
+  }
+  .brand-title {
+    margin: 0.5rem 0px;
+  }
+}

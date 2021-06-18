@@ -3,65 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DinoLand - Rides and Experiences</title>
+    <link 
+      rel="shortcut icon" 
+      href="img/dinoland logo.png" />
     <link
       rel="stylesheet"
       type="text/css"
       href="stylesheet/style_rides_and_experiences.css"
     />
-    <title>DinoLand - Rides And Experiences webpage</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+    </style>
   </head>
   <body>
     <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
-    <nav id="phone-and-button-top-nav">
-      <p>1-800-374-4654</p>
-      <button>BOOK NOW</button>
-    </nav>
-
-    <nav class="navbar">
-      <div class="brand-title">
-        <a href="index.html" class="brandLink">DinoLand</a>
+    
+    <div class="mobile-button">
+      <div id="phone-and-button-top-nav">
+        <p>1-800-374-4654</p>
+        <button>BOOK NOW</button>
       </div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="places-to-stay.html">Places to stay</a>
-          </li>
-          <li>
-            <a class="active" href="rides-and-experiences.html">Rides & experiences</a>
-          </li>
-        </ul>
+    </div>
+
+    <nav class="nav-wrap">
+      <div class="navbar">
+        <div class="brand-title item1">
+          <a class="logo" href="index.html">
+            <img
+              class="logo-img"
+              src="img/dinoland logo.png"
+              alt="logo"
+              width="100px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <!-- <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a> -->
+        <div class="item2">
+          <div class="navbar-links">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="places-to-stay.html">Places to stay</a>
+              </li>
+              <li class="active">
+                <a class="active" href="rides-and-experiences.html">Rides & experiences</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item3">
+          <div id="phone-and-button-top-nav">
+            <p>1-800-374-4654</p>
+            <button>BOOK NOW</button>
+          </div>
+        </div>
       </div>
     </nav>
 
     <main>
       <!-- Intro section for Rides and experiences below coded by Martha Fortrie-->
+    <div class="mainRidesExperiences">
+
+      <div class="text-above-fold">
+        <div class="col-overlay">
+          <div class="text">
+            <h2>“We are the best theme park in the world!”</h2>
+            <h2>“DinoLand is great for families!”</h2>
+            <a class="book-btn" href="#">BOOK NOW</a>
+          </div>
+          <div class="img">
+            <img
+              src="img/2_Ride_Experience.png"
+              alt="cartoon drawing of DinoLand rides"
+            />
+          </div>
+        </div>
+      </div>
 
       <div class="RandEContainer">
         <h3>Rides and Experiences</h3>
         <p>
-          DinoLand is a fun place for everyone! Spend the day riding our
-          dinosaur themed rides or experience one of our many attractions. We
-          also offers themed shows for all ages and provide numourus dining
-          options.
-        </p>
-        <h2><a href="#ShowsAndEvents">Shows and Events</a></h2>
-        <!-- Internal link to shows and events -->
-        <h2><a href="#RestaurantsAndDining">Restaurants and Dining</a></h2>
-        <!-- Internal link to restaurants and dining -->
+          DinoLand is a fun place for everyone! Spend the day riding our dinosaur
+          themed rides or experience one of our many attractions. We also offers themed shows 
+          for all ages and provide numourus dining options.</p>   
+        <h2><a href ="#ShowsAndEvents">Shows and Events</a></h2> <!-- Internal link to shows and events -->
+        <h2><a href="#RestaurantsAndDining">Restaurants and Dining</a></h2> <!-- Internal link to restaurants and dining -->
         <p>Available for adults and children. Book your experience now!</p>
       </div>
+      
 
       <!-- Section for our featured rides below coded by Martha Fortrie-->
-      <div class="ridesContainer">
+      <div class="ridesMain">
         <h2>Our Featured Rides</h2>
+      <div class="ridesContainer">
         <!-- description and image of the Tyranno ride coded by Martha Fortrie-->
         <div class="TyrannoCont">
           <h3>The Tyranno</h3>
@@ -70,6 +113,7 @@
             alt="Image of Tyranno Ride"
             style="width: 500px; height: auto"
           />
+          <div>
           <p>
             Dinoland's oldest and most iconic roller coaster ride. Offers a two
             minute ride reaching speeds of 40 m.p.h.<br />
@@ -82,6 +126,7 @@
           <p>
             <i><b>Age Requirment:</b> 10 years or older</i>
           </p>
+          </div>
         </div>
 
         <!--description and image of the Velocir ride  coded by Martha Fortrie-->
@@ -92,35 +137,39 @@
             alt="Image of the Velocir ride"
             style="width: 500px; height: auto"
           />
-          <p>
-            Enjoy this swinging ride. Go round and round. The faster the Velocir
-            goes, the more ride tilts<br />offering you a soaring experience.
-          </p>
-          <p>
+          <div>
+            <p>
+              Enjoy this swinging ride. Go round and round. The faster the Velocir
+              goes, the more ride tilts<br />offering you a soaring experience.
+            </p>
+            <p>
             <i
               ><b>Height Requirment:</b> 40" minimum OR be accompanied by an
-              adult.</i
-            >
-          </p>
-          <p>
+              adult.</i>
+            </p>
+            <p>
             <i
               ><b>Age Requirment:</b> 10 years or older. Infants are not
               permitted.</i
             >
           </p>
+          </div>
         </div>
+
+        <!-- description and image of the spinosaurus ride coded by Martha Fortrie-->
         <div class="SpinosaurusCont">
-          <!-- description and image of the spinosaurus ride coded by Martha Fortrie-->
           <h3>Spinosaurus Speed</h3>
           <img
             src="img/img_ride_2.jpg"
             alt="Image of the Spinosaurus Speed ride"
             style="width: 500px; height: auto"
           />
+          <div>
+          
           <p>
-            Strap-in and brace yourself for this ride. This ride has no mercy
-            for those who fear.<br />The Spinosaurus Speed is our fastest ride
-            reaching speeds of 60 m.p.h. Loop after loop inside and out.
+            Strap-in and brace yourself for this ride. This ride has no mercy for
+            those who fear.<br />The Spinosaurus Speed is our fastest ride reaching
+            speeds of 60 m.p.h. Loop after loop inside and out.
           </p>
           <p>
             <i><b>Height Requirment:</b> 40" minimum</i>
@@ -131,13 +180,16 @@
           <br />
           <!--link for page with more rides below coded by Martha Fortrie-->
           <a href="#">More Rides</a>
+          </div>
         </div>
       </div>
-
+    
+  
       <!-- Section for our shows and events coded by Martha Fortrie-->
+      <div class="ShowsMain" >
+        <h2>Shows and Events</h2>
       <div class="ShowsAndEventsContainer">
         <a name="ShowsAndEvents"></a>
-        <h2>Shows and Events</h2>
         <!-- Image and description of the Jurassic Quest show coded by Martha Fortrie-->
         <div class="JurassicCont">
           <h3>Jurassic Quest</h3>
@@ -146,15 +198,18 @@
             alt="Image of the Jurassic Quest Show"
             style="width: 500px; height: 200px"
           />
+          <div>
           <p>
-            The Jurassic Quest, is a show for all ages. A 45-minute animated
-            show based on the movie Jurassic Park.
+            The Jurassic Quest, is a show for all ages. A 45-minute animated show
+            based on the movie Jurassic Park.
           </p>
           <p>Show exhibits every Monday, Thursday and Sunday at 7PM.</p>
           <p>
             <i><b>Age Requirment:</b> All ages welome!</i>
           </p>
         </div>
+        </div>
+
         <!-- Image and description of the Dino Dance Show coded by Martha Fortrie-->
         <div class="DinoDanceCont">
           <h3>Dino Dance Show</h3>
@@ -163,18 +218,21 @@
             alt="Image of the Dino Dance Show"
             style="width: 500px; height: 200px"
           />
-          <p>
-            The Dino Dance show is for the younger crowds. Bring your kids and
-            have some fun featuring all of the latests dino dances.
-          </p>
-          <p>
-            The Dino Dance show can be enjoyed every Tuesday, Wednesday and
-            Saturday starting at 4PM
-          </p>
-          <p>
-            <i><b>Age Requirment:</b> All ages welcome!</i>
-          </p>
+            <div>
+              <p>
+              The Dino Dance show is for the younger crowds. Bring your kids and have
+              some fun featuring all of the latests dino dances.
+              </p>
+              <p>
+              The Dino Dance show can be enjoyed every Tuesday, Wednesday and Saturday
+              starting at 4PM
+              </p>
+              <p>
+              <i><b>Age Requirment:</b> All ages welcome!</i>
+              </p>
+            </div>
         </div>
+
         <!-- Image and description of our live music event coded by Martha Fortrie-->
         <div class="LiveMusicContainer">
           <h3>Live Music</h3>
@@ -183,20 +241,26 @@
             alt="Image of Live Music Event"
             style="width: 500px; height: 200px"
           />
+          <div>
+          
           <p>
-            Put the kids to bed and come join us every friday night for live
-            music featuring our local latest talet.
+            Put the kids to bed and come join us every friday night for live music
+            featuring our local latest talet.
           </p>
           <p>Shows begin at 9PM</p>
           <p>
             <i><b>Age Requirment:</b> All ages welcome!</i>
           </p>
+          </div>
+        </div>
         </div>
       </div>
+
       <!-- Section for our Restaurant and Dining options coded by Martha Fortrie-->
+      <div class="RestMain">
+        <h2>Restaurants and Dining</h2>
       <div class="RestaurantsContainer">
         <a name="RestaurantsAndDining"></a>
-        <h2>Restaurants and Dining</h2>
         <!-- Image and description of the Jungle Cafe coded by Martha Fortrie-->
         <div class="JungleCont">
           <h3>Jungle Cafe</h3>
@@ -205,12 +269,15 @@
             alt="Image of the Jungle Cafe"
             style="width: 500px; height: auto"
           />
-          <p>
-            Enjoy our Jungle Cafe. This jungle themed cafe serves food of all
-            types for all appetites.
-          </p>
-          <p>Open every day from 8:00AM to 10:00PM.</p>
+            <div>
+                <p>
+                  Enjoy our Jungle Cafe. This jungle themed cafe serves food of all types
+                  for all appetites.
+                </p>
+                <p>Open every day from 8:00AM to 10:00PM.</p>
+            </div>
         </div>
+
         <!-- Image and description of our T-Rex BBQ Pit coded by Martha Fortrie -->
         <div class="T_rexCont">
           <h3>T-Rex BBQ Pit</h3>
@@ -219,13 +286,16 @@
             alt="Image of the T-Rex BBQ Pit"
             style="width: 500px; height: auto"
           />
-          <p>
-            The T-Rex BBQ Pit, offers mouth watering smoked brisket, the finest
-            rotisserie chicken and pork platters as well as your most desired
-            comfort foods.
-          </p>
-          <p>Open every day from 8:00AM to 10:00PM.</p>
+          <div>
+              <p>
+                The T-Rex BBQ Pit, offers mouth watering smoked brisket, the finest
+                rotisserie chicken and pork platters as well as your most desired
+                comfort foods.
+              </p>
+              <p>Open every day from 8:00AM to 10:00PM.</p>
+          </div>
         </div>
+
         <!-- Image and description of our Mcdonalds dining option coded by Martha Fortrie-->
         <div class="McdonaldsCont">
           <h3>McDondalds</h3>
@@ -234,14 +304,18 @@
             alt="Image of McDonalds"
             style="width: 300px; height: auto"
           />
-          <p>
-            Burgers, fries and more. Enjoy some food in between rides for a
-            quick grab and go or sit in our cafe while you rest from the thrills
-            of the park.
-          </p>
-          <p>Open everyday from 7:00AM to midnight.</p>
+          <div>
+              <p>
+                Burgers, fries and more. Enjoy some food in between rides for a quick
+                grab and go or sit in our cafe while you rest from the thrills of the
+                park.
+              </p>
+              <p>Open everyday from 7:00AM to midnight.</p>
+          </div>
         </div>
       </div>
+      </div>
+
       <!-- Section for our park map coded by Martha Fortrie-->
       <div class="MapCont">
         <!-- Image of our park map and additional park details coded by Martha Fortrie-->
@@ -286,12 +360,43 @@
         <address><b>Address:</b>1877 DinoLane, DinoCity FL 876543</address>
         <p><b>Number:</b>1-1800-666-6999</p>
       </div>
-    </main>
+    </div>
+  </main>
+
 
     <!-- Footer Code Below (George Wauchope's code)-->
     <footer>
       <div class="footer">
-        <h2><a href="/index.html">DinoLand</a></h2>
+        <div class="part1">
+          <a class="logo" href="/index.html">
+            <img class="logo-img" src="img/dinoland logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="part2">
+          <p>DinoLand</p>
+          <p>73, Waldrop Street, Orlando, Florida, US</p>
+          <p>(800) 374-4654</p>
+        </div>
+        <div class="part3">
+          <div class="footer-pages">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="places-to-stay.html">Places to stay</a>
+              </li>
+              <li>
+                <a href="rides-and-experiences.html" target="_blank"
+                  >Rides & experiences</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="part4">
+          <a class="book-btn" href="#">BOOK NOW</a>
+        </div>
       </div>
     </footer>
   </body>
