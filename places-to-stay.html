@@ -9,14 +9,17 @@
   <meta name="description" content="DinoLand - Places to stay webpage" />
   <meta name="keywords" content="DinoLand booking bookings housing 'place to stay'" />
   <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
-
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+  </style>
   <!-- Code made with the help of https://realfavicongenerator.net/  -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <link rel="manifest" href="/scripts/">
   <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="shortcut icon" href="img/dinoland-logo.png" />
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-config" content="/scripts/browserconfig.xml">
   <meta name="theme-color" content="#e8f852">
@@ -25,37 +28,76 @@
 </head>
 
 <body>
-  <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
 
-  <div id="nav">
-    <nav id="phone-and-button-top-nav">
+  <!-- Top Nav Bar Code Below (George Wauchope's code) - I used the nav semantic tag here so that people using screen readers know that this is the navigation bar-->
+  <div id="mobile-button">
+    <div class="phone-and-button-top-nav">
       <p>1-800-374-4654</p>
       <button>BOOK NOW</button>
-    </nav>
+    </div>
+  </div>
 
-    <nav class="navbar">
-      <div class="brand-title">
-        <a href="index.html" class="brandLink">DinoLand</a>
+  <nav class="nav-wrap">
+    <div class="navbar">
+      <div class="brand-title item1">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="img/dinoland-logo.png"
+            alt="logo"
+            width="100"
+            height="70"
+          />
+        </a>
       </div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li>
-            <a href="places-to-stay.html">Places to stay</a>
-          </li>
-          <li>
-            <a href="rides-and-experiences.html">Rides & experiences</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <div id="grid-container-PtS">
-      
+      <div class="item2">
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a class="active" href="places-to-stay.html">Places to stay</a>
+            </li>
+            <li>
+              <a href="rides-and-experiences.html">Rides & experiences</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="phone-and-button-top-nav">
+          <p>1-800-374-4654</p>
+          <button>BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="main-flex-container">
+    <div class="text-above-fold">
+      <div class="col-overlay">
+        <div class="text">
+          <h2>“Nothing beats a stay in Dinoland!!”</h2>
+          <h2>“We have more than 500 comfortable beds <br/>in twelve fantastic locations!”</h2>
+          <a class="book-btn" href="#">BOOK NOW</a>
+        </div>
+        <div class="img">
+          <img
+            src="img/3_Place_to_stay.png"
+            alt="cartoon drawing of DinoLand theme park map"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    <main id="grid-container-PtS">
+      <input type="radio" name = "searchSwitch" id= "searchPreview" checked/>
+      <input type="radio" name = "searchSwitch" id= "searchListings"/>
+
       <!-- Searchbar for housing, coded by Sveinbjoern -->
       <div id="housingSearchBar">
         <h2>SEARCH</h2>
@@ -72,24 +114,17 @@
         <h3>Number one rated<br />theme park in the<br />world!</h3>
 
 
-        <label for="housingSearchButton"><h4>SEARCH</h4></label>
+        <label for="searchListings" id = "searchButtonListings"><b>SEARCH</b></label>
+        <label for="searchPreview" id = "searchButtonPreview"><b>SEARCH</b></label>
       </div>
 
 
 
-      <input type="checkbox" id= "housingSearchButton"/>
+      
       <!-- Preview Shown when there is no active search, coded by Sveinbjoern-->
       <div id="housingPreview" title="Sample pictures of housing">
-        <!-- <img src="/img/preview.jpg" alt="picture preview of housing" />
-        <p>
-          All accomodations<br />includes the stay<br />in the park
-        </p> -->
-
+       
         
-
-
-
-
           <!-- adapted from https://css-tricks.com/css-only-carousel/ -->
           <section class="carousel" >
 
@@ -146,64 +181,213 @@
               </aside>
             </section>
 
+      
+      <!-- Listings. When you search you get listings, coded by Sveinbjoern-->
+          
+
+            
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+
+              <div class="listings">
+                <h2>Name of listing</h2>
+                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+
+                <p>Double beds: <span id="singleBedListing1"></span></p>
+                <p>Single beds: <span id="doubleBedListing1"></span></p>
+                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+
+                <p>All accomodations includes the stay in the park</p>
+                <button id="orderNowButton" type="button">ORDER NOW</button>
+              </div>
+           
+
       </div>
 
-      <!-- Listings. When you search you get listings, coded by Sveinbjoern-->
-      <div id="housingListings">
 
-        <div class="listing">
-          <h2>Name of listing</h2>
-          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-          <p>Double beds: <span id="singleBedListing1"></span></p>
-          <p>Single beds: <span id="doubleBedListing1"></span></p>
-          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
-
-          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
-
-          <p>All accomodations includes the stay in the park</p>
-          <button id="orderNowButton" type="button">ORDER NOW</button>
+      <!-- Information for special bookings, coded by Sveinbjoern-->
+      <div class="contact-us">
+        <h2 class="contact-header">Contact us</h2>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="fname">First name:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                required
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                required
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                rows="6"
+                cols="50"
+                name="comment"
+                placeholder="Enter message here..."
+              ></textarea>
+            </div>
+            <div class="form-group-submit">
+              <button class="submit-button" type="submit" name="button">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
-      <!-- Information for special bookings, coded by Sveinbjoern-->
-    <div class="contact-us">
-      <p>Do you have special requirements?</p>
-      <p>Would you like to book for a group?</p>
-      <p>Do you need space for conferences or parties?</p>
+    </main>
 
-      <p>
-        If you have any questions then<br />
-        please contact us:
-      </p>
-
-      <!-- Contact Form Code Below (George Wauchope's code)-->
-
-
-      
-      <h2>Contact us</h2>
-      <form>
-        <label for="fname">First name:</label><br />
-        <input type="text" id="fname" name="fname" /><br />
-        <label for="lname">Last name:</label><br />
-        <input type="text" id="lname" name="lname" /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
-        <label for="message">Message:</label><br />
-        <input type="text" id="message" name="message" /><br />
-        <input type="submit" value="Submit" /><br />
-      </form>
-    </div>
-
-    </div>
-
-
-    
     <!-- Footer Code Below (George Wauchope's code)-->
+
     <footer>
       <div class="footer">
-        <h2><a href="/index.html">DinoLand</a></h2>
+        <div class="part1">
+          <a class="logo" href="/index.html">
+            <img
+              class="logo-img"
+              src="img/dinoland-logo.png"
+              alt="logo of DinoLand, a dinosuar"
+            />
+          </a>
+        </div>
+        <div class="part2">
+          <p>DinoLand</p>
+          <p>73, Waldrop Street, Orlando, Florida, US</p>
+          <p>(800) 374-4654</p>
+        </div>
+        <div class="part3">
+          <div class="footer-pages">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="places-to-stay.html">Places to stay</a>
+              </li>
+              <li>
+                <a href="rides-and-experiences.html">Rides & experiences</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="part4">
+          <a class="book-btn" href="#">BOOK NOW</a>
+        </div>
       </div>
     </footer>
 
