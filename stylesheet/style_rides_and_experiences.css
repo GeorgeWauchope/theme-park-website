@@ -213,14 +213,6 @@ body {
   margin: 0;
 }
 
-/* @keyframes change-color {
-  0% {color: black; left: 0px;}
-  25% {color:red; left: 100px;}
-  50% {color:yellow;}
-  75% {color:green; left: 300px;}
-  100% {color: black; }
-} */
-
 .mainRidesExperiences {
 display: flex;
 justify-content: center;
@@ -238,19 +230,20 @@ text-align: center;
 font-size: 18px;
 }
 
-.RandEContainer > h3, h2 {
+.RandEContainer > h1, h2 {
 text-align: center;
-font-size: 25px;
+font-size: 30px;
 }
 
 /* make change to annimation +++++++++++++++++++++++++++++++++===*/
-.RandEContainer > h3 {
+.RandEContainer > h1 {
 font-size: 50px;
 position: relative;
 animation-name: change-color;
 animation-duration: 6s;
 animation-iteration-count: 3;
 }
+
 
 .ridesMain:hover > h2 {
   cursor: pointer;
@@ -261,51 +254,50 @@ animation-iteration-count: 3;
 .ridesContainer { 
 display: flex;
 width: 100%;
+justify-content: center;
 flex-direction: row; 
 padding: 5px; 
 font-size: 1em; 
 }
 
 .ridesContainer > img {
-  width: 300px;
-  padding: 1rem; 
+  width:100%;
+  }
+
+.ridesContainer > div {
+  line-height: 1.5;
+  padding: 15px;
+  width: 400px;
+  }
+
+.ridesContainer h1 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #b81106;
+    padding: 1rem;
+
   }
 
 .TyrannoCont {
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
-}
-
-.ridesContainer > div {
-padding: 1rem;   
-margin: 0 1rem 0 0;
-text-align:left;
-}
-
-.ridesContainer h3 {
-font-weight:bold;
-font-size: 30px;
-color: #b81106;
-padding: 1rem;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .VelocirCont {
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .RaptorRide {
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .ShowsAndEventsContainer {
 display: flex;
 width: 100%;
 flex-direction: row;
+justify-content: center;
 padding: 5px;
 font-size: 1em; 
 }
@@ -332,7 +324,7 @@ transform: rotateX(360deg);
 .JurassicCont { 
 overflow: hidden;
 padding: 1rem;
-max-width: 100%
+max-width: 100%;
 }
 
 .ShowsAndEventsContainer > img {
@@ -344,25 +336,27 @@ padding: 1rem;
 .ShowsAndEventsContainer > div {
   padding: 1rem;   
   margin: 0 1rem 0 0;
-  text-align: left;   
+  text-align: left; 
+  width: 400px;  
 }
 
 .DinoDanceCont{
 overflow: hidden;
 padding: 1rem; 
-max-width: 100%
+max-width: 100%;
 }
 
 .LiveMusicContainer {
 overflow: hidden;
 padding: 1rem;
-max-width: 100%
+max-width: 100%;
 }
 
 .RestaurantsContainer {
 display: flex;
 width: 100%;
 flex-direction: row;
+justify-content: center;
 padding: 5px;
 font-size: 1em;
 }
@@ -376,18 +370,18 @@ transform: rotateX(360deg);
 .HerbivoreCont {
 overflow: hidden;
 padding: 1rem;
-max-width: 100%
+max-width: 100%;
 }
 
 .RestaurantsContainer > img {
-width: 300px;  
 padding: 1rem;
 }
 
 .RestaurantsContainer > div {
   padding: 1rem;   
   margin: 0 1rem 0 0;
-  text-align: left;  
+  text-align: left; 
+  width: 400px; 
 }
 
 .RestaurantsContainer h3 {
@@ -400,13 +394,13 @@ padding: 1rem;
 .DinoBurgersCont {  
 overflow: hidden;
 padding: 1rem;
-max-width: 100%
+max-width: 100%;
 }
 
 .McdonaldsCont {   
 overflow: hidden;
 padding: 1rem;
-max-width: 100%
+max-width: 100%;
 }
 
 .MapCont{
@@ -428,18 +422,23 @@ align-items: left;
 @media only screen and (max-width: 720px){
 .ridesContainer {
 flex-direction: column;
+text-align: center;
 }
 .ShowsAndEventsContainer {
 flex-direction: column;
+text-align: center;
 }
 .RestaurantsContainer {
 flex-direction: column;
+text-align: center;
 }
 /* On smaller screens moves headers to center alignment */
 .mainRidesExperiences h3 {
   text-align: center;
 }
 }
+
+
   
 /* Footer coded by George Wauchope */
 .footer {
