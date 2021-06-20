@@ -372,7 +372,7 @@ body {
 }
 
 .contact-us {
-  width: 80%;
+  width: 95%;
   margin-top: 50px;
   border: 1px solid #ddd;
   padding: 30px 10px;
@@ -941,8 +941,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%,-40%,70px);
-  color: #fff;
-  font-size: 2em;
+  /* color: #fff;
+  font-size: 2em; */
 }
 
 #housingPreview .carousel__snapper {
@@ -967,11 +967,11 @@ body {
   }
 }
 
-/* @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   #housingPreview .carousel__snapper {
     animation-name: none;
   }
-} */
+}
 
 #housingPreview .carousel:hover .carousel__snapper,
 #housingPreview .carousel:focus-within .carousel__snapper {
