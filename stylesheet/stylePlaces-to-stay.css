@@ -10,8 +10,8 @@
 
 body {
     
-    /* max-width: 100%;
-     */
+    max-width: 100%;
+    
   }
   
  
@@ -29,12 +29,30 @@ body {
   align-self: flex-start;
  
 }
+/* Button look code by Sveinbjørn, 
+adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
+
+#searchButtonListings,
+#searchButtonPreview{
+  /* font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE; */
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #CCCCCC;
+  border-right: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 2px solid #CCCCCC;
+  cursor: pointer;
+}
 #housingSearchBar input[type=date]{
        
   margin-left: auto; 
   margin-right: 0;
  
 }
+
+
 
 
 #housingSearchBar { grid-area: searchBar; }
@@ -97,6 +115,31 @@ body {
         
         position: relative;
       }
+
+       /* css for re-fitting contact when resizing */
+  
+       .contact-us {
+        width: 80%;
+        margin-top: 50px;
+        padding: 30px 0px;
+        margin-bottom: 50px;
+      }
+ 
+      .contact-us .contact-form {
+        display: flex;
+        justify-content: center;
+      }
+      .contact-us .contact-form .form-group {
+        margin: 25px 0px;
+      }
+      .contact-us .contact-form .form-group input {
+        width: 85%;
+        margin-left: 12px;
+      }
+      .contact-us .contact-form .form-group textarea {
+        width: 85%;
+        margin-left: 12px;
+      }
       
 }
 /*Tablet-------------------------------------*/
@@ -109,8 +152,7 @@ body {
         
         grid-template-areas:
           'searchBar housingPreview  '
-          'searchBar housingListings '
-          'searchBar contact-us '
+          'contact-us contact-us'
                             
       }
       
@@ -156,7 +198,32 @@ body {
         position: relative;
       }
       
-     
+       /* css for re-fitting contact when resizing */
+  
+       .contact-us {
+        width: 80%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 0px;
+        margin-bottom: 50px;
+      }
+ 
+      .contact-us .contact-form {
+        display: flex;
+        justify-content: center;
+      }
+      .contact-us .contact-form .form-group {
+        margin: 25px 0px;
+      }
+      .contact-us .contact-form .form-group input {
+        width: 85%;
+        margin-left: 12px;
+      }
+      .contact-us .contact-form .form-group textarea {
+        width: 85%;
+        margin-left: 12px;
+      }
 
 
       
@@ -179,9 +246,11 @@ body {
       /* css for fitting contact form as side content */
   
   .contact-us {
+    
     width: 98%;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px 0px;
     margin-bottom: auto;
   }
@@ -191,7 +260,7 @@ body {
     justify-content: top;
   }
   .contact-us .contact-form .form-group {
-    margin: 15px 0px;
+    margin: 10px 0px;
   }
   .contact-us .contact-form .form-group input {
     width: 95%;
