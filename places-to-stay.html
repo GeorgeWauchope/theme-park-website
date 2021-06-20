@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="styleSheet/preview.css">
   <link rel="stylesheet" type="text/css" href="styleSheet/Header.Footer.Bar.css">
   <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
+  <link href='https://fonts.googleapis.com/css2?family=Pattaya&display=swap' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap' rel='stylesheet' type='text/css'>
   <!-- <style>
     @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
@@ -96,18 +98,31 @@
       <!-- Searchbar for housing, coded by Sveinbjoern -->
       <form id="housingSearchBar">
         <fieldset> 
-          <legend>SEARCH</legend>
+          <legend>SEARCH FOR HOUSING</legend>
           <!-- Data input -->
-          <div>from: <input type="date" /> 
-            <img src="/img/babies-icon-14.jpg" alt="icon of baby: How many children less then five year old" height="20px" />
-            <img src="/img/old-man.png" alt="icon of old man: How many pensioners over the age of 65" height="20px" />
-          </div>
+          <label id="fromDate">from: 
+            <input class="dateField" type="date" max="2022-12-31"/> 
+           <br/>
+          </label>
 
-          <p>to:   <input type="date" /></p>
+          <label id="toDate">
+            to:<input class="dateField" type="date" max="2022-12-31"/>
+            
+           </label>
 
           <!-- number of participats input -->
-          <p>number of adults: <input type="number" /></p>
-          <p>number of children: <input type="number" /></p>
+          <div id="numberInputTop" >
+            <img src="/img/babies-icon-14.jpg" alt="icon of baby" height="20px" /> (0-4) 
+            <input class="numberInput" type="number" min="0" max="15" placeholder="0" />
+            <img src="/img/old-man.png" alt="icon of old man" height="20px" /> (66+) 
+            <input class="numberInput" type="number" min="0" max="15" placeholder="0"/>
+          </div>
+          <div id="numberInputBottom" >
+            <img src="/img/clipart2133687.png" alt="icon of adult" height="18px" /> (18-65) 
+            <input class="numberInput" type="number" min="0" max="15" placeholder="1"/>
+            <img src="/img/iconfinder_1608628_child_icon_64px.png" alt="icon of young person" height="20px" />(5-17)
+            <input class="numberInput" type="number" min="0" max="15" placeholder="0"/>
+          </div>
 
           <!-- slogan -->
           <h3>Number one rated<br />theme park in the<br />world!</h3>

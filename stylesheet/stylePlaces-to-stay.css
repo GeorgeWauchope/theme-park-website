@@ -19,18 +19,47 @@ body {
 /* css for seach field */
 
 #housingSearchBar{
-       
+ text-align: center; 
   margin: 11px;
   position: relative;
-  
-
-
   /* box-sizing: content-box; */
   align-self: flex-start;
  
 }
+#housingSearchBar legend{
+  text-align: left;
+}
+
+.dateField{
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+
+#fromDate,
+#toDate{
+       
+  margin: 2px 10px;
+  /* padding 10px; */
+ 
+}
+ #numberInputTop,
+ #numberInputBottom{
+  margin: 4px;
+}
+#numberInputTop img,
+#numberInputBottom img{
+  object-fit: cover;
+ 
+}
+
+.numberInput{
+  width: 10%;
+}
+
+
 /* Button look code by Sveinbjørn, 
-adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
+partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
 
 #searchButtonListings,
 #searchButtonPreview{
@@ -43,16 +72,10 @@ adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-li
   border-right: 3px solid #333333;
   border-bottom: 3px solid #333333;
   border-left: 2px solid #CCCCCC;
+
   cursor: pointer;
-}
-#housingSearchBar input[type=date]{
-       
-  margin-left: auto; 
-  margin-right: 0;
- 
-}
 
-
+}
 
 
 #housingSearchBar { grid-area: searchBar; }
@@ -121,6 +144,8 @@ adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-li
        .contact-us {
         width: 80%;
         margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 30px 0px;
         margin-bottom: 50px;
       }
@@ -146,7 +171,7 @@ adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-li
 @media only screen and (min-width: 641px) and (max-width: 1010px){
     #grid-container-PtS {
         display: grid;
-        grid-template-columns: 220px auto;
+        grid-template-columns: 380px auto;
         width: 100%;
         object-fit: cover;
         
