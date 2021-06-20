@@ -9,10 +9,10 @@
   <meta name="description" content="DinoLand - Places to stay webpage" />
   <meta name="keywords" content="DinoLand booking bookings housing 'place to stay'" />
   <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
-  <style>
+  <!-- <style>
     @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-  </style>
+  </style> -->
   <!-- Code made with the help of https://realfavicongenerator.net/  -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -99,8 +99,9 @@
       <input type="radio" name = "searchSwitch" id= "searchListings"/>
 
       <!-- Searchbar for housing, coded by Sveinbjoern -->
-      <div id="housingSearchBar">
-        <h2>SEARCH</h2>
+      <form id="housingSearchBar">
+        <fieldset> 
+        <legend>SEARCH</legend>
         <!-- Data input -->
         <p>from: <input type="date" /></p>
 
@@ -116,7 +117,8 @@
 
         <label for="searchListings" id = "searchButtonListings"><b>SEARCH</b></label>
         <label for="searchPreview" id = "searchButtonPreview"><b>SEARCH</b></label>
-      </div>
+        </fieldset>
+      </form>
 
 
 
@@ -296,7 +298,7 @@
 
 
 
-      <!-- Information for special bookings, coded by Sveinbjoern-->
+     <!-- Contact Form Code Below (George Wauchope's code)-->
       <div class="contact-us">
         <h2 class="contact-header">Contact us</h2>
         <div class="contact-form">
