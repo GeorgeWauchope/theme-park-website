@@ -1,22 +1,23 @@
 /* fonts for the webpage */
-    @font-face {
-    font-family: "Jurassic";
-    src: url("/fonts/JurassicPark-BL48.ttf")format("truetype");
-    }
-    @font-face {
-    font-family: "DinosaurBeeline";
-    src: url("/fonts/Dinosbeeline-vmmO.ttf")format("truetype");
-    }
-    @font-face {
-    font-family: "DingOfSaurs7";
-    src: url("/fonts/DingOSaurs-7arw.otf")format("opentype");
-    }
-    @font-face {
-    font-family: "DingofSaurs8";
-    src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
-    }
-   
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
     
-    @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+
+@font-face {
+font-family: "Jurassic";
+src: url("/fonts/JurassicPark-BL48.ttf")format("truetype");
+}
+@font-face {
+font-family: "DinosaurBeeline";
+src: url("/fonts/Dinosbeeline-vmmO.ttf")format("truetype");
+}
+@font-face {
+font-family: "DingOfSaurs7";
+src: url("/fonts/DingOSaurs-7arw.otf")format("opentype");
+}
+@font-face {
+font-family: "DingofSaurs8";
+src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
+}
     
