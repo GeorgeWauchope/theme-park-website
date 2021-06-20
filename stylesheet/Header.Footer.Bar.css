@@ -224,7 +224,7 @@
     font-size: 22px;
   }
 
-  /* css for google map */
+  /* css for google map text */
   
   .our_location {
     text-align: center;
@@ -236,6 +236,7 @@
   /* css for contact form */
   
   .contact-us {
+   
     width: 80%;
     margin-top: 50px;
     border: 1px solid #ddd;
@@ -277,6 +278,8 @@
     margin-right: 35px;
     cursor: pointer;
   }
+
+  
 
   /* css for footer */
   
