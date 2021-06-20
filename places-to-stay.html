@@ -8,11 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="DinoLand - Places to stay webpage" />
   <meta name="keywords" content="DinoLand booking bookings housing 'place to stay'" />
+  <link rel="stylesheet" type="text/css" href="styleSheet/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styleSheet/preview.css">
+  <link rel="stylesheet" type="text/css" href="styleSheet/Header.Footer.Bar.css">
   <link rel="stylesheet" type="text/css" href="styleSheet/stylePlaces-to-stay.css">
   <!-- <style>
     @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
   </style> -->
+
   <!-- Code made with the help of https://realfavicongenerator.net/  -->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -57,7 +61,7 @@
             <li>
               <a href="index.html">Home</a>
             </li>
-            <li class="active">
+            <li class = "active">
               <a class="active" href="places-to-stay.html">Places to stay</a>
             </li>
             <li>
@@ -75,18 +79,19 @@
     </div>
   </nav>
 
+  
   <div id="main-flex-container">
     <div class="text-above-fold">
       <div class="col-overlay">
         <div class="text">
-          <h2>“Nothing beats a stay in Dinoland!!”</h2>
-          <h2>“We have more than 500 comfortable beds <br/>in twelve fantastic locations!”</h2>
+          <h2>“Nothing beats a stay in Dinoland!”</h2>
+          <h2>“We have beds in twelve fantastic locations!”</h2>
           <a class="book-btn" href="#">BOOK NOW</a>
         </div>
         <div class="img">
           <img
             src="img/3_Place_to_stay.png"
-            alt="cartoon drawing of DinoLand theme park map"
+            alt="cartoon drawing of a hotel"
           />
         </div>
       </div>
@@ -101,22 +106,22 @@
       <!-- Searchbar for housing, coded by Sveinbjoern -->
       <form id="housingSearchBar">
         <fieldset> 
-        <legend>SEARCH</legend>
-        <!-- Data input -->
-        <p>from: <input type="date" /></p>
+          <legend>SEARCH</legend>
+          <!-- Data input -->
+          <p>from: <input type="date" /></p>
 
-        <p>to:   <input type="date" /></p>
+          <p>to:   <input type="date" /></p>
 
-        <!-- number of participats input -->
-        <p>number of adults: <input type="number" /></p>
-        <p>number of children: <input type="number" /></p>
+          <!-- number of participats input -->
+          <p>number of adults: <input type="number" /></p>
+          <p>number of children: <input type="number" /></p>
 
-        <!-- slogan -->
-        <h3>Number one rated<br />theme park in the<br />world!</h3>
+          <!-- slogan -->
+          <h3>Number one rated<br />theme park in the<br />world!</h3>
 
 
-        <label for="searchListings" id = "searchButtonListings"><b>SEARCH</b></label>
-        <label for="searchPreview" id = "searchButtonPreview"><b>SEARCH</b></label>
+          <label for="searchListings" id = "searchButtonListings"><b>SEARCH</b></label>
+          <label for="searchPreview" id = "searchButtonPreview"><b>SEARCH</b></label>
         </fieldset>
       </form>
 
