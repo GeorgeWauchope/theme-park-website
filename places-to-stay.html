@@ -118,14 +118,14 @@
             <input class="numberInput" type="number" min="0" max="15" placeholder="0"/>
           </div>
           <div id="numberInputBottom" >
-            <img src="/img/clipart2133687.png" alt="icon of adult" height="18px" /> (18-65) 
+            <img src="/img/clipart2133687.png" alt="icon of adult" height="20px" /> (18-65) 
             <input class="numberInput" type="number" min="0" max="15" placeholder="1"/>
             <img src="/img/iconfinder_1608628_child_icon_64px.png" alt="icon of young person" height="20px" />(5-17)
             <input class="numberInput" type="number" min="0" max="15" placeholder="0"/>
           </div>
 
           <!-- slogan -->
-          <h3>Number one rated<br />theme park in the<br />world!</h3>
+          <h3>The number ONE rated<br />theme park in the world!</h3>
 
 
           <label for="searchListings"  id = "searchButtonListings"><b>SEARCH</b></label>
@@ -142,8 +142,6 @@
         
           <!-- adapted from https://css-tricks.com/css-only-carousel/ -->
           <section class="carousel" >
-
-            
             <p> All accomodations<br />includes the stay<br />in the park</p>
               <ol class="carousel__viewport">
                 <li id="carousel__slide1"
@@ -195,119 +193,129 @@
                     </li>
               </aside>
             </section>
-
+        </div>
       
       <!-- Listings. When you search you get listings, coded by Sveinbjoern-->
-          
+      <div id="housingListings" title="Listings of available housing">  
 
+
+
+        <div class="listings">
+          <h2>The Cabin Inn</h2>
+          <section>
+            <div>
+              <img src="/img/listing.jpg" alt="picture of an available house" />
+            </div>
+            <div>
+              <p>Double beds: <span id="singleBedListing1">1</span><br/>
+                Single beds: <span id="doubleBedListing1">2</span><br/>
+                Childrens beds: <span id="childrensBedListing1">2</span></p>
+            </div>
+
+            <div>
+              <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+              <p>Price per day average: <span id="pricePerDay"></span> $</p>
+            </div>
+            <div class ="orderNowButton">
+              <p>All accomodations<br/>includes the stay<br/> in the park</p>
+              <button type="button">ORDER NOW</button>
+            </div>
+          </section>
+        </div>
             
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+        <div class="listings">
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+        <div class="listings">
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+        <div class="listings">
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+        <div class="listings">
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+        <div class="listings">
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
 
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
+        <div class="listings">
+          <h2>Name of listing</h2>
+          <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
 
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
+          <p>Double beds: <span id="singleBedListing1"></span></p>
+          <p>Single beds: <span id="doubleBedListing1"></span></p>
+          <p>Childrens beds: <span id="childrensBedListing1"></span></p>
 
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+          <p>Price oer day average: <span id="pricePerDay"></span> $</p>
 
-              <div class="listings">
-                <h2>Name of listing</h2>
-                <img src="/img/listing.jpg" alt="picture of an available house" width="200" height="200" />
-
-                <p>Double beds: <span id="singleBedListing1"></span></p>
-                <p>Single beds: <span id="doubleBedListing1"></span></p>
-                <p>Childrens beds: <span id="childrensBedListing1"></span></p>
-
-                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-                <p>Price oer day average: <span id="pricePerDay"></span> $</p>
-
-                <p>All accomodations includes the stay in the park</p>
-                <button id="orderNowButton" type="button">ORDER NOW</button>
-              </div>
+          <p>All accomodations includes the stay in the park</p>
+          <button id="orderNowButton" type="button">ORDER NOW</button>
+        </div>
            
 
-      </div>
+      </div> 
 
 
 

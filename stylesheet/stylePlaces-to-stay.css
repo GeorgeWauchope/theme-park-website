@@ -57,25 +57,107 @@ body {
   width: 10%;
 }
 
-
 /* Button look code by Sveinbjørn, 
-partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
+imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
 
 #searchButtonListings,
 #searchButtonPreview{
-  /* font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE; */
+  /* font: bold 11px Arial;*/
+  /* text-decoration: none; */
+  background-color: #EEEEEE;
   color: #333333;
   padding: 2px 6px 2px 6px;
   border-top: 2px solid #CCCCCC;
   border-right: 3px solid #333333;
   border-bottom: 3px solid #333333;
   border-left: 2px solid #CCCCCC;
-
+  border-radius: 3%;
   cursor: pointer;
+}
+
+#searchButtonListings:hover,
+#searchButtonPreview:hover {
+  background-color: #FFFFFF;
+  color: #222222;
+  border-top: 2px solid #DDDDDD;
+  border-right: 3px solid #222222;
+  border-bottom: 3px solid #222222;
+  border-left: 2px solid #DDDDDD;
+}
+
+#searchButtonListings:active,
+#searchButtonPreview:active {
+  background-color: #333333;
+  color: #EEEEEE;
+  border-top: 2px solid #AAAAAA;
+  border-right: 3px solid #222222;
+  border-bottom: 3px solid #222222;
+  border-left: 2px solid #AAAAAA;
+}
+
+
+
+/* css for listings by Sveinbjørn */
+#housingListings{
+  /* margin: 10px;  */
 
 }
+
+#housingListings .listings .orderNowButton{
+  /* left: auto;
+  right: 0;
+  bottom: 0;
+  margin: 500;  */
+
+}
+#housingListings .listings section{
+ 
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  /* align-content: stretch; */
+  /* justify-content: flex-end; */
+  align-items: stretch;
+  
+   /* default 0 */
+  
+  /* margin:10px; */
+  max-width: 100%;
+}
+#housingListings .listings img{
+  /* object-fit: fill; */
+  /* width: auto; */
+ max-height: 200px;
+
+}
+#housingListings .listings{
+  object-fit: fill;
+  border: blue;
+  border-style: solid;
+  
+  /* color: red; */
+  padding: 5px;
+  margin: 5px 0px;
+  
+}
+.listings p *{
+  
+  flex-grow: 1;
+  margin: 5px;
+  /* min-width: 450; */
+width: 300;
+  
+  
+}
+
+
+
+
+
+
+
+
+
 
 
 #housingSearchBar { grid-area: searchBar; }
@@ -94,7 +176,7 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
         grid-template-areas:
           ' searchBar '
           ' housingPreview  '
-          ' housingListings '
+          ' housingListings  '
           ' contact-us '
                             
       }
@@ -177,6 +259,7 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
         
         grid-template-areas:
           'searchBar housingPreview  '
+          'searchBar housingListings  '
           'contact-us contact-us'
                             
       }
@@ -264,6 +347,7 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
         
         grid-template-areas:
           'searchBar housingPreview  contact-us'
+          'searchBar housingListings  contact-us'
           
            
   }
@@ -345,6 +429,8 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
 
 /* css for search Button by Sveibjørn. Toggles between showing previews and listings */
 
+
+/* Change button */
 #searchListings ,
 #searchPreview {
   display: none;
@@ -368,13 +454,7 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
 }
 
 
-
-/* searchListings" id = "searchButtonListings" "searchPreivew" id = "searchButtonPreview" */
-
- /* nav li a:hover{
-     color:hsl(0,0%,255%);
-     text-decoration: none;
- } */
+/* Change the content */
 
  .carousel{
   display: none;
@@ -389,7 +469,7 @@ partially adapted from https://stackoverflow.com/questions/710089/how-do-i-make-
 }
 
 
-#searchListings:checked~#housingPreview .listings{
+#searchListings:checked~#housingListings .listings{
   display: block;
  }
 
