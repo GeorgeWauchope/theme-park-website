@@ -1,6 +1,6 @@
 
 * {
-  margin: 5;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 /* Below is CSS for top navbar created by Geoge Wauchope */
@@ -128,7 +128,7 @@
     display: flex;
   }
 }
-/* Above is CSS for top navbar */
+/* Above is CSS for top navbar created by George*/
 
 .text-above-fold {
   width: 100%;
@@ -233,23 +233,12 @@ font-size: 18px;
 .RandEContainer > h1, h2 {
 text-align: center;
 font-size: 30px;
+padding: 20px 20px 20px 20px;
 }
 
-/* make change to annimation +++++++++++++++++++++++++++++++++===*/
-.RandEContainer > h1 {
-font-size: 50px;
-position: relative;
-animation-name: change-color;
-animation-duration: 6s;
-animation-iteration-count: 3;
+.RandEContainer > p {
+  padding: 20px;
 }
-
-
-.ridesMain:hover > h2 {
-  cursor: pointer;
-  transition: all 2s linear;
-  transform: rotateX(360deg);
-  }
 
 .ridesContainer { 
 display: flex;
@@ -259,6 +248,12 @@ flex-direction: row;
 padding: 5px; 
 font-size: 1em; 
 }
+
+.ridesMain:hover > h2 {
+  cursor: pointer;
+  transition: all 2s linear;
+  transform: rotateX(360deg);
+  }
 
 .ridesContainer > img {
   width:100%;
@@ -270,13 +265,12 @@ font-size: 1em;
   width: 400px;
   }
 
-.ridesContainer h1 {
+.ridesContainer h3 {
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
     padding: 1rem;
-
-  }
+}
 
 .TyrannoCont {
   overflow: hidden;
@@ -319,7 +313,7 @@ transform: rotateX(360deg);
   font-size: 30px;
   color: #b81106;
   padding: 1rem;
-  }
+}
 
 .JurassicCont { 
 overflow: hidden;
@@ -331,7 +325,6 @@ max-width: 100%;
 width: 300px; 
 padding: 1rem; 
 }
-
 
 .ShowsAndEventsContainer > div {
   padding: 1rem;   
@@ -437,9 +430,7 @@ text-align: center;
   text-align: center;
 }
 }
-
-
-  
+ 
 /* Footer coded by George Wauchope */
 .footer {
   width: 100%;
@@ -504,7 +495,6 @@ text-align: center;
   .part4 {
     margin: 20px 0px;
   }
-
 }
 
 @media (max-width: 767px) {
