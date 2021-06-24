@@ -165,6 +165,8 @@
   animation-iteration-count: 3;
   padding-bottom: 20px;
 }
+
+/* Annimation makes text move from left to right  */
 @keyframes mymove {
   from {
     left: -100px;
@@ -206,13 +208,13 @@
 
   
  /*Below is CSS coded by Martha Fortrie*/ 
-
 body {
   background-color: #fff;
   padding: 0;
   margin: 0;
 }
 
+/* Main styling container holding all content of Rides and Experiences page */
 .mainRidesExperiences {
 display: flex;
 justify-content: center;
@@ -221,6 +223,7 @@ flex-direction: column;
 overflow: hidden;
 }
 
+/* Styling container holding intro text */
 .RandEContainer {
 width: 100%;
 display: flex;
@@ -230,16 +233,19 @@ text-align: center;
 font-size: 18px;
 }
 
+/* styling for header 1 and header 2 within container */
 .RandEContainer > h1, h2 {
 text-align: center;
 font-size: 30px;
 padding: 20px 20px 20px 20px;
 }
 
+/* styling for paragraph text within container */
 .RandEContainer > p {
   padding: 20px;
 }
 
+/* styling container for all the rides together  */
 .ridesContainer { 
 display: flex;
 width: 100%;
@@ -249,22 +255,26 @@ padding: 5px;
 font-size: 1em; 
 }
 
+/* annimation for header 2 in the ridesMain container  */
 .ridesMain:hover > h2 {
   cursor: pointer;
   transition: all 2s linear;
   transform: rotateX(360deg);
   }
 
+/* styles width of all images in rides container */
 .ridesContainer > img {
   width:100%;
   }
 
+/* styles all the div tags for the text in the rides container  */
 .ridesContainer > div {
   line-height: 1.5;
   padding: 15px;
   width: 400px;
   }
 
+/* styles only the header 3 from rides container  */
 .ridesContainer h3 {
     font-weight:bold;
     font-size: 30px;
@@ -287,27 +297,36 @@ font-size: 1em;
   max-width: 100%;
 }
 
+/* styling container for all the shows and events together  */
 .ShowsAndEventsContainer {
 display: flex;
 width: 100%;
-flex-direction: row;
 justify-content: center;
+flex-direction: row;
 padding: 5px;
 font-size: 1em; 
 }
 
+/* annimation for header 2 in the showsMain container  */
 .ShowsMain:hover > h2 {
 cursor: pointer;
 transition: all 2s linear;
 transform: rotateX(360deg);
 }  
 
-.ShowsAndEventsContainer:hover > h2 {
-cursor: pointer;
-transition: all 2s linear;
-transform: rotateX(360deg);
+/* styles width of all images in ShowsAndEventsContainer */
+.ShowsAndEventsContainer > img {
+width: 100%;  
 }
 
+/* styles all the div tags for the text in the ShowsAndEventsContainer  */
+.ShowsAndEventsContainer > div {
+  line-height: 1.5;
+  padding: 15px;
+  width: 400px; 
+}
+
+/* styles only the header 3 from the shows and events container  */
 .ShowsAndEventsContainer h3 {
   font-weight:bold;
   font-size: 30px;
@@ -316,35 +335,21 @@ transform: rotateX(360deg);
 }
 
 .JurassicCont { 
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
-}
-
-.ShowsAndEventsContainer > img {
-width: 300px; 
-padding: 1rem; 
-}
-
-.ShowsAndEventsContainer > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left; 
-  width: 400px;  
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .DinoDanceCont{
-overflow: hidden;
-padding: 1rem; 
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .LiveMusicContainer {
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
+/* styling container for all Restaurants and Dining options together  */
 .RestaurantsContainer {
 display: flex;
 width: 100%;
@@ -354,29 +359,26 @@ padding: 5px;
 font-size: 1em;
 }
 
+/* annimation for header 2 in the restMain container  */
 .RestMain:hover > h2 {
 cursor: pointer;
 transition: all 2s linear;
 transform: rotateX(360deg);
 }
 
-.HerbivoreCont {
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
-}
-
+/* styles width of all images in RestaurantsContainer */
 .RestaurantsContainer > img {
 padding: 1rem;
 }
 
+/* styles all the div tags for the text in the RestaurantsContainer  */
 .RestaurantsContainer > div {
-  padding: 1rem;   
-  margin: 0 1rem 0 0;
-  text-align: left; 
+  line-height: 1.5;
+  padding: 15px;
   width: 400px; 
 }
 
+/* styles only the header 3 from the RestaurantsContainer  */
 .RestaurantsContainer h3 {
 font-weight:bold;
 font-size: 30px;
@@ -384,30 +386,37 @@ color: #b81106;
 padding: 1rem;
 }
 
+.HerbivoreCont {
+  overflow: hidden;
+  max-width: 100%;
+}
 .DinoBurgersCont {  
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .McdonaldsCont {   
-overflow: hidden;
-padding: 1rem;
-max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
+/* styling container for all content from MapCont  */
 .MapCont{
 display: flex;
 width: 100%;
 flex-direction: column;
-padding: 20px;
 font-size: 1em; 
 align-items: center;
 }
 
+/* Addes margin to top of the paragraph tag */
+.MapCont > p {
+  margin-top: 20px;
+}
+
+/* Adds padding to the table with opening hours */
 table {
-color:#000000;
-align-items: left;
+padding: 10px;
 }
 
 
