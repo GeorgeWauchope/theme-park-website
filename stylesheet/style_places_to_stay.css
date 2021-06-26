@@ -290,7 +290,7 @@ position: relative;
 
       
 }
-/*Desktop-------------------------------------*/
+/*Desktop/Wide screen-------------------------------------*/
 @media only screen and (min-width: 1500px){
     
   #grid-container-PtS {
