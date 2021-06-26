@@ -1,10 +1,5 @@
 /* Below is CSS for top navbar */
 
-* {
-    margin: 0;
-    font-family: Verdana, Tahoma, sans-serif;
-  }
-
 .phone-and-button-top-nav {
     display: flex;
     justify-content: flex-end;
@@ -231,7 +226,9 @@
     font-size: 28px;
     margin-bottom: 20px;
     margin-top: 50px;
+    width: 100%;
   }
+
 
   /* css for contact form */
   
