@@ -1,9 +1,9 @@
 /* properties for the entire page */
 
 * {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* thumb and track color */
-    scrollbar-width: 0px;
+   
+    /* scrollbar-color: transparent transparent; /* thumb and track color *
+    scrollbar-width: 0px; */
     
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .numberInput{
-  width: 10%;
+  width: 13%;
 }
 
 /* Button look code by Sveinbjørn, 
@@ -161,10 +161,11 @@ width: 300;
 #housingSearchBar { grid-area: searchBar; }
 #housingPreview { grid-area: housingPreview; }
 #housingListings { grid-area: housingListings; }
+.our_location { grid-area: our_location;}
 .contact-us { grid-area: contact-us;}
 
 /*Mobile*/
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 991px){
     #grid-container-PtS { 
         display: grid;
         grid-template-columns: auto;
@@ -175,6 +176,7 @@ width: 300;
           ' searchBar '
           ' housingPreview  '
           ' housingListings  '
+          ' our_location  '
           ' contact-us '
                             
       }
@@ -247,8 +249,8 @@ width: 300;
       }
       
 }
-/*Tablet-------------------------------------*/
-@media only screen and (min-width: 641px) and (max-width: 1010px){
+/*Tablet and Laptop-------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1499px){
     #grid-container-PtS {
         display: grid;
         grid-template-columns: 380px auto;
@@ -258,6 +260,7 @@ width: 300;
         grid-template-areas:
           'searchBar housingPreview  '
           'searchBar housingListings  '
+          'our_location our_location'
           'contact-us contact-us'
                             
       }
@@ -328,14 +331,14 @@ width: 300;
       }
       .contact-us .contact-form .form-group textarea {
         width: 85%;
-        margin-left: 12px;
+        margin-left: 12px; 
       }
 
 
       
 }
 /*Desktop-------------------------------------*/
-@media only screen and (min-width: 1011px){
+@media only screen and (min-width: 1500px){
     
   #grid-container-PtS {
         display: grid;
@@ -346,6 +349,8 @@ width: 300;
         grid-template-areas:
           'searchBar housingPreview  contact-us'
           'searchBar housingListings  contact-us'
+          'searchBar our_location contact-us'
+          
           
            
   }
@@ -377,7 +382,9 @@ width: 300;
     width: 95%;
     margin-left: 10px;
   }
- 
+ .our_location{
+   text-align:center;
+ }
 
 
     
