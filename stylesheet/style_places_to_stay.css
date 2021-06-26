@@ -147,9 +147,44 @@ width: 300;
   
   
 }
+/* css for preview */
+
+#housingPreview{
+    
+       
+  position: relative;
+  object-fit: cover;
+/* width: 100% */
+
+
+}
+
+/* Example of use of z-index and transparency */
+#housingPreview .carousel p {
+font-size: 25px;
+z-index: 1;
+
+position: absolute;
+bottom: 5%; 
+margin: 20px;
+background-color: rgba(255, 255, 255, 0.418);
+}
+#housingPreview  img {
+
+
+  /* border: 16px solid rgb(115, 150, 65); */
+  /* border-radius: 16px; */
+  /* margin-top: 15px; */
+  object-fit: cover;
+max-height: 100%;
+object-fit: fill;
+width: 100%;
+/* height: 100%; */
 
 
 
+position: relative;
+}
 
 
 
@@ -182,45 +217,6 @@ width: 300;
       }
       
    
-      
-      #housingPreview{
-    
-       
-          position: relative;
-          object-fit: cover;
-        width: 100%
-
-        
-      }
-      
-      #housingPreview  p {
-        font-size: 25px;
-        z-index: 1;
-        /* display: inline; */
-        position: absolute;
-       bottom: 10%; 
-       margin: 16px;
-       
-      
-      background-color: #f6fa003c;
-      border-radius: 10px;
-        
-
-      }
-
-      #housingPreview  img {
-        
-        border: 16px solid rgb(115, 150, 65);
-        border-radius: 16px;
-        margin-top: 15px;
-        object-fit: fill;
-        width: 100%;
-       
-
-        
-        position: relative;
-      }
-
        /* css for re-fitting contact when resizing */
   
        .contact-us {
@@ -264,51 +260,8 @@ width: 300;
           'contact-us contact-us'
                             
       }
-      
- 
-
-      
-      
-      #housingPreview{
     
-       
-          position: relative;
-          object-fit: cover;
-        width: 100%
-
-        
-      }
-      
-      #housingPreview  p {
-        font-size: 25px;
-        z-index: 1;
-        /* display: inline; */
-        position: absolute;
-       bottom: 10%; 
-       margin: 16px;
-       
-      
-      background-color: #f6fa003c;
-      border-radius: 10px;
-        
-
-      }
-
-      #housingPreview  img {
-        
-        border: 16px solid rgb(115, 150, 65);
-        border-radius: 16px;
-        margin-top: 15px;
-        object-fit: fill;
-        width: 100%;
-       
-
-        
-        position: relative;
-      }
-      
-       /* css for re-fitting contact when resizing */
-  
+    /* css for re-fitting contact when resizing */
        .contact-us {
         width: 80%;
         margin-top: 50px;
@@ -347,9 +300,9 @@ width: 300;
         object-fit: cover;
         
         grid-template-areas:
-          'searchBar housingPreview  contact-us'
+          'searchBar housingPreview   contact-us'
           'searchBar housingListings  contact-us'
-          'searchBar our_location contact-us'
+          'searchBar our_location     contact-us'
           
           
            
@@ -385,52 +338,11 @@ width: 300;
  .our_location{
    text-align:center;
  }
-
-
-    
-      
-      
-      #housingPreview{
-    
        
-          position: relative;
-          object-fit: cover;
-        /* width: 100% */
-
-        
-      }
-      
-      #housingPreview .carousel p {
-        font-size: 25px;
-        z-index: 1;
-        /* display: inline; */
-        position: absolute;
-       bottom: 5%; 
-       margin: 20px;
-       background-color: rgba(255, 255, 255, 0.418);
-      }
-      #housingPreview  img {
-
-
-          /* border: 16px solid rgb(115, 150, 65); */
-          /* border-radius: 16px; */
-          /* margin-top: 15px; */
-          object-fit: cover;
-        max-height: 100%;
-        object-fit: fill;
-        width: 100%;
-        /* height: 100%; */
-       
-
-        
-        position: relative;
-      }
-      
-      
-      
-     
 
 }
+
+
 
 /* css for search Button by Sveibjørn. Toggles between showing previews and listings */
 
