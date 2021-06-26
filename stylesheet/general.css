@@ -18,3 +18,18 @@ font-family: "DingofSaurs8";
 src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
 }
     
+* {
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+* h2{
+    /* text-align: end; */
+}  
+
+* p{
+    /* text-align: end; */
+    text-size: 16px;
+}
