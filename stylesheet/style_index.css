@@ -3,7 +3,6 @@
 
 
 /* Below is CSS Grid for the rides part of homepage */
-
 .rides_H1 {
   margin-top: 60px;
   margin-bottom: -50px;
@@ -11,7 +10,6 @@
 
 .grid-for-rides {
   margin: 5rem auto;
-
   display: grid;
   grid-auto-flow: row;
   gap: 2em;
@@ -21,7 +19,6 @@
 .grid-for-rides > .ride {
   text-align: center;
 }
-
 .grid-for-rides > .ride > img {
   width: 100%;
   height: 400px;
