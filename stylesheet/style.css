@@ -1,206 +1,6 @@
 /* All CSS Below Is From George Wauchope & Is For The Home Page */
 
-* {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-/* Below background color uses OPACITY in hex number to make the background colour more transparent */
-
-/* Below is CSS for top navbar */
-
-.phone-and-button-top-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #e9fa00;
-  height: 50px;
-  width: 100%;
-}
-
-.phone-and-button-top-nav > button {
-  margin: 20px;
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
-  background: red;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.phone-and-button-top-nav > p {
-  margin-right: 30px;
-}
-
-.item3 .phone-and-button-top-nav {
-  background-color: #fff;
-}
-.nav-wrap {
-  width: 100%;
-}
-
-.navbar .item3 {
-  margin-left: auto;
-}
-.navbar .item2 {
-  margin-left: 20px;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  color: #000;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
-.navbar-links ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  text-decoration: none;
-  color: #000;
-  padding: 1rem;
-  display: block;
-}
-
-.brandLink {
-  text-decoration: none;
-  color: #000;
-  padding: 1rem;
-  display: block;
-}
-
-.navbar-links li a:hover {
-  color: red;
-  background-color: #e9fa00;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 1.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.navbar-links li a {
-  padding: 0.5rem 1rem;
-}
-
-.navbar-links.active {
-  display: flex;
-}
-
-.active {
-  background-color: #e9fa00;
-  color: red !important;
-}
-#mobile-button {
-  display: none;
-}
-@media (max-width: 991px) {
-  .item3 {
-    display: none;
-  }
-  #mobile-button {
-    display: flex;
-  }
-}
-
-/* Above is CSS for top navbar */
-
-#main-flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.text-above-fold {
-  width: 100%;
-}
-.col-overlay {
-  background: #1034a6;
-  padding: 50px 0px;
-  overflow: hidden;
-}
-.text-above-fold .text {
-  color: white;
-  width: 50%;
-  float: left;
-  display: block;
-  text-align: center;
-  font-size: 24px;
-  margin-top: 60px;
-}
-.text-above-fold .img {
-  width: 50%;
-  float: right;
-  display: block;
-  text-align: center;
-}
-.text-above-fold .img img {
-  width: 500px;
-  height: auto;
-}
-
-.text-above-fold .text h2 {
-  font-family: "Fjalla One", sans-serif;
-  position: relative;
-  animation: mymove 3s;
-  animation-iteration-count: 3;
-  padding-bottom: 20px;
-}
-@keyframes mymove {
-  from {
-    left: -100px;
-  }
-  to {
-    left: 50px;
-  }
-}
-
-@media (max-width: 1275px) {
-  .text-above-fold .text {
-    margin-top: 10px;
-  }
-}
-
-.text-above-fold > button {
-  margin-top: 15px;
-  padding: 10px;
-  text-decoration: none;
-  background-color: #b81106;
-  color: white;
-  font-size: 16px;
-}
 
 /* Below is CSS Grid for the rides part of homepage */
 
@@ -247,6 +47,8 @@
   margin-bottom: 15px;
 }
 
+/* Pricing field code by George */
+
 .pricing {
   width: 80%;
   margin-top: 50px;
@@ -271,106 +73,8 @@
   font-size: 22px;
 }
 
-.our_location {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
 
-.contact-us {
-  width: 80%;
-  margin-top: 50px;
-  border: 1px solid #ddd;
-  padding: 30px 0px;
-  margin-bottom: 50px;
-}
-.contact-us .contact-header {
-  text-align: center;
-  font-size: 44px;
-}
-.contact-us .contact-form {
-  display: flex;
-  justify-content: center;
-}
-.contact-us .contact-form .form-group {
-  margin: 25px 0px;
-}
-.contact-us .contact-form .form-group input {
-  width: 85%;
-  padding: 8px;
-  margin-left: 12px;
-}
-.contact-us .contact-form .form-group textarea {
-  width: 85%;
-  padding: 8px;
-  margin-left: 12px;
-}
-.contact-us .contact-form .form-group label {
-  font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
-}
-.contact-us .contact-form .form-group-submit {
-  text-align: right;
-}
-.contact-us .contact-form .form-group-submit .submit-button {
-  padding: 10px 20px;
-  margin-right: 35px;
-  cursor: pointer;
-}
 
-.footer {
-  width: 100%;
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 30px 0px;
-}
-.footer .part1 .logo-img {
-  width: 100px;
-  height: auto;
-}
-.footer .part2 {
-  text-align: center;
-}
-.footer .part2 p {
-  padding: 5px 0px;
-}
-.footer-pages {
-  display: flex;
-  padding: 0;
-}
-.footer-pages ul {
-  list-style: none;
-  padding: 0;
-}
-.footer-pages ul li {
-  float: left;
-}
-.footer-pages ul li a {
-  text-decoration: none;
-  padding: 0px 10px;
-  color: #000;
-}
-.footer-pages ul li a:hover {
-  color: red;
-}
-.book-btn {
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
-  background: red;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.book-btn:hover {
-  background: #e9fa00;
-  color: #000;
-}
 
 @media (min-width: 992px) {
   .grid-for-rides {
@@ -379,29 +83,7 @@
 }
 
 @media (max-width: 991px) {
-  .footer {
-    flex-direction: column;
-  }
-  .footer .part1,
-  .part2,
-  .part3,
-  .part4 {
-    margin: 20px 0px;
-  }
-  .contact-us {
-    width: 90%;
-  }
-  .pricing {
-    width: 90%;
-  }
-  .text-above-fold .img img {
-    width: 350px;
-    margin-top: 25px;
-  }
-  .text-above-fold .text {
-    font-size: 22px;
-    padding-top: 0px;
-  }
+  
   .grid-for-rides .ride {
     margin-bottom: 50px;
   }
@@ -410,35 +92,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .text-above-fold .text {
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .text-above-fold .img {
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .navbar-links li:hover {
-    background-color: #e9fa00;
-  }
-}
-@media (max-width: 600px) {
-  .navbar {
-    width: 100%;
-  }
-  .navbar .item2 {
-    margin-left: 0px;
-  }
-  .brand-title {
-    margin: 0.5rem 0px;
-  }
-}
 
-/* Media Queries Below: */
+
 
 /* Below media quiery keeps ride images on homepage mobile responsive on larger devices greater than 623 pixels wide */
 @media (min-width: 720px) {
