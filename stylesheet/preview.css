@@ -16,12 +16,12 @@
     }
   }
   
-  @keyframes tostart {
-    75% {
+  @keyframes tostart4 {
+    55% {
       left: 0;
     }
     95% {
-      left: -300%;
+      left: -400%;
     }
     98% {
       left: -300%;
@@ -30,6 +30,8 @@
       left: 0;
     }
   }
+
+  
   
   @keyframes snap { 
     96% {
@@ -45,16 +47,22 @@
       scroll-snap-align: center;
     }
   }
-  
-  .carousel__slide{
+  /* .carousel__slide */
+  .listings *{
     overflow-anchor: none;
   }
   
   #housingPreview *::-webkit-scrollbar {
     width: 0;
   }
+  .listings *::-webkit-scrollbar {
+    width: 0;
+  }
   
   #housingPreview *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .listings *::-webkit-scrollbar-track {
     background: transparent;
   }
   
@@ -62,29 +70,119 @@
     background: transparent;
     border: none;
   }
+  .listings *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
   
   #housingPreview * {
     -ms-overflow-style: none;
   }
+  .listings * {
+    -ms-overflow-style: none;
+  }
   
+
+
+/* Example of use of z-index and transparency */
+#housingPreview .carousel p {
+  font-size: 25px;
+  z-index: 1;
+  
+  position: absolute;
+  bottom: 5%; 
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.418);
+  }
+
+  #housingPreview  img {
+  
+  
+    /* border: 16px solid rgb(115, 150, 65); */
+    /* border-radius: 16px; */
+    /* margin-top: 15px; */
+    /* object-fit: cover; */
+  /* max-height: 100%; */
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
+ 
+ 
+  /* position: relative; */
+  }
+  .listings  img *{
+  
+    /* border: 16px solid rgb(115, 150, 65); */
+    /* border-radius: 16px; */
+    /* margin-top: 15px; */
+    /* object-fit: none; */
+  /* max-height: 100%; */
+  object-fit: cover;
+  /* height: 100%; */
+  
+
+  /* max-height: 100%; */
+
+  /* height: 100%; */
+
+  /* position: relative; */
+  }
+  /* .carousel {
+    width: 1400;
+  } */
+  
+
+
+
   #housingPreview ol, li {
     list-style: none;
     margin: 0;
     padding: 0;
+    /* overflow-y:none; */
+
   }
+  .listings ol, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* overflow-y:none; */
   
+  }
+  /* .listings ol{
+    width: 200;
+  } */
+  
+  /* #housingPreview  */
   #housingPreview .carousel {
     position: relative;
-    padding-top: 64%;
+    padding-top: 69%;
     /* display: none; */
     /* max-height: 980px; */
     filter: drop-shadow(0 0 10px #0003);
-    perspective: 100px;
+    /* perspective: 100px; */
     /* overflow-anchor: none; */
-  
+    /* overflow-y:none; */
+ 
+  }
+
+  .listings .carousel {
+    position: relative;
+    /* left:0%;
+    right: auto; */
+    padding-top: 200px;
+    /* height: 100%; */
+    /* display: none; */
+    /* max-height: 980px; */
+    filter: drop-shadow(0 0 10px #0003);
+    /* perspective: 100px; */
+
+    
+    overflow: none;
+    /* overflow-y:none; */
   }
   
-  #housingPreview .carousel__viewport {
+  /* #housingPreview  */
+  .carousel__viewport {
     position: absolute;
     top: 0;
     right: 0;
@@ -95,76 +193,139 @@
     counter-reset: item;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
   }
   
-  #housingPreview .carousel__slide {
+  /* #housingPreview  */
+  .carousel__slide {
     position: relative;
     flex: 0 0 100%;
-    width: 100%;
+    overflow: none;
+    /* width: 100%; */
     
-    counter-increment: item;
+    /* counter-increment: item; */
+  }
+
+  .listings .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+ 
+    
+    /* counter-increment: item; */
   }
   
   /* #housingPreview .carousel__slide:nth-child(even) {
   
   } */
   
-  #housingPreview .carousel__slide:before {
+  /* #housingPreview  */
+  /* .carousel__slide:before {
     content: counter(item);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-40%,70px);
     /* color: #fff;
-    font-size: 2em; */
-  }
+    font-size: 2em; 
+    display: none;
+  } */
   
-  #housingPreview .carousel__snapper {
+  /* #housingPreview  */
+  .carousel__snapper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    scroll-snap-align: center;
+    scroll-snap-align: center; 
+
+  }
+  .listings .carousel__snapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center; 
+ 
   }
   
   @media (hover: hover) {
     #housingPreview .carousel__snapper {
-      animation-name: tonext, snap;
-      animation-timing-function: ease;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
-  
-    #housingPreview .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart, snap;
-    }
+        animation-name: tonext, snap;
+        animation-timing-function: ease;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+     /* #housingPreview  */
+     #housingPreview .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart4, snap;
+      }
+     
+
+      .listings .carousel__slide:last-child .carousel__snapper {
+        animation-name: tostart4, snap;
+      }
+      .listings  .carousel__snapper  {
+          
+          animation-name: tonext, snap;
+          animation-timing-function: ease;
+          animation-duration: 2.5s;
+          animation-iteration-count: infinite;
+        }
+
+
   }
-  
+ .listings .carousel:hover .carousel__snapper{
+        animation-name: none;
+        
+      }
+    
+  /* #housingPreview */
   @media (prefers-reduced-motion: reduce) {
-    #housingPreview .carousel__snapper {
+     .carousel__snapper {
       animation-name: none;
     }
   }
   
+  /* #housingPreview  */
+  /* #housingPreview  */
   #housingPreview .carousel:hover .carousel__snapper,
   #housingPreview .carousel:focus-within .carousel__snapper {
     animation-name: none;
+    
   }
+
+    
+
+    /* .fourImages .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart4, snap;
+    }
+    .fiveImages .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart5, snap;
+    } */
+    
   
-  #housingPreview .carousel__navigation {
+  /* #housingPreview  */
+  .carousel__navigation {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     text-align: center;
-  }
   
-  #housingPreview .carousel__navigation-list,
-  #housingPreview .carousel__navigation-item {
+
+  }
+  /* #housingPreview  */
+  /* #housingPreview  */
+  .carousel__navigation-list,
+  .carousel__navigation-item {
     display: inline-block;
+  
+    
   }
   
+  /* #housingPreview  */
   #housingPreview .carousel__navigation-button {
     display: inline-block;
     width: 1.5rem;
@@ -175,12 +336,34 @@
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
+ 
+  }
+
+  .listings .carousel__navigation-button {
+    
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+
+    font-size: 0;
+    transition: transform 0.1s;
+ 
+    
   }
   
-  #housingPreview .carousel::before,
-  #housingPreview .carousel::after,
-  #housingPreview .carousel__prev,
-  #housingPreview .carousel__next {
+  /* #housingPreview */
+  /* #housingPreview */
+  /* #housingPreview */
+  /* #housingPreview */
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    
     position: absolute;
     top: 0;
     margin-top: 37.5%;
@@ -190,16 +373,23 @@
     border-radius: 50%;
     font-size: 0;
     outline: 0;
+ 
   }
   
-  #housingPreview .carousel::before,
+  /* #housingPreview  */
+  .carousel::before,
   .carousel__prev {
     left: -1rem;
+ 
+    
   }
   
-  #housingPreview .carousel::after,
+  /* #housingPreview  */
+  .carousel::after,
   .carousel__next {
     right: -1rem;
+
+    
   }
   
   /* #housingPreview .carousel::before,
