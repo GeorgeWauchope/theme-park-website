@@ -30,11 +30,21 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
     
   }
 
+  h1{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
 h2 {
     /* text-align: end; */
     font-family: "Fjalla One", Verdana, sans-serif;
     
-}  
+} 
+
+h3{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+}
 
 p{
     /* text-align: end; */
