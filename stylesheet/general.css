@@ -38,7 +38,8 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
 h2 {
     /* text-align: end; */
     font-family: "Fjalla One", Verdana, sans-serif;
-    
+    font-size: 20px;
+    margin: 0px 5px;
 } 
 
 h3{

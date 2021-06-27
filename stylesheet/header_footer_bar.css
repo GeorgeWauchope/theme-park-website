@@ -151,6 +151,9 @@
     font-size: 24px;
     margin-top: 60px;
   }
+  .text-above-fold h2 {
+    font-size: 34px;
+  }
   .text-above-fold .img {
     width: 50%;
     float: right;
