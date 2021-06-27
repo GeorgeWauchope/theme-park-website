@@ -82,7 +82,7 @@
     background-color: #e9fa00;
   }
   
-  .toggle-button {
+  /* .toggle-button {
     position: absolute;
     top: 1.75rem;
     right: 1rem;
@@ -98,7 +98,7 @@
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
-  }
+  } */
   
   .navbar-links li a {
     padding: 0.5rem 1rem;

@@ -188,10 +188,21 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
 
 .mapouter{
-  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; */
 }
 .gmap_canvas{
-  overflow-y: hidden;
+  /* overflow: hidden; */
+}
+.our_location{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 
