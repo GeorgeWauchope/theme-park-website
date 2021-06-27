@@ -64,6 +64,7 @@ font-size: 1em;
 
 /* styles only the header 3 from rides container  */
 .ridesContainer h3 {
+    font-family: "Fjalla One", Verdana, sans-serif;
     font-weight:bold;
     font-size: 30px;
     color: #b81106;
@@ -116,6 +117,7 @@ width: 100%;
 
 /* styles only the header 3 from the shows and events container  */
 .ShowsAndEventsContainer h3 {
+  font-family: "Fjalla One", Verdana, sans-serif;
   font-weight:bold;
   font-size: 30px;
   color: #b81106;
@@ -168,6 +170,7 @@ padding: 1rem;
 
 /* styles only the header 3 from the RestaurantsContainer  */
 .RestaurantsContainer h3 {
+font-family: "Fjalla One", Verdana, sans-serif;
 font-weight:bold;
 font-size: 30px;
 color: #b81106;
