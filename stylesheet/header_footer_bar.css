@@ -1,4 +1,4 @@
-/* Below is CSS for top navbar */
+/* Below is CSS for top navbar by George*/
 
 .phone-and-button-top-nav {
     display: flex;
@@ -126,6 +126,7 @@
   
   /* Above is CSS for top navbar */
   
+  /* CSS for blue bar by George*/
   #main-flex-container {
     display: flex;
     justify-content: center;
@@ -187,14 +188,6 @@
     }
   }
   
-  /* .text-above-fold > button {
-    margin-top: 15px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #b81106;
-    color: white;
-    font-size: 16px;
-  } */
 
 
   /* css for google map text by George */
@@ -208,7 +201,7 @@
   }
 
 
-  /* css for contact form */
+  /* css for contact form by George */
   
   .contact-us {
    
@@ -310,7 +303,7 @@
     color: #000;
   }
   
-  
+  /* media queries for adaptable content */
   @media (max-width: 991px) {
     .footer {
       flex-direction: column;
