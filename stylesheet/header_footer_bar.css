@@ -163,7 +163,7 @@
   }
   
   .text-above-fold .text h2 {
-    font-family: "Fjalla One", Verdana, sans-serif;
+    
     position: relative;
     animation: mymove 3s;
     animation-iteration-count: 1;
@@ -193,33 +193,8 @@
     font-size: 16px;
   }
 
-  /* Pricing field code by George */
 
-  .pricing {
-    width: 80%;
-    margin-top: 50px;
-    border: 1px solid #ddd;
-    padding: 30px 0px;
-    margin-bottom: 50px;
-  }
-  .pricing .price-header {
-    text-align: center;
-    font-size: 44px;
-  }
-  
-  .pricing .price-list {
-    display: flex;
-    justify-content: center;
-  }
-  .pricing .price-list ul {
-    margin: 30px 0px;
-  }
-  .pricing .price-list ul li {
-    padding: 10px 0px;
-    font-size: 22px;
-  }
-
-  /* css for google map text */
+  /* css for google map text by George */
   
   .our_location {
     text-align: center;
@@ -278,7 +253,7 @@
 
   
 
-  /* css for footer */
+  /* css for footer by George*/
   
   .footer {
     width: 100%;
@@ -332,11 +307,6 @@
     color: #000;
   }
   
-  @media (min-width: 992px) {
-    .grid-for-rides {
-      grid-auto-flow: column;
-    }
-  }
   
   @media (max-width: 991px) {
     .footer {
@@ -362,12 +332,7 @@
       font-size: 22px;
       padding-top: 0px;
     }
-    .grid-for-rides .ride {
-      margin-bottom: 50px;
-    }
-    .grid-for-rides .ride:last-child {
-      margin-bottom: 0px;
-    }
+    
   }
   
   @media (max-width: 767px) {
@@ -397,13 +362,3 @@
       margin: 0.5rem 0px;
     }
   }
-  
-  /* Media Queries Below: */
-  
-  /* Below media quiery keeps ride images on homepage mobile responsive on larger devices greater than 623 pixels wide */
-  @media (min-width: 720px) {
-    .flex-container-for-rides {
-      display: inline;
-    }
-  }
-  
