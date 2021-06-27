@@ -25,11 +25,15 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
     text-align: center;
   }
 
-* h2{
+h2 {
     /* text-align: end; */
+    
 }  
 
-* p{
+p{
     /* text-align: end; */
     text-size: 16px;
 }
+
+
+
