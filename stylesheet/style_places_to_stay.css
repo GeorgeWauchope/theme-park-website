@@ -5,11 +5,12 @@
     /* scrollbar-color: transparent transparent; /* thumb and track color *
     scrollbar-width: 0px; */
     
+   
 }
 
 body {
+ 
     
-    /* max-width: 100%; */
     
   }
   
@@ -164,7 +165,7 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
   
   
 }
-/* css for preview */
+/* css for preview section*/
 
 #housingPreview{
     
@@ -175,7 +176,7 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
 
 }
-
+/* css for listings section*/
 .listings{
   overflow-y:hidden;
   position: relative;
@@ -186,7 +187,12 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
 
 
-
+.mapouter{
+  overflow: hidden;
+}
+.gmap_canvas{
+  overflow-y: hidden;
+}
 
 
 
