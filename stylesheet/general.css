@@ -20,7 +20,7 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
     
 * {
     margin: 0;
-    font-family: Verdana, Tahoma, sans-serif;
+    
     box-sizing: border-box;
     text-align: center;
 
@@ -32,12 +32,14 @@ src: url("/fonts/DingOSaurs-v8r9.ttf")format("truetype");
 
 h2 {
     /* text-align: end; */
+    font-family: "Fjalla One", Verdana, sans-serif;
     
 }  
 
 p{
     /* text-align: end; */
-    text-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 
