@@ -9,7 +9,7 @@
     width: 100%;
   }
   
-  .phone-and-button-top-nav > button {
+  /* .phone-and-button-top-nav > button {
     margin: 20px;
     padding: 10px;
     text-decoration: none;
@@ -19,7 +19,7 @@
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-  }
+  } */
   
   .phone-and-button-top-nav > p {
     margin-right: 30px;
@@ -184,14 +184,14 @@
     }
   }
   
-  .text-above-fold > button {
+  /* .text-above-fold > button {
     margin-top: 15px;
     padding: 10px;
     text-decoration: none;
     background-color: #b81106;
     color: white;
     font-size: 16px;
-  }
+  } */
 
 
   /* css for google map text by George */
