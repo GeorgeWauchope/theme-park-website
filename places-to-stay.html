@@ -192,6 +192,7 @@
                       <a href="#carousel__slide4"
                          class="carousel__navigation-button">Go to slide 4</a>
                     </li>
+                  </ol>
               </aside>
             </section>
         </div>
@@ -204,29 +205,80 @@
         <div class="listings">
           <h2>The Cabin Inn</h2>
             
-          
-          <section>
-            <img src="/img/cabin_inn/244913783.jpg" alt="picture of an available house" />
-            <div>
-              <p>Double beds: <span id="singleBedListing1">1</span><br/>
-                Single beds: <span id="doubleBedListing1">2</span><br/>
-                Childrens beds: <span id="childrensBedListing1">2</span></p>
-            </div>
+            <!-- <img src="/img/cabin_inn/244913783.jpg" alt="picture of an available house" /> -->
+            <section class="carousel" >
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide5"
+                      tabindex="5"
+                      class="carousel__slide">
+                      <img src="/img/cabin_inn/244913783.jpg" alt="picture of an available house" />
+                    <div class="carousel__snapper">
+                      <a href="#carousel__slide8"
+                         class="carousel__prev">Go to last slide</a>
+                  <li id="carousel__slide6"
+                      tabindex="5"
+                      class="carousel__slide">
+                      <img src="/img/cabin_inn/3c5e253b835805945ba087bde1ce0b1b.jpg" alt="picture of an available house" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide5"
+                       class="carousel__prev">Go to previous slide</a>
+                  <li id="carousel__slide7"
+                      tabindex="5"
+                      class="carousel__slide">
+                      <img src="/img/cabin_inn/alexander-kaunas-kg06gupFNZc-unsplash.jpg" alt="picture of an available house" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide6"
+                       class="carousel__prev">Go to previous slide</a>
+                  <li id="carousel__slide8"
+                      tabindex="5"
+                      class="carousel__slide">
+                      <img src="/img/cabin_inn/c2e3cc3988accd12e839a102f96affb1.jpg" alt="picture of an available house" />
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide7"
+                       class="carousel__prev">Go to previous slide</a>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide5"
+                           class="carousel__navigation-button">Go to slide 1</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide6"
+                           class="carousel__navigation-button">Go to slide 2</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide7"
+                           class="carousel__navigation-button">Go to slide 3</a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide8"
+                           class="carousel__navigation-button">Go to slide 4</a>
+                      </li>
+                    </ol> 
+                </aside>
+            </section>
+            <div class= "flex-box-listings" > 
+              <div>
+                <p>Double beds: <span id="singleBedListing1">1</span><br/>
+                  Single beds: <span id="doubleBedListing1">2</span><br/>
+                  Childrens beds: <span id="childrensBedListing1">2</span></p>
+              </div>
 
-            <div>
-              <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
-              <p>Price per day average: <span id="pricePerDay"></span> $</p>
-            </div>
-            <div class ="orderNowButton">
-              <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
-            </div>
-          </section>
+              <div>
+                <p>Price for the whole stay: <span id="priceTotal"></span> $</p>
+                <p>Price per day average: <span id="pricePerDay"></span> $</p>
+              </div>
+              <div class ="orderNowButton">
+                <p>All accomodations<br/>includes the stay<br/> in the park</p>
+                <button class = "book-btn" type="button">ORDER NOW</button>
+              </div>
+          </div>
         </div>
             
         <div class="listings">
 
-          <h2>Dino bunglos</h2>
+          <h2>Dino Bunglos</h2>
           <section>
             <img src="/img/dino_bungalos/no-description-1217243.jpg" alt="picture of an available house" />
             <div>
@@ -241,7 +293,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
@@ -262,7 +314,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
@@ -283,7 +335,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
@@ -304,7 +356,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
@@ -325,7 +377,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
@@ -346,7 +398,7 @@
             </div>
             <div class ="orderNowButton">
               <p>All accomodations<br/>includes the stay<br/> in the park</p>
-              <button type="button">ORDER NOW</button>
+              <button class = "book-btn" type="button">ORDER NOW</button>
             </div>
           </section>
         </div>
