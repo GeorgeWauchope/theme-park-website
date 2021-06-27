@@ -9,11 +9,12 @@
 
 body {
     
-    max-width: 100%;
+    /* max-width: 100%; */
     
   }
   
 /* places-to-stay.html main area*/
+
 /* css for seach field */
 
 #housingSearchBar{
@@ -22,6 +23,8 @@ body {
   position: relative;
   /* box-sizing: content-box; */
   align-self: flex-start;
+
+  
  
 }
 #housingSearchBar legend{
@@ -97,39 +100,52 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
 /* css for listings by Sveinbjørn */
 #housingListings{
-  /* margin: 10px;  */
+
+}
+#housingListings .listings{
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  /* align-content: stretch; */
+  /* justify-content: flex-end; */
+  
 
 }
 
-#housingListings .listings .orderNowButton{
-  /* left: auto;
-  right: 0;
-  bottom: 0;
-  margin: 500;  */
-
+.flex-box-listings{
+  
+  
+  display: flex;
+  
+  flex-direction: row;
+  text-align: center;
+  align-items:stretch;
+  align-self: stretch;
+  align-content: stretch;
+   
 }
-#housingListings .listings section{
+
+
+.listings section{
  
   display: flex;
   /* flex-wrap: nowrap; */
   /* flex-direction: row; */
   /* align-content: stretch; */
   /* justify-content: flex-end; */
-  align-items: stretch;
-  
-   /* default 0 */
-  
+  /* align-items: stretch; */
+  /* default 0 */
   /* margin:10px; */
-  max-width: 100%;
+  /* max-width: 100%; */
 }
-#housingListings .listings img{
+#housingListings img{
   /* object-fit: fill; */
   /* width: auto; */
- max-height: 200px;
-
+ /* max-height: 200px; */
+ 
 }
 #housingListings .listings{
-  object-fit: fill;
+  /* object-fit: fill; */
   border: blue;
   border-style: solid;
   
@@ -138,12 +154,13 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
   margin: 5px 0px;
   
 }
-.listings p *{
+.listings p {
   
-  flex-grow: 1;
-  margin: 5px;
+  /* flex-grow: 1; */
+  margin: 10px 15px ;
   /* min-width: 450; */
-width: 300;
+  
+  
   
   
 }
@@ -151,7 +168,7 @@ width: 300;
 
 #housingPreview{
     
-       
+  overflow-y:hidden; 
   position: relative;
   object-fit: cover;
 /* width: 100% */
@@ -159,32 +176,14 @@ width: 300;
 
 }
 
-/* Example of use of z-index and transparency */
-#housingPreview .carousel p {
-font-size: 25px;
-z-index: 1;
-
-position: absolute;
-bottom: 5%; 
-margin: 20px;
-background-color: rgba(255, 255, 255, 0.418);
-}
-#housingPreview  img {
-
-
-  /* border: 16px solid rgb(115, 150, 65); */
-  /* border-radius: 16px; */
-  /* margin-top: 15px; */
+.listings{
+  overflow-y:hidden;
+  position: relative;
   object-fit: cover;
-max-height: 100%;
-object-fit: fill;
-width: 100%;
-/* height: 100%; */
-
-
-
-position: relative;
+  height: auto;
+  /* width: 100%; */
 }
+
 
 
 
@@ -214,6 +213,13 @@ position: relative;
           ' our_location  '
           ' contact-us '
                             
+      }
+
+      .flex-box-listings{
+        /* display: inline; */
+        
+        flex-direction: column;
+      
       }
       
    
@@ -256,10 +262,18 @@ position: relative;
         grid-template-areas:
           'searchBar housingPreview  '
           'searchBar housingListings  '
-          'our_location our_location'
-          'contact-us contact-us'
+          'searchBar our_location'
+          'searchBar contact-us'
                             
       }
+
+    /* Sticky searchbar */
+  #housingSearchBar{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
     
     /* css for re-fitting contact when resizing */
        .contact-us {
@@ -307,11 +321,28 @@ position: relative;
           
            
   }
+
+ /* not functional */
+   .contact-us iframe {
+    width: 95%;
+  }
+  
+
+
+  /* Sticky searchbar */
+  #housingSearchBar{
+      position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
       
       /* css for fitting contact form as side content */
   
   .contact-us {
-    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 98%;
     margin-top: 5px;
     margin-left: auto;
