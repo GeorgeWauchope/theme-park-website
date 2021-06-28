@@ -1,47 +1,40 @@
-/* general.css sets sitewide default values  */ 
-
-
+/* general.css sets sitewide default values  */
 
 * {
-    margin: 0;
-    
-    box-sizing: border-box;
-    text-align: center;
+  margin: 0;
 
-    scroll-snap-type: none;
-    overflow: none;
-   
-    
-  }
+  box-sizing: border-box;
+  text-align: center;
 
-h1{
+  scroll-snap-type: none;
+  overflow: none;
+}
+
+h1 {
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 30px;
 }
 
 h2 {
-    /* text-align: end; */
-    font-family: "Fjalla One", Verdana, sans-serif;
-    font-size: 34px;
-    margin: 0px 5px;
-} 
-
-h3{
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 20px;
+  /* text-align: end; */
+  font-family: "Fjalla One", Verdana, sans-serif;
+  font-size: 34px;
+  margin: 0px 5px;
 }
 
-h4{
-    font-family: "Fjalla One", Verdana, sans-serif;
-    font-size: 20px;
-    margin: 0px 10px;
+h3 {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 20px;
 }
 
-p{
-    /* text-align: end; */
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 16px;
+h4 {
+  font-family: "Fjalla One", Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0px 10px;
 }
 
-
-
+p {
+  /* text-align: end; */
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}

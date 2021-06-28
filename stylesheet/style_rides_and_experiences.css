@@ -1,29 +1,27 @@
-
-  
-/*Below is CSS coded by Martha Fortrie*/ 
+/*Below is CSS coded by Martha Fortrie*/
 
 /* Main styling container holding all content of Rides and Experiences page */
 .mainRidesExperiences {
-display: flex;
-justify-content: center;
-align-items: left;
-flex-direction: column;
-overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 /* Styling container holding intro text */
 .RandEContainer {
-width: 100%;
-display: flex;
-box-sizing: border-box;
-flex-direction: column;
-text-align: center;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: center;
 }
 
 /* styling for header 1 and header 2 within container */
-.RandEContainer > h1{
-text-align: center;
-padding: 20px 20px 20px 20px;
+.RandEContainer > h1 {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
 }
 
 /* styling for paragraph text within container */
@@ -32,13 +30,13 @@ padding: 20px 20px 20px 20px;
 }
 
 /* styling container for all the rides together  */
-.ridesContainer { 
-display: flex;
-width: 100%;
-justify-content: center;
-flex-direction: row; 
-padding: 5px; 
-font-size: 1em; 
+.ridesContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 1em;
 }
 
 /* annimation for header 2 in the ridesMain container  */
@@ -46,25 +44,25 @@ font-size: 1em;
   cursor: pointer;
   transition: all 2s linear;
   transform: rotateX(360deg);
-  }
+}
 
 /* styles width of all images in rides container */
 .ridesContainer > img {
-  width:100%;
-  }
+  width: 100%;
+}
 
 /* styles all the div tags for the text in the rides container  */
 .ridesContainer > div {
   line-height: 1.5;
   padding: 15px;
   width: 400px;
-  }
+}
 
 /* styles only the header 3 from rides container  */
 .ridesContainer h3 {
-    font-weight:bold;
-    color: #b81106;
-    padding: 1rem;
+  font-weight: bold;
+  color: #b81106;
+  padding: 1rem;
 }
 
 .TyrannoCont {
@@ -84,45 +82,45 @@ font-size: 1em;
 
 /* styling container for all the shows and events together  */
 .ShowsAndEventsContainer {
-display: flex;
-width: 100%;
-justify-content: center;
-flex-direction: row;
-padding: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
 }
 
 /* annimation for header 2 in the showsMain container  */
 .ShowsMain:hover > h2 {
-cursor: pointer;
-transition: all 2s linear;
-transform: rotateX(360deg);
-}  
+  cursor: pointer;
+  transition: all 2s linear;
+  transform: rotateX(360deg);
+}
 
 /* styles width of all images in ShowsAndEventsContainer */
 .ShowsAndEventsContainer > img {
-width: 100%;  
+  width: 100%;
 }
 
 /* styles all the div tags for the text in the ShowsAndEventsContainer  */
 .ShowsAndEventsContainer > div {
   line-height: 1.5;
   padding: 15px;
-  width: 400px; 
+  width: 400px;
 }
 
 /* styles only the header 3 from the shows and events container  */
 .ShowsAndEventsContainer h3 {
-  font-weight:bold;
+  font-weight: bold;
   color: #b81106;
   padding: 1rem;
 }
 
-.JurassicCont { 
+.JurassicCont {
   overflow: hidden;
   max-width: 100%;
 }
 
-.DinoDanceCont{
+.DinoDanceCont {
   overflow: hidden;
   max-width: 100%;
 }
@@ -134,59 +132,59 @@ width: 100%;
 
 /* styling container for all Restaurants and Dining options together  */
 .RestaurantsContainer {
-display: flex;
-width: 100%;
-flex-direction: row;
-justify-content: center;
-padding: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
 }
 
 /* annimation for header 2 in the restMain container  */
 .RestMain:hover > h2 {
-cursor: pointer;
-transition: all 2s linear;
-transform: rotateX(360deg);
+  cursor: pointer;
+  transition: all 2s linear;
+  transform: rotateX(360deg);
 }
 
 /* styles width of all images in RestaurantsContainer */
 .RestaurantsContainer > img {
-padding: 1rem;
+  padding: 1rem;
 }
 
 /* styles all the div tags for the text in the RestaurantsContainer  */
 .RestaurantsContainer > div {
   line-height: 1.5;
   padding: 15px;
-  width: 400px; 
+  width: 400px;
 }
 
 /* styles only the header 3 from the RestaurantsContainer  */
 .RestaurantsContainer h3 {
-font-weight:bold;
-color: #b81106;
-padding: 1rem;
+  font-weight: bold;
+  color: #b81106;
+  padding: 1rem;
 }
 
 .HerbivoreCont {
   overflow: hidden;
   max-width: 100%;
 }
-.DinoBurgersCont {  
+.DinoBurgersCont {
   overflow: hidden;
   max-width: 100%;
 }
 
-.McdonaldsCont {   
+.McdonaldsCont {
   overflow: hidden;
   max-width: 100%;
 }
 
 /* styling container for all content from MapCont  */
-.MapCont{
-display: flex;
-width: 100%;
-flex-direction: column;
-align-items: center;
+.MapCont {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Addes margin to top of the paragraph tag */
@@ -196,19 +194,18 @@ align-items: center;
 
 /* Adds padding to the table with opening hours */
 table {
-padding: 10px;
+  padding: 10px;
 }
-
 
 /* For smaller screens enables mobile responsiveness content shown in columns */
-@media only screen and (max-width: 720px){
-.ridesContainer {
-flex-direction: column;
-}
-.ShowsAndEventsContainer {
-flex-direction: column;
-}
-.RestaurantsContainer {
-flex-direction: column;
-}
+@media only screen and (max-width: 720px) {
+  .ridesContainer {
+    flex-direction: column;
+  }
+  .ShowsAndEventsContainer {
+    flex-direction: column;
+  }
+  .RestaurantsContainer {
+    flex-direction: column;
+  }
 }

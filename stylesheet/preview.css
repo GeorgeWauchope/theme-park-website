@@ -2,314 +2,296 @@
  this preview.css is only for the image carusels used in places-to-stay.html
  It was seperated because it is a complicated system.*/
 
-
 /* Animation for the carousel 
 These animations are used to change the images*/
 @keyframes tonext {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
+  75% {
+    left: 0;
   }
-  
-  @keyframes tostart {
-    55% {
-      left: 0;
-    }
-    95% {
-      left: -400%;
-    }
-    98% {
-      left: -400%;
-    }
-    99% {
-      left: 0;
-    }
+  95% {
+    left: 100%;
   }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
 
-  
-  
-  @keyframes snap { 
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
+@keyframes tostart {
+  55% {
+    left: 0;
   }
+  95% {
+    left: -400%;
+  }
+  98% {
+    left: -400%;
+  }
+  99% {
+    left: 0;
+  }
+}
 
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
 
-  /*General setting for carousel */
-  .listings *{
-    overflow-anchor: none;
-  }
-  
-  #housingPreview *::-webkit-scrollbar {
-    width: 0;
-  }
-  .listings *::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  #housingPreview *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .listings *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  #housingPreview *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-  .listings *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-  
-  #housingPreview * {
-    -ms-overflow-style: none;
-  }
-  .listings * {
-    -ms-overflow-style: none;
-  }
-  
+/*General setting for carousel */
+.listings * {
+  overflow-anchor: none;
+}
 
+#housingPreview *::-webkit-scrollbar {
+  width: 0;
+}
+.listings *::-webkit-scrollbar {
+  width: 0;
+}
+
+#housingPreview *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.listings *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#housingPreview *::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+.listings *::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+#housingPreview * {
+  -ms-overflow-style: none;
+}
+.listings * {
+  -ms-overflow-style: none;
+}
 
 /* Setting text properites inside the carousel
   Example of use of z-index and transparency */
 #housingPreview p {
   font-size: 25px;
   z-index: 1;
-  
+
   position: absolute;
-  bottom: 5%; 
+  bottom: 5%;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.418);
-  }
+}
 
 #housingPreview h2 {
   font-size: 45px;
   z-index: 1;
-  
+
   position: absolute;
-  top: 0%; 
+  top: 0%;
   right: 0%;
   margin: 20px;
   color: rgba(255, 255, 255, 0.623);
 }
 
 .listings p {
-  margin: 5px 5px ;
+  margin: 5px 5px;
 }
 
-.listings h2{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-    padding: 5px;
-    border-radius: 45%;
-    background: rgba(255, 255, 255, 0.651);
-
+.listings h2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 0.651);
 }
 
 /* css for images in the  carousel */
-  #housingPreview  img {
+#housingPreview img {
   object-fit: cover;
   width: 100%;
- 
-  }
+}
 
-  
-  .listings  img {
+.listings img {
   object-fit: cover;
- 
-  }
- 
+}
+
 /*  the carousel uses ol with li to contain its items
   here are their css properties */
-  #housingPreview ol, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .listings ol, li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  
-  }
+#housingPreview ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.listings ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 /* Each section in each carousel set to flex */
-  .listings section{
- 
-    display: flex;
-  }
-  
- /* The main class carousel the padding top sets the 
+.listings section {
+  display: flex;
+}
+
+/* The main class carousel the padding top sets the 
  height of the window and decides where the buttons go*/
-  #housingPreview .carousel {
-    position: relative;
-    padding-top: 69%;
-    filter: drop-shadow(0 0 10px #0003);
+#housingPreview .carousel {
+  position: relative;
+  padding-top: 69%;
+  filter: drop-shadow(0 0 10px #0003);
+}
+
+.listings .carousel {
+  position: relative;
+  padding-top: 200px;
+  filter: drop-shadow(0 0 10px #0003);
+  overflow: none;
+}
+
+/* properties for all carousels */
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  overflow: none;
+}
+
+.listings .carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+/* This media tag starts the animation that rotates the images */
+@media (hover: hover) {
+  #housingPreview .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 
-  .listings .carousel {
-    position: relative;
-    padding-top: 200px;
-    filter: drop-shadow(0 0 10px #0003);
-    overflow: none;
-  }
-  
-
-  /* properties for all carousels */
-  .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overflow-y: hidden;
-  }
-  
-  .carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
-    overflow: none;
+  #housingPreview .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
   }
 
-  .listings .carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
+  .listings .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
   }
- 
-  .carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center; 
-
+  .listings .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
   }
-
-  /* This media tag starts the animation that rotates the images */
-  @media (hover: hover) {
-    #housingPreview .carousel__snapper {
-        animation-name: tonext, snap;
-        animation-timing-function: ease;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-      }
-     
-     #housingPreview .carousel__slide:last-child .carousel__snapper {
-        animation-name: tostart, snap;
-      }
-     
-
-      .listings .carousel__slide:last-child .carousel__snapper {
-        animation-name: tostart, snap;
-      }
-      .listings  .carousel__snapper  {
-          
-          animation-name: tonext, snap;
-          animation-timing-function: ease;
-          animation-duration: 2.5s;
-          animation-iteration-count: infinite;
-        }
-  }
+}
 /* Prevents animation if the user sets prefer reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-     .carousel__snapper {
-      animation-name: none;
-    }
-  }
-  
-  /* Makes the images stop rotating if you mouse over or have the carusel as 
-  the active object */
-  #housingPreview .carousel:hover .carousel__snapper,
-  #housingPreview .carousel:focus-within .carousel__snapper {
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
     animation-name: none;
   }
+}
 
-  /* Makes the images stop rotating if you hover over the carousel */
- .listings .carousel:hover .carousel__snapper{
-        animation-name: none;
-      }
-    
- /* more properties for all carousels */     
-  .carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-  }
+/* Makes the images stop rotating if you mouse over or have the carusel as 
+  the active object */
+#housingPreview .carousel:hover .carousel__snapper,
+#housingPreview .carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
 
-  .carousel__navigation-list,
-  .carousel__navigation-item {
-    display: inline-block;
-    
-  }
-  
-  /* Only the preview has buttons */
-  #housingPreview .carousel__navigation-button {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
- 
-  }
+/* Makes the images stop rotating if you hover over the carousel */
+.listings .carousel:hover .carousel__snapper {
+  animation-name: none;
+}
 
-  .carousel::before,
-  .carousel::after,
-  .carousel__prev,
-  .carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
-    outline: 0;
- 
-  }
-  
-  /* #housingPreview  */
-  .carousel::before,
-  .carousel__prev {
-    left: -1rem;
-  }
-  
-  /* #housingPreview  */
-  .carousel::after,
-  .carousel__next {
-    right: -1rem;  
-  }
-  
+/* more properties for all carousels */
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+/* Only the preview has buttons */
+#housingPreview .carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+/* #housingPreview  */
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+/* #housingPreview  */
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}

@@ -1,46 +1,38 @@
-
 /* css unique to places-to-stay.html*/
 
 /* css for seach field */
 
-#housingSearchBar{
- text-align: center; 
+#housingSearchBar {
+  text-align: center;
   margin: 11px;
   position: relative;
   /* box-sizing: content-box; */
   align-self: flex-start;
-
-  
- 
 }
-#housingSearchBar legend{
+#housingSearchBar legend {
   text-align: left;
 }
 
-.dateField{
-  margin-left: auto; 
+.dateField {
+  margin-left: auto;
   margin-right: 0;
 }
 
-
 #fromDate,
-#toDate{
-       
+#toDate {
   margin: 2px 10px;
   /* padding 10px; */
- 
 }
- #numberInputTop,
- #numberInputBottom{
+#numberInputTop,
+#numberInputBottom {
   margin: 4px;
 }
 #numberInputTop img,
-#numberInputBottom img{
+#numberInputBottom img {
   object-fit: cover;
- 
 }
 
-.numberInput{
+.numberInput {
   width: 13%;
 }
 
@@ -48,45 +40,42 @@
 imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
 
 #searchButtonListings,
-#searchButtonPreview{
+#searchButtonPreview {
   /* font: bold 11px Arial;*/
   /* text-decoration: none; */
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   color: #333333;
   padding: 2px 6px 2px 6px;
-  border-top: 2px solid #CCCCCC;
+  border-top: 2px solid #cccccc;
   border-right: 3px solid #333333;
   border-bottom: 3px solid #333333;
-  border-left: 2px solid #CCCCCC;
+  border-left: 2px solid #cccccc;
   border-radius: 3%;
   cursor: pointer;
 }
 
 #searchButtonListings:hover,
 #searchButtonPreview:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #222222;
-  border-top: 2px solid #DDDDDD;
+  border-top: 2px solid #dddddd;
   border-right: 3px solid #222222;
   border-bottom: 3px solid #222222;
-  border-left: 2px solid #DDDDDD;
+  border-left: 2px solid #dddddd;
 }
 
 #searchButtonListings:active,
 #searchButtonPreview:active {
   background-color: #333333;
-  color: #EEEEEE;
-  border-top: 2px solid #AAAAAA;
+  color: #eeeeee;
+  border-top: 2px solid #aaaaaa;
   border-right: 3px solid #222222;
   border-bottom: 3px solid #222222;
-  border-left: 2px solid #AAAAAA;
+  border-left: 2px solid #aaaaaa;
 }
 
-
-
 /* css for listings section*/
-#housingListings .listings{
-
+#housingListings .listings {
   border: blue;
   border-style: solid;
   padding: 5px;
@@ -96,27 +85,24 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
   border-radius: 1%;
 }
 /* For the text bollow the pictures of each listing */
-.flex-box-listings{
-    
+.flex-box-listings {
   display: flex;
   flex-direction: row;
   text-align: center;
-  align-items:stretch;
+  align-items: stretch;
   align-self: stretch;
   align-content: stretch;
-   
 }
 /* css for preview section*/
 
-#housingPreview{
-  overflow-y:hidden; 
+#housingPreview {
+  overflow-y: hidden;
   position: relative;
   object-fit: cover;
 }
 
-
 /* css for google map adjusted to places-to-stay*/
-.our_location{
+.our_location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,152 +110,146 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
   overflow: hidden;
 }
 
-
 /* grid with media queries for different devices based on screen width*/
 
-#housingSearchBar { grid-area: searchBar; }
-#housingPreview { grid-area: housingPreview; }
-#housingListings { grid-area: housingListings; }
-.our_location { grid-area: our_location;}
-.contact-us { grid-area: contact-us;}
+#housingSearchBar {
+  grid-area: searchBar;
+}
+#housingPreview {
+  grid-area: housingPreview;
+}
+#housingListings {
+  grid-area: housingListings;
+}
+.our_location {
+  grid-area: our_location;
+}
+.contact-us {
+  grid-area: contact-us;
+}
 
 /*Mobile grid, small-tablet, old screen
 Each item listed in a column*/
-@media only screen and (max-width: 991px){
-    #grid-container-PtS { 
-        display: grid;
-        grid-template-columns: auto;
-        width: 100%;
-        object-fit: cover;
-        
-        grid-template-areas:
-          ' searchBar '
-          ' housingPreview  '
-          ' housingListings  '
-          ' our_location  '
-          ' contact-us '
-                            
-      }
-      /* make the listing take smaller space by making them flex down */
-      .flex-box-listings{
-        flex-direction: column;
-      }
-      
-   
-       /* css for re-fitting contact when resizing */
-  
-       .contact-us {
-        width: 80%;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px 0px;
-        margin-bottom: 50px;
-      }
- 
-      .contact-us .contact-form {
-        display: flex;
-        justify-content: center;
-      }
-      .contact-us .contact-form .form-group {
-        margin: 25px 0px;
-      }
-      .contact-us .contact-form .form-group input {
-        width: 85%;
-        margin-left: 12px;
-      }
-      .contact-us .contact-form .form-group textarea {
-        width: 85%;
-        margin-left: 12px;
-      }
-      
+@media only screen and (max-width: 991px) {
+  #grid-container-PtS {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    object-fit: cover;
+
+    grid-template-areas:
+      " searchBar "
+      " housingPreview  "
+      " housingListings  "
+      " our_location  "
+      " contact-us ";
+  }
+  /* make the listing take smaller space by making them flex down */
+  .flex-box-listings {
+    flex-direction: column;
+  }
+
+  /* css for re-fitting contact when resizing */
+
+  .contact-us {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+  }
+
+  .contact-us .contact-form {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-us .contact-form .form-group {
+    margin: 25px 0px;
+  }
+  .contact-us .contact-form .form-group input {
+    width: 85%;
+    margin-left: 12px;
+  }
+  .contact-us .contact-form .form-group textarea {
+    width: 85%;
+    margin-left: 12px;
+  }
 }
 /*Tablet and Laptop grid-------------------------------------
 search always present with sticky searchbar
 contact form and map at the bottom*/
-@media only screen and (min-width: 992px) and (max-width: 1499px){
-    #grid-container-PtS {
-        display: grid;
-        grid-template-columns: 380px auto;
-        width: 100%;
-        object-fit: cover;
-        
-        grid-template-areas:
-          'searchBar housingPreview  '
-          'searchBar housingListings  '
-          'searchBar our_location'
-          'searchBar contact-us'
-                            
-      }
-
-    /* Sticky searchbar */
-  #housingSearchBar{
-    position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-    
-    /* css for re-fitting contact when resizing */
-        .contact-us {
-        width: 80%;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 30px 0px;
-        margin-bottom: 50px;
-      }
- 
-      .contact-us .contact-form {
-        display: flex;
-        justify-content: center;
-      }
-      .contact-us .contact-form .form-group {
-        margin: 25px 0px;
-      }
-      .contact-us .contact-form .form-group input {
-        width: 85%;
-        margin-left: 12px;
-      }
-      .contact-us .contact-form .form-group textarea {
-        width: 85%;
-        margin-left: 12px; 
-      }
-
-
-      
-}
-/*Desktop/Wide grid-------------------------------------
-maximun content in one page with Sticky side content, most information at once*/
-@media only screen and (min-width: 1500px){
-    
+@media only screen and (min-width: 992px) and (max-width: 1499px) {
   #grid-container-PtS {
-        display: grid;
-        grid-template-columns: 380px auto 320px;
-        width: 100%;
-        object-fit: cover;
-        
-        grid-template-areas:
-          'searchBar housingPreview   contact-us'
-          'searchBar housingListings  contact-us'
-          'searchBar our_location     contact-us'
-          
-           
+    display: grid;
+    grid-template-columns: 380px auto;
+    width: 100%;
+    object-fit: cover;
+
+    grid-template-areas:
+      "searchBar housingPreview  "
+      "searchBar housingListings  "
+      "searchBar our_location"
+      "searchBar contact-us";
   }
 
- 
-
-
   /* Sticky searchbar */
-  #housingSearchBar{
-      position: -webkit-sticky;
+  #housingSearchBar {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
-  
-      
-      /* css for fitting contact form as side content */
-  
+
+  /* css for re-fitting contact when resizing */
+  .contact-us {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+  }
+
+  .contact-us .contact-form {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-us .contact-form .form-group {
+    margin: 25px 0px;
+  }
+  .contact-us .contact-form .form-group input {
+    width: 85%;
+    margin-left: 12px;
+  }
+  .contact-us .contact-form .form-group textarea {
+    width: 85%;
+    margin-left: 12px;
+  }
+}
+/*Desktop/Wide grid-------------------------------------
+maximun content in one page with Sticky side content, most information at once*/
+@media only screen and (min-width: 1500px) {
+  #grid-container-PtS {
+    display: grid;
+    grid-template-columns: 380px auto 320px;
+    width: 100%;
+    object-fit: cover;
+
+    grid-template-areas:
+      "searchBar housingPreview   contact-us"
+      "searchBar housingListings  contact-us"
+      "searchBar our_location     contact-us";
+  }
+
+  /* Sticky searchbar */
+  #housingSearchBar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  /* css for fitting contact form as side content */
+
   .contact-us {
     position: -webkit-sticky;
     position: sticky;
@@ -281,7 +261,7 @@ maximun content in one page with Sticky side content, most information at once*/
     padding: 5px 0px;
     margin-bottom: auto;
   }
- 
+
   .contact-us .contact-form {
     display: block;
     justify-content: top;
@@ -297,24 +277,18 @@ maximun content in one page with Sticky side content, most information at once*/
     width: 95%;
     margin-left: 10px;
   }
- 
- 
-
 }
-
-
 
 /* css for search Button by Sveibjørn. Toggles between showing previews and listings */
 
-
 /* Change button */
-#searchListings ,
+#searchListings,
 #searchPreview {
   display: none;
   overflow-anchor: none;
- }
+}
 
- #searchButtonListings{
+#searchButtonListings {
   display: block;
 }
 
@@ -322,35 +296,28 @@ maximun content in one page with Sticky side content, most information at once*/
   display: block;
 }
 
-#searchPreview:checked~#housingSearchBar #searchButtonPreview{
+#searchPreview:checked ~ #housingSearchBar #searchButtonPreview {
   display: none;
 }
 
-#searchListings:checked~#housingSearchBar #searchButtonListings{
-  display: none; 
+#searchListings:checked ~ #housingSearchBar #searchButtonListings {
+  display: none;
 }
-
 
 /* Change between preview and listings */
 
- .carousel{
+.carousel {
   display: none;
 }
 
-#searchPreview:checked~#housingPreview .carousel{
+#searchPreview:checked ~ #housingPreview .carousel {
   display: block;
- }
+}
 
- .listings{
+.listings {
   display: none;
 }
 
-
-#searchListings:checked~#housingListings .listings{
+#searchListings:checked ~ #housingListings .listings {
   display: block;
- }
-
-
-
-
-
+}

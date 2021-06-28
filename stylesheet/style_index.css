@@ -1,7 +1,5 @@
 /* All CSS Below Is From George Wauchope & Is For The Home Page */
 
-
-
 /* Below is CSS Grid for the rides part of homepage */
 .rides_H1 {
   margin-top: 60px;
@@ -70,9 +68,6 @@
   font-size: 22px;
 }
 
-
-
-
 @media (min-width: 992px) {
   .grid-for-rides {
     grid-auto-flow: column;
@@ -80,7 +75,6 @@
 }
 
 @media (max-width: 991px) {
-  
   .grid-for-rides .ride {
     margin-bottom: 50px;
   }
@@ -88,9 +82,6 @@
     margin-bottom: 0px;
   }
 }
-
-
-
 
 /* Below media quiery keeps ride images on homepage mobile responsive on larger devices greater than 623 pixels wide */
 @media (min-width: 720px) {

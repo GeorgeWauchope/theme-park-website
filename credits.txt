@@ -135,3 +135,6 @@ img_food_1 - Louis Hansel -  https://unsplash.com/photos/EHULTRqQqbk
 img_food_2 - Syed Ahmad - https://unsplash.com/photos/kgjQ1AGDwE0
 img_food_3 - Liam Shaw - https://unsplash.com/photos/w4097QxuxQ4
 park map - https://www.roarrdinosauradventure.co.uk/view-map/
+
+Pure css image carousel adapted by Sveinbjørn from https://css-tricks.com/css-only-carousel/ 
+Serach-button css(places-to stay.html) inspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-link-look-like-a-button */
