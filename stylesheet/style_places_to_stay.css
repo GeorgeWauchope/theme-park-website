@@ -1,20 +1,5 @@
-/* properties for the entire page */
 
-* {
-   
-    /* scrollbar-color: transparent transparent; /* thumb and track color *
-    scrollbar-width: 0px; */
-    
-   
-}
-
-body {
- 
-    
-    
-  }
-  
-/* places-to-stay.html main area*/
+/* css unique to places-to-stay.html*/
 
 /* css for seach field */
 
@@ -99,25 +84,21 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
 
 
-/* css for listings by Sveinbjørn */
-#housingListings{
-
-}
+/* css for listings section*/
 #housingListings .listings{
-  /* display: flex; */
-  /* flex-wrap: nowrap; */
-  /* flex-direction: row; */
-  /* align-content: stretch; */
-  /* justify-content: flex-end; */
-  
 
+  border: blue;
+  border-style: solid;
+  padding: 5px;
+  margin: 5px 0px;
+  position: relative;
+  height: auto;
+  border-radius: 1%;
 }
-
+/* For the text bollow the pictures of each listing */
 .flex-box-listings{
-  
-  
+    
   display: flex;
-  
   flex-direction: row;
   text-align: center;
   align-items:stretch;
@@ -125,89 +106,26 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
   align-content: stretch;
    
 }
-
-
-.listings section{
- 
-  display: flex;
-  /* flex-wrap: nowrap; */
-  /* flex-direction: row; */
-  /* align-content: stretch; */
-  /* justify-content: flex-end; */
-  /* align-items: stretch; */
-  /* default 0 */
-  /* margin:10px; */
-  /* max-width: 100%; */
-}
-#housingListings img{
-  /* object-fit: fill; */
-  /* width: auto; */
- /* max-height: 200px; */
- 
-}
-#housingListings .listings{
-  /* object-fit: fill; */
-  border: blue;
-  border-style: solid;
-  
-  /* color: red; */
-  padding: 5px;
-  margin: 5px 0px;
-  
-}
-.listings p {
-  
-  /* flex-grow: 1; */
-  margin: 10px 15px ;
-  /* min-width: 450; */
-  
-  
-  
-  
-}
 /* css for preview section*/
 
 #housingPreview{
-    
   overflow-y:hidden; 
   position: relative;
   object-fit: cover;
-/* width: 100% */
-
-
-}
-/* css for listings section*/
-.listings{
-  overflow-y:hidden;
-  position: relative;
-  object-fit: cover;
-  height: auto;
-  /* width: 100%; */
 }
 
 
-
-.mapouter{
-  /* display: flex;
-  justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden; */
-}
-.gmap_canvas{
-  /* overflow: hidden; */
-}
+/* css for google map adjusted to places-to-stay*/
 .our_location{
   display: flex;
   justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 
-
-
+/* grid with media queries for different devices based on screen width*/
 
 #housingSearchBar { grid-area: searchBar; }
 #housingPreview { grid-area: housingPreview; }
@@ -215,7 +133,8 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 .our_location { grid-area: our_location;}
 .contact-us { grid-area: contact-us;}
 
-/*Mobile*/
+/*Mobile grid, small-tablet, old screen
+Each item listed in a column*/
 @media only screen and (max-width: 991px){
     #grid-container-PtS { 
         display: grid;
@@ -231,12 +150,9 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
           ' contact-us '
                             
       }
-
+      /* make the listing take smaller space by making them flex down */
       .flex-box-listings{
-        /* display: inline; */
-        
         flex-direction: column;
-      
       }
       
    
@@ -268,7 +184,9 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
       }
       
 }
-/*Tablet and Laptop-------------------------------------*/
+/*Tablet and Laptop grid-------------------------------------
+search always present with sticky searchbar
+contact form and map at the bottom*/
 @media only screen and (min-width: 992px) and (max-width: 1499px){
     #grid-container-PtS {
         display: grid;
@@ -293,7 +211,7 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
     
     /* css for re-fitting contact when resizing */
-       .contact-us {
+        .contact-us {
         width: 80%;
         margin-top: 50px;
         margin-left: auto;
@@ -321,7 +239,8 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 
       
 }
-/*Desktop/Wide screen-------------------------------------*/
+/*Desktop/Wide grid-------------------------------------
+maximun content in one page with Sticky side content, most information at once*/
 @media only screen and (min-width: 1500px){
     
   #grid-container-PtS {
@@ -334,7 +253,6 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
           'searchBar housingPreview   contact-us'
           'searchBar housingListings  contact-us'
           'searchBar our_location     contact-us'
-          
           
            
   }
@@ -379,10 +297,8 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
     width: 95%;
     margin-left: 10px;
   }
- .our_location{
-   text-align:center;
- }
-       
+ 
+ 
 
 }
 
@@ -415,7 +331,7 @@ imspired by https://stackoverflow.com/questions/710089/how-do-i-make-an-html-lin
 }
 
 
-/* Change the content */
+/* Change between preview and listings */
 
  .carousel{
   display: none;

@@ -1,6 +1,10 @@
-/* css adapted by Sveinbjørn from https://css-tricks.com/css-only-carousel/ */
+/* css adapted by Sveinbjørn from https://css-tricks.com/css-only-carousel/ 
+ this preview.css is only for the image carusels used in places-to-stay.html
+ It was seperated because it is a complicated system.*/
 
 
+/* Animation for the carousel 
+These animations are used to change the images*/
 @keyframes tonext {
     75% {
       left: 0;
@@ -16,7 +20,7 @@
     }
   }
   
-  @keyframes tostart4 {
+  @keyframes tostart {
     55% {
       left: 0;
     }
@@ -24,7 +28,7 @@
       left: -400%;
     }
     98% {
-      left: -300%;
+      left: -400%;
     }
     99% {
       left: 0;
@@ -47,7 +51,9 @@
       scroll-snap-align: center;
     }
   }
-  /* .carousel__slide */
+
+
+  /*General setting for carousel */
   .listings *{
     overflow-anchor: none;
   }
@@ -84,7 +90,8 @@
   
 
 
-/* Example of use of z-index and transparency */
+/* Setting text properites inside the carousel
+  Example of use of z-index and transparency */
 #housingPreview p {
   font-size: 25px;
   z-index: 1;
@@ -95,118 +102,81 @@
   background-color: rgba(255, 255, 255, 0.418);
   }
 
-  #housingPreview h2 {
-    font-size: 45px;
-    z-index: 1;
-    
-    position: absolute;
-    top: 0%; 
-    right: 0%;
-    margin: 20px;
-    color: rgba(255, 255, 255, 0.623);
-    }
-
-  #housingPreview  img {
+#housingPreview h2 {
+  font-size: 45px;
+  z-index: 1;
   
-  
-    /* border: 16px solid rgb(115, 150, 65); */
-    /* border-radius: 16px; */
-    /* margin-top: 15px; */
-    /* object-fit: cover; */
-  /* max-height: 100%; */
-  object-fit: cover;
-  width: 100%;
-  /* height: 100%; */
- 
- 
-  /* position: relative; */
-  }
+  position: absolute;
+  top: 0%; 
+  right: 0%;
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.623);
+}
 
-  .listings h2{
+.listings p {
+  margin: 5px 5px ;
+}
+
+.listings h2{
     position: absolute;
     top: 0%;
     left: 0%;
     z-index: 1;
     padding: 5px;
-    /* margin: 30px; */
     border-radius: 45%;
-    /* background-color: rgba(255, 255, 255, 0.63); */
     background: rgba(255, 255, 255, 0.651);
 
+}
 
-  }
-  .listings  img *{
-  
-    /* border: 16px solid rgb(115, 150, 65); */
-    /* border-radius: 16px; */
-    /* margin-top: 15px; */
-    /* object-fit: none; */
-  /* max-height: 100%; */
+/* css for images in the  carousel */
+  #housingPreview  img {
   object-fit: cover;
-  /* height: 100%; */
-  
-
-  /* max-height: 100%; */
-
-  /* height: 100%; */
-
-  /* position: relative; */
+  width: 100%;
+ 
   }
-  /* .carousel {
-    width: 1400;
-  } */
+
   
-
-
-
+  .listings  img {
+  object-fit: cover;
+ 
+  }
+ 
+/*  the carousel uses ol with li to contain its items
+  here are their css properties */
   #housingPreview ol, li {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* overflow-y:none; */
-
   }
   .listings ol, li{
     list-style: none;
     margin: 0;
     padding: 0;
-    /* overflow-y:none; */
   
   }
-  /* .listings ol{
-    width: 200;
-  } */
+/* Each section in each carousel set to flex */
+  .listings section{
+ 
+    display: flex;
+  }
   
-  /* #housingPreview  */
+ /* The main class carousel the padding top sets the 
+ height of the window and decides where the buttons go*/
   #housingPreview .carousel {
     position: relative;
     padding-top: 69%;
-    /* display: none; */
-    /* max-height: 980px; */
     filter: drop-shadow(0 0 10px #0003);
-    /* perspective: 100px; */
-    /* overflow-anchor: none; */
-    /* overflow-y:none; */
- 
   }
 
   .listings .carousel {
     position: relative;
-    /* left:0%;
-    right: auto; */
     padding-top: 200px;
-    /* height: 100%; */
-    /* display: none; */
-    /* max-height: 980px; */
     filter: drop-shadow(0 0 10px #0003);
-    /* perspective: 100px; */
-
-    
     overflow: none;
-    /* overflow-y:none; */
   }
   
-  /* #housingPreview  */
+
+  /* properties for all carousels */
   .carousel__viewport {
     position: absolute;
     top: 0;
@@ -221,41 +191,17 @@
     overflow-y: hidden;
   }
   
-  /* #housingPreview  */
   .carousel__slide {
     position: relative;
     flex: 0 0 100%;
     overflow: none;
-    /* width: 100%; */
-    
-    /* counter-increment: item; */
   }
 
   .listings .carousel__slide {
     position: relative;
     flex: 0 0 100%;
- 
-    
-    /* counter-increment: item; */
   }
-  
-  /* #housingPreview .carousel__slide:nth-child(even) {
-  
-  } */
-  
-  /* #housingPreview  */
-  /* .carousel__slide:before {
-    content: counter(item);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-40%,70px);
-    /* color: #fff;
-    font-size: 2em; 
-    display: none;
-  } */
-  
-  /* #housingPreview  */
+ 
   .carousel__snapper {
     position: absolute;
     top: 0;
@@ -265,16 +211,8 @@
     scroll-snap-align: center; 
 
   }
-  .listings .carousel__snapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center; 
- 
-  }
-  
+
+  /* This media tag starts the animation that rotates the images */
   @media (hover: hover) {
     #housingPreview .carousel__snapper {
         animation-name: tonext, snap;
@@ -282,14 +220,14 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
       }
-     /* #housingPreview  */
+     
      #housingPreview .carousel__slide:last-child .carousel__snapper {
-        animation-name: tostart4, snap;
+        animation-name: tostart, snap;
       }
      
 
       .listings .carousel__slide:last-child .carousel__snapper {
-        animation-name: tostart4, snap;
+        animation-name: tostart, snap;
       }
       .listings  .carousel__snapper  {
           
@@ -298,59 +236,42 @@
           animation-duration: 2.5s;
           animation-iteration-count: infinite;
         }
-
-
   }
- .listings .carousel:hover .carousel__snapper{
-        animation-name: none;
-        
-      }
-    
-  /* #housingPreview */
+/* Prevents animation if the user sets prefer reduced motion */
   @media (prefers-reduced-motion: reduce) {
      .carousel__snapper {
       animation-name: none;
     }
   }
   
-  /* #housingPreview  */
-  /* #housingPreview  */
+  /* Makes the images stop rotating if you mouse over or have the carusel as 
+  the active object */
   #housingPreview .carousel:hover .carousel__snapper,
   #housingPreview .carousel:focus-within .carousel__snapper {
     animation-name: none;
-    
   }
 
+  /* Makes the images stop rotating if you hover over the carousel */
+ .listings .carousel:hover .carousel__snapper{
+        animation-name: none;
+      }
     
-
-    /* .fourImages .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart4, snap;
-    }
-    .fiveImages .carousel__slide:last-child .carousel__snapper {
-      animation-name: tostart5, snap;
-    } */
-    
-  
-  /* #housingPreview  */
+ /* more properties for all carousels */     
   .carousel__navigation {
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     text-align: center;
-  
-
   }
-  /* #housingPreview  */
-  /* #housingPreview  */
+
   .carousel__navigation-list,
   .carousel__navigation-item {
     display: inline-block;
-  
     
   }
   
-  /* #housingPreview  */
+  /* Only the preview has buttons */
   #housingPreview .carousel__navigation-button {
     display: inline-block;
     width: 1.5rem;
@@ -364,31 +285,10 @@
  
   }
 
-  .listings .carousel__navigation-button {
-    
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-color: #333;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-
-    font-size: 0;
-    transition: transform 0.1s;
- 
-    
-  }
-  
-  /* #housingPreview */
-  /* #housingPreview */
-  /* #housingPreview */
-  /* #housingPreview */
   .carousel::before,
   .carousel::after,
   .carousel__prev,
   .carousel__next {
-    
     position: absolute;
     top: 0;
     margin-top: 37.5%;
@@ -405,40 +305,11 @@
   .carousel::before,
   .carousel__prev {
     left: -1rem;
- 
-    
   }
   
   /* #housingPreview  */
   .carousel::after,
   .carousel__next {
-    right: -1rem;
-
-    
+    right: -1rem;  
   }
   
-  /* #housingPreview .carousel::before,
-  #housingPreview .carousel::after {
-    content: '';
-    z-index: 1;
-    background-color: #333;
-    background-size: 1.5rem 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    text-align: center;
-    pointer-events: none;
-  } */
-  /* #housingPreview .carousel::before {
-    overflow-anchor: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-    
-  }
-  
-  #housingPreview .carousel::after {
-    overflow-anchor: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-    
-  } */

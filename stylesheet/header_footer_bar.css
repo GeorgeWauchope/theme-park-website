@@ -1,3 +1,7 @@
+/* header.footer.bar.css contains CSS for all parts that are used
+ in more than one of the pages. This includes header, footer, the blue bar,
+ the contac-us field, and google maps section */
+
 /* Below is CSS for top navbar by George*/
 
 .phone-and-button-top-nav {
@@ -8,18 +12,6 @@
     height: 50px;
     width: 100%;
   }
-  
-  /* .phone-and-button-top-nav > button {
-    margin: 20px;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    background: red;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  } */
   
   .phone-and-button-top-nav > p {
     margin-right: 30px;
@@ -81,24 +73,6 @@
     color: red;
     background-color: #e9fa00;
   }
-  
-  /* .toggle-button {
-    position: absolute;
-    top: 1.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-  }
-  
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-  } */
   
   .navbar-links li a {
     padding: 0.5rem 1rem;
@@ -171,6 +145,7 @@
     animation-iteration-count: 1;
     padding-bottom: 20px;
   }
+  /* animation */
   @keyframes mymove {
     from {
       left: -100px;
@@ -179,12 +154,45 @@
       left: 0px;
     }
   }
+   /* media queries for adaptable content */
   
+  @media (max-width: 600px) {
+    .navbar {
+      width: 100%;
+    }
+    .navbar .item2 {
+      margin-left: 0px;
+    }
+    .brand-title {
+      margin: 0.5rem 0px;
+    }
+  }
+  
+  
+  @media (max-width: 767px) {
+    .text-above-fold .text {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .text-above-fold .img {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .navbar-links li:hover {
+      background-color: #e9fa00;
+    }
+  }
+
   @media (max-width: 1275px) {
     .text-above-fold .text {
       margin-top: 10px;
     }
   }
+ 
+
   
 
 
@@ -304,7 +312,7 @@
     color: #000;
   }
   
-  /* media queries for adaptable content */
+  /* media queries for adaptable content by George */
   @media (max-width: 991px) {
     .footer {
       flex-direction: column;
@@ -332,30 +340,5 @@
     
   }
   
-  @media (max-width: 767px) {
-    .text-above-fold .text {
-      float: none;
-      margin: 0 auto;
-      width: 100%;
-      margin-bottom: 40px;
-    }
-    .text-above-fold .img {
-      float: none;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .navbar-links li:hover {
-      background-color: #e9fa00;
-    }
-  }
-  @media (max-width: 600px) {
-    .navbar {
-      width: 100%;
-    }
-    .navbar .item2 {
-      margin-left: 0px;
-    }
-    .brand-title {
-      margin: 0.5rem 0px;
-    }
-  }
+  
+  
