@@ -18,13 +18,11 @@ display: flex;
 box-sizing: border-box;
 flex-direction: column;
 text-align: center;
-font-size: 18px;
 }
 
 /* styling for header 1 and header 2 within container */
 .RandEContainer > h1{
 text-align: center;
-font-size: 30px;
 padding: 20px 20px 20px 20px;
 }
 
@@ -91,7 +89,6 @@ width: 100%;
 justify-content: center;
 flex-direction: row;
 padding: 5px;
-font-size: 1em; 
 }
 
 /* annimation for header 2 in the showsMain container  */
@@ -142,7 +139,6 @@ width: 100%;
 flex-direction: row;
 justify-content: center;
 padding: 5px;
-font-size: 1em;
 }
 
 /* annimation for header 2 in the restMain container  */
@@ -190,7 +186,6 @@ padding: 1rem;
 display: flex;
 width: 100%;
 flex-direction: column;
-font-size: 1em; 
 align-items: center;
 }
 
@@ -209,18 +204,11 @@ padding: 10px;
 @media only screen and (max-width: 720px){
 .ridesContainer {
 flex-direction: column;
-text-align: center;
 }
 .ShowsAndEventsContainer {
 flex-direction: column;
-text-align: center;
 }
 .RestaurantsContainer {
 flex-direction: column;
-text-align: center;
-}
-/* On smaller screens moves headers to center alignment */
-.mainRidesExperiences h3 {
-  text-align: center;
 }
 }
